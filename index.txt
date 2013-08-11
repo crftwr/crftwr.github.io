@@ -1,0 +1,38 @@
+==========================================================
+ craftware
+==========================================================
+
+:連絡先: craftware@gmail.com
+:craftware home: http://sites.google.com/site/craftware/
+:craftwave blog: http://craftwave.blogspot.jp/
+:@crftwr: https://twitter.com/crftwr
+:github/crftwr: https://github.com/crftwr
+
+.. contents::
+
+
+このサイトについて
+==========================
+
+    Craftwareは主にWindowsのアプリケーションを開発し、オンラインソフトとして公開する一連のプロジェクトです。
+
+
+プロジェクト
+==========================
+
+    LREdit_
+    
+    `内骨格`_
+    
+    CraftLaunch_
+    
+    keyhac_
+    
+    CraftMemo_
+
+    .. _LREdit: https://sites.google.com/site/craftware/lredit
+    .. _`内骨格`: https://sites.google.com/site/craftware/cfiler
+    .. _CraftLaunch: https://sites.google.com/site/craftware/clnch
+    .. _keyhac: https://sites.google.com/site/craftware/keyhac
+    .. _CraftMemo: https://sites.google.com/site/craftware/cmemo
+

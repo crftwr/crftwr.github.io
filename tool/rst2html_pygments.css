@@ -1,12 +1,3 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="generator" content="Docutils 0.10: http://docutils.sourceforge.net/" />
-<title>craftware</title>
-<style type="text/css">
-
 /*
 :Author: David Goodger (goodger@python.org)
 :Id: $Id: html4css1.css 5951 2009-05-18 18:03:10Z milde $
@@ -370,50 +361,3 @@ div.highlight {
 .vi { color: #19177C } /* Name.Variable.Instance */
 .il { color: #666666 } /* Literal.Number.Integer.Long */
 
-
-</style>
-</head>
-<body>
-<div class="document" id="craftware">
-<h1 class="title">craftware</h1>
-<table class="docinfo" frame="void" rules="none">
-<col class="docinfo-name" />
-<col class="docinfo-content" />
-<tbody valign="top">
-<tr class="field"><th class="docinfo-name">連絡先:</th><td class="field-body"><a class="reference external" href="mailto:craftware&#64;gmail.com">craftware&#64;gmail.com</a></td>
-</tr>
-<tr class="field"><th class="docinfo-name">craftware home:</th><td class="field-body"><a class="reference external" href="http://sites.google.com/site/craftware/">http://sites.google.com/site/craftware/</a></td>
-</tr>
-<tr class="field"><th class="docinfo-name">craftwave blog:</th><td class="field-body"><a class="reference external" href="http://craftwave.blogspot.jp/">http://craftwave.blogspot.jp/</a></td>
-</tr>
-<tr class="field"><th class="docinfo-name">&#64;crftwr:</th><td class="field-body"><a class="reference external" href="https://twitter.com/crftwr">https://twitter.com/crftwr</a></td>
-</tr>
-<tr class="field"><th class="docinfo-name">github/crftwr:</th><td class="field-body"><a class="reference external" href="https://github.com/crftwr">https://github.com/crftwr</a></td>
-</tr>
-</tbody>
-</table>
-<div class="contents topic" id="contents">
-<p class="topic-title first">Contents</p>
-<ul class="simple">
-<li><a class="reference internal" href="#id1" id="id4">このサイトについて</a></li>
-<li><a class="reference internal" href="#id2" id="id5">プロジェクト</a></li>
-</ul>
-</div>
-<div class="section" id="id1">
-<h1><a class="toc-backref" href="#id4">このサイトについて</a></h1>
-<blockquote>
-Craftwareは主にWindowsのアプリケーションを開発し、オンラインソフトとして公開する一連のプロジェクトです。</blockquote>
-</div>
-<div class="section" id="id2">
-<h1><a class="toc-backref" href="#id5">プロジェクト</a></h1>
-<blockquote>
-<p><a class="reference external" href="https://sites.google.com/site/craftware/lredit">LREdit</a></p>
-<p><a class="reference external" href="https://sites.google.com/site/craftware/cfiler">内骨格</a></p>
-<p><a class="reference external" href="https://sites.google.com/site/craftware/clnch">CraftLaunch</a></p>
-<p><a class="reference external" href="https://sites.google.com/site/craftware/keyhac">keyhac</a></p>
-<p><a class="reference external" href="https://sites.google.com/site/craftware/cmemo">CraftMemo</a></p>
-</blockquote>
-</div>
-</div>
-</body>
-</html>
