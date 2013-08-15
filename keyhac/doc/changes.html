@@ -1,0 +1,865 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Docutils 0.10: http://docutils.sourceforge.net/" />
+<title>更新履歴</title>
+<style type="text/css">
+
+/*
+:Author: David Goodger (goodger@python.org)
+:Id: $Id: html4css1.css 5951 2009-05-18 18:03:10Z milde $
+:Copyright: This stylesheet has been placed in the public domain.
+
+Default cascading style sheet for the HTML output of Docutils.
+
+See http://docutils.sf.net/docs/howto/html-stylesheets.html for how to
+customize this style sheet.
+*/
+
+/* used to remove borders from tables and images */
+.borderless, table.borderless td, table.borderless th {
+  border: 0 }
+
+table.borderless td, table.borderless th {
+  /* Override padding for "table.docutils td" with "! important".
+     The right padding separates the table cells. */
+  padding: 0 0.5em 0 0 ! important }
+
+.first {
+  /* Override more specific margin styles with "! important". */
+  margin-top: 0 ! important }
+
+.last, .with-subtitle {
+  margin-bottom: 0 ! important }
+
+.hidden {
+  display: none }
+
+a.toc-backref {
+  text-decoration: none ;
+  color: black }
+
+blockquote.epigraph {
+  margin: 2em 5em ; }
+
+dl.docutils dd {
+  margin-bottom: 0.5em }
+
+/* Uncomment (and remove this text!) to get bold-faced definition list terms
+dl.docutils dt {
+  font-weight: bold }
+*/
+
+div.abstract {
+  margin: 2em 5em }
+
+div.abstract p.topic-title {
+  font-weight: bold ;
+  text-align: center }
+
+div.admonition, div.attention, div.caution, div.danger, div.error,
+div.hint, div.important, div.note, div.tip, div.warning {
+  margin: 2em ;
+  border: medium outset ;
+  padding: 1em }
+
+div.admonition p.admonition-title, div.hint p.admonition-title,
+div.important p.admonition-title, div.note p.admonition-title,
+div.tip p.admonition-title {
+  font-weight: bold ;
+  font-family: sans-serif }
+
+div.attention p.admonition-title, div.caution p.admonition-title,
+div.danger p.admonition-title, div.error p.admonition-title,
+div.warning p.admonition-title {
+  color: red ;
+  font-weight: bold ;
+  font-family: sans-serif }
+
+/* Uncomment (and remove this text!) to get reduced vertical space in
+   compound paragraphs.
+div.compound .compound-first, div.compound .compound-middle {
+  margin-bottom: 0.5em }
+
+div.compound .compound-last, div.compound .compound-middle {
+  margin-top: 0.5em }
+*/
+
+div.dedication {
+  margin: 2em 5em ;
+  text-align: center ;
+  font-style: italic }
+
+div.dedication p.topic-title {
+  font-weight: bold ;
+  font-style: normal }
+
+div.figure {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+div.footer, div.header {
+  clear: both;
+  font-size: smaller }
+
+div.line-block {
+  display: block ;
+  margin-top: 1em ;
+  margin-bottom: 1em }
+
+div.line-block div.line-block {
+  margin-top: 0 ;
+  margin-bottom: 0 ;
+  margin-left: 1.5em }
+
+div.sidebar {
+  margin: 0 0 0.5em 1em ;
+  border: medium outset ;
+  padding: 1em ;
+  background-color: #ffffee ;
+  width: 40% ;
+  float: right ;
+  clear: right }
+
+div.sidebar p.rubric {
+  font-family: sans-serif ;
+  font-size: medium }
+
+div.system-messages {
+  margin: 5em }
+
+div.system-messages h1 {
+  color: red }
+
+div.system-message {
+  border: medium outset ;
+  padding: 1em }
+
+div.system-message p.system-message-title {
+  color: red ;
+  font-weight: bold }
+
+div.topic {
+  margin: 2em }
+
+h1.section-subtitle, h2.section-subtitle, h3.section-subtitle,
+h4.section-subtitle, h5.section-subtitle, h6.section-subtitle {
+  margin-top: 0.4em }
+
+h1.title {
+  text-align: center }
+
+h2.subtitle {
+  text-align: center }
+
+hr.docutils {
+  width: 75% }
+
+img.align-left, .figure.align-left{
+  clear: left ;
+  float: left ;
+  margin-right: 1em }
+
+img.align-right, .figure.align-right {
+  clear: right ;
+  float: right ;
+  margin-left: 1em }
+
+.align-left {
+  text-align: left }
+
+.align-center {
+  clear: both ;
+  text-align: center }
+
+.align-right {
+  text-align: right }
+
+/* reset inner alignment in figures */
+div.align-right {
+  text-align: left }
+
+/* div.align-center * { */
+/*   text-align: left } */
+
+ol.simple, ul.simple {
+  margin-bottom: 1em }
+
+ol.arabic {
+  list-style: decimal }
+
+ol.loweralpha {
+  list-style: lower-alpha }
+
+ol.upperalpha {
+  list-style: upper-alpha }
+
+ol.lowerroman {
+  list-style: lower-roman }
+
+ol.upperroman {
+  list-style: upper-roman }
+
+p.attribution {
+  text-align: right ;
+  margin-left: 50% }
+
+p.caption {
+  font-style: italic }
+
+p.credits {
+  font-style: italic ;
+  font-size: smaller }
+
+p.label {
+  white-space: nowrap }
+
+p.rubric {
+  font-weight: bold ;
+  font-size: larger ;
+  color: maroon ;
+  text-align: center }
+
+p.sidebar-title {
+  font-family: sans-serif ;
+  font-weight: bold ;
+  font-size: larger }
+
+p.sidebar-subtitle {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+p.topic-title {
+  font-weight: bold }
+
+pre.address {
+  margin-bottom: 0 ;
+  margin-top: 0 ;
+  font: inherit }
+
+pre.literal-block, pre.doctest-block {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+span.classifier {
+  font-family: sans-serif ;
+  font-style: oblique }
+
+span.classifier-delimiter {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+span.interpreted {
+  font-family: sans-serif }
+
+span.option {
+  white-space: nowrap }
+
+span.pre {
+  white-space: pre }
+
+span.problematic {
+  color: red }
+
+span.section-subtitle {
+  /* font-size relative to parent (h1..h6 element) */
+  font-size: 80% }
+
+table.citation {
+  border-left: solid 1px gray;
+  margin-left: 1px }
+
+table.docinfo {
+  margin: 2em 4em }
+
+table.docutils {
+  margin-top: 0.5em ;
+  margin-bottom: 0.5em }
+
+table.footnote {
+  border-left: solid 1px black;
+  margin-left: 1px }
+
+table.docutils td, table.docutils th,
+table.docinfo td, table.docinfo th {
+  padding-left: 0.5em ;
+  padding-right: 0.5em ;
+  vertical-align: top }
+
+table.docutils th.field-name, table.docinfo th.docinfo-name {
+  font-weight: bold ;
+  text-align: left ;
+  white-space: nowrap ;
+  padding-left: 0 }
+
+h1 tt.docutils, h2 tt.docutils, h3 tt.docutils,
+h4 tt.docutils, h5 tt.docutils, h6 tt.docutils {
+  font-size: 100% }
+
+ul.auto-toc {
+  list-style-type: none }
+
+/* added by craftware */
+
+div.highlight {
+  margin-left: 4em;
+  margin-right: 4em;
+  background-color: #dddddd }
+
+.hll { background-color: #ffffcc }
+.c { color: #408080; font-style: italic } /* Comment */
+.err { border: 1px solid #FF0000 } /* Error */
+.k { color: #008000; font-weight: bold } /* Keyword */
+.o { color: #666666 } /* Operator */
+.cm { color: #408080; font-style: italic } /* Comment.Multiline */
+.cp { color: #BC7A00 } /* Comment.Preproc */
+.c1 { color: #408080; font-style: italic } /* Comment.Single */
+.cs { color: #408080; font-style: italic } /* Comment.Special */
+.gd { color: #A00000 } /* Generic.Deleted */
+.ge { font-style: italic } /* Generic.Emph */
+.gr { color: #FF0000 } /* Generic.Error */
+.gh { color: #000080; font-weight: bold } /* Generic.Heading */
+.gi { color: #00A000 } /* Generic.Inserted */
+.go { color: #808080 } /* Generic.Output */
+.gp { color: #000080; font-weight: bold } /* Generic.Prompt */
+.gs { font-weight: bold } /* Generic.Strong */
+.gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+.gt { color: #0040D0 } /* Generic.Traceback */
+.kc { color: #008000; font-weight: bold } /* Keyword.Constant */
+.kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
+.kn { color: #008000; font-weight: bold } /* Keyword.Namespace */
+.kp { color: #008000 } /* Keyword.Pseudo */
+.kr { color: #008000; font-weight: bold } /* Keyword.Reserved */
+.kt { color: #B00040 } /* Keyword.Type */
+.m { color: #666666 } /* Literal.Number */
+.s { color: #BA2121 } /* Literal.String */
+.na { color: #7D9029 } /* Name.Attribute */
+.nb { color: #008000 } /* Name.Builtin */
+.nc { color: #0000FF; font-weight: bold } /* Name.Class */
+.no { color: #880000 } /* Name.Constant */
+.nd { color: #AA22FF } /* Name.Decorator */
+.ni { color: #999999; font-weight: bold } /* Name.Entity */
+.ne { color: #D2413A; font-weight: bold } /* Name.Exception */
+.nf { color: #0000FF } /* Name.Function */
+.nl { color: #A0A000 } /* Name.Label */
+.nn { color: #0000FF; font-weight: bold } /* Name.Namespace */
+.nt { color: #008000; font-weight: bold } /* Name.Tag */
+.nv { color: #19177C } /* Name.Variable */
+.ow { color: #AA22FF; font-weight: bold } /* Operator.Word */
+.w { color: #bbbbbb } /* Text.Whitespace */
+.mf { color: #666666 } /* Literal.Number.Float */
+.mh { color: #666666 } /* Literal.Number.Hex */
+.mi { color: #666666 } /* Literal.Number.Integer */
+.mo { color: #666666 } /* Literal.Number.Oct */
+.sb { color: #BA2121 } /* Literal.String.Backtick */
+.sc { color: #BA2121 } /* Literal.String.Char */
+.sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
+.s2 { color: #BA2121 } /* Literal.String.Double */
+.se { color: #BB6622; font-weight: bold } /* Literal.String.Escape */
+.sh { color: #BA2121 } /* Literal.String.Heredoc */
+.si { color: #BB6688; font-weight: bold } /* Literal.String.Interpol */
+.sx { color: #008000 } /* Literal.String.Other */
+.sr { color: #BB6688 } /* Literal.String.Regex */
+.s1 { color: #BA2121 } /* Literal.String.Single */
+.ss { color: #19177C } /* Literal.String.Symbol */
+.bp { color: #008000 } /* Name.Builtin.Pseudo */
+.vc { color: #19177C } /* Name.Variable.Class */
+.vg { color: #19177C } /* Name.Variable.Global */
+.vi { color: #19177C } /* Name.Variable.Instance */
+.il { color: #666666 } /* Literal.Number.Integer.Long */
+
+
+</style>
+</head>
+<body>
+<div class="document" id="id1">
+<h1 class="title">更新履歴</h1>
+
+<blockquote>
+<p><strong>1.61</strong></p>
+<blockquote>
+<ul class="simple">
+<li>クリップボード履歴として保存するデータの最大合計サイズを keymap.clipboard_history.quota で設定できるようにした。</li>
+<li>デフォルト設定ファイルに、クリップボードのテキストを変換して貼りつける機能の例を追加。(Quote,Indent,Unindent)</li>
+<li>デフォルト設定ファイルに、クリップボードのテキストをデスクトップにファイルとして保存するコマンドの例を追加。</li>
+<li>フックのなかで与えられた関数を実行するメソッド、Keymap.hookCall() を追加。</li>
+<li>クリップボード履歴リストからの貼り付け処理に Keymap.hookCall() を使うようにして、キーが押しっぱなしになってしまう可能性があったのを修正。</li>
+<li>テキストファイルを編集するメソッド、Keymap.editTextFile() を追加。</li>
+<li>OS 起動直後など Keymap.getTopLevelWindow() が None を返すことがあり、command_MoveWindow_MonitorEdge でエラーが発生することがあったのを修正。</li>
+</ul>
+</blockquote>
+<p><strong>1.60</strong></p>
+<blockquote>
+<ul class="simple">
+<li>Python27 から Python33 に移行。</li>
+<li>Firefox 22.0 から、クリップボード履歴へのコピーが失敗するようになってしまっていた問題を回避。OpenClipboard()を、WM_DRAWCLIPBOARD の中ではなく、delayedCall() で呼ぶようにした。</li>
+</ul>
+</blockquote>
+<p><strong>1.52</strong></p>
+<blockquote>
+<ul class="simple">
+<li>shellExecute() を ckit ではなく pyauto のものを使うようにした。これに伴って、第一引数の hwnd が廃止された。</li>
+<li>command_ShellExecute() の hwnd 引数を廃止した。</li>
+<li>Keymap.popListWindow(), Keymap.cancelListWindow(), Keymap.isListWindowOpened() を追加し、クリップボード履歴以外の目的にもリストウインドウを利用できるようにした。</li>
+<li>Window.setDelayedCall() を Window.delayedCall() に変名。</li>
+<li>Balloon のフォントがおかしくなっていたのを修正。</li>
+<li>モディファイアを押している間にマウスのボタンを押したら、ワンショットモディファイアが発動しないようにした。</li>
+</ul>
+</blockquote>
+<p><strong>1.51</strong></p>
+<blockquote>
+<ul class="simple">
+<li>ini ファイルに [DEBUG] send_input_on_tru = 1 が設定されているときだけ、TRU で Input.send() するようにした。
+(常に Input.send() してしまうと、Win8 で Alt-TAB などが使えなくなっていたため。)</li>
+<li>Keymap.callHotKey を廃止。クリップボード履歴リストは Window.setDelayedCall を使って呼び出すようにした。</li>
+<li>ini ファイルの不要なセクションを削除 ( [FONT], [COLOR] )</li>
+<li>APIリファレンスを整備した。</li>
+</ul>
+</blockquote>
+<p><strong>1.50</strong></p>
+<blockquote>
+<ul class="simple">
+<li>getAsyncKeyState()をつかって、キーが押されていない場合に、KeyUp を省略する処理を廃止。
+(VAIO Z の Fn + F3, Fn + F4 によるボリューム調節操作が、押しっぱなしになってしまう問題を修正。)</li>
+<li>定期的なサブスレッド処理を行うための Cron 機能を追加。</li>
+<li>Keymap.setFont()、Keymap.setTheme() を追加。</li>
+</ul>
+</blockquote>
+<p><strong>1.48</strong></p>
+<blockquote>
+<ul class="simple">
+<li>モディファイアが押されっぱなしになってしまう問題を修正。
+(TRUのときも、Input.send() を使ってキー入力生成処理を行うようにした。)</li>
+</ul>
+</blockquote>
+<p><strong>1.47</strong></p>
+<blockquote>
+<ul class="simple">
+<li>keyhac.shellExecute が ckit 版ではなく、pyauto 版になっていたのを修正。</li>
+</ul>
+</blockquote>
+<p><strong>1.46</strong></p>
+<blockquote>
+<ul class="simple">
+<li>1.45で、ckit 側の整理の影響で、起動しない状態になっていたのを修正。</li>
+</ul>
+</blockquote>
+<p><strong>1.45</strong></p>
+<blockquote>
+<ul class="simple">
+<li>クリップボード履歴で、Migemo を使ったインクリメンタルサーチが、エラーになってしまうのを修正。</li>
+</ul>
+</blockquote>
+<p><strong>1.44</strong></p>
+<blockquote>
+<ul class="simple">
+<li>Keymap.editor に呼び出し可能オブジェクトを設定したとき、config.py の編集がエラーになっていたのを修正。</li>
+<li>ドキュメントを整備 (Pythonのコードブロックに色をつけるなど)</li>
+<li>getTopLevelWindow() がエラーになるケースがあったのを修正。</li>
+<li>keymap.clipboard_history.maxnum の設定が、履歴の読み込み時に効いていなかったのを修正。</li>
+<li>インストール場所やデータ置き場に、日本語文字が含まれているときに、エラーになっていたのを修正。</li>
+</ul>
+</blockquote>
+<p><strong>1.43</strong></p>
+<blockquote>
+<ul class="simple">
+<li>D-, U-, O- がエラーになってしまっていたのを修正。</li>
+</ul>
+</blockquote>
+<p><strong>1.42</strong></p>
+<blockquote>
+<ul class="simple">
+<li>キーボードのタイプによって、キーコードが異なる記号系のキーに関しても、
+名前でキー入力条件を指定できるようにした。(Semicolonなど)</li>
+<li>xml.etree など、標準ライブラリの一部が含まれてなかったのを修正。</li>
+<li>デスクトップにキーボードフォーカスがある間、デフォルトキーマップが効かない問題を修正。</li>
+<li>キーボードマクロの記録開始や停止のときに、バルーンヘルプを表示するようにした。</li>
+</ul>
+</blockquote>
+<p><strong>1.41</strong></p>
+<blockquote>
+<ul class="simple">
+<li>タスクトレイのアイコンから、キーボードマクロの記録の開始と終了ができるようにした。</li>
+</ul>
+</blockquote>
+<p><strong>1.40</strong></p>
+<blockquote>
+<ul class="simple">
+<li>ver 1.38 と 1.39 の Win Alt 単体押しキャンセル処理が不完全だったのを修正。</li>
+</ul>
+</blockquote>
+<p><strong>1.39</strong></p>
+<blockquote>
+<ul class="simple">
+<li>ver 1.38 の Win Alt 単体押しキャンセル処理が不完全だったのを修正。</li>
+<li>モディファイアキーを押しなおす必要があるようなマルチストロークのキーが
+うまく入力できず、途中でキャンセルされてしまっていたのを修正。</li>
+</ul>
+</blockquote>
+<p><strong>1.38</strong></p>
+<blockquote>
+<ul class="simple">
+<li>Pythonの標準ライブラリを含めるようにした。</li>
+<li>クリップボード履歴のカスタマイズ方法をドキュメントに追記。</li>
+<li>デフォルト設定ファイルに、クリップボード履歴の最大個数のカスタマイズ方法を追加。</li>
+<li>Window.maximize(), Window.minimize(), Window.restore() に、SetWindowPlacement() ではなく、WM_SYSCOMMAND を使うようにした。
+これにより、最大化したまま最小化したウインドウを restore() するときに、通常サイズに戻ることなく、最大化状態で復帰するようにした。</li>
+<li>Win や Alt をモディファイアとして使ったキー入力に割り当てたアクションの実行後に Win や Alt の短押し相当の
+動作が発動してしまう場合があったのを修正。</li>
+</ul>
+</blockquote>
+<p><strong>1.37</strong></p>
+<blockquote>
+<ul class="simple">
+<li>1.36 の修正で、ユーザ定義モディファイアのワンショットモディファイアの
+動作がエラーになってしまっていたのを修正。</li>
+</ul>
+</blockquote>
+<p><strong>1.36</strong></p>
+<blockquote>
+<ul class="simple">
+<li>1.35 のワンショットモディファイア関係の修正で、全てのキー入力が、
+内部的に replaceKey 扱いになってしまっていたのを修正。</li>
+</ul>
+</blockquote>
+<p><strong>1.35</strong></p>
+<blockquote>
+<ul class="simple">
+<li>Shift や Ctrl などの標準のモディファイアキーにワンショットモディファイアの
+割り当てを行うと、別のウインドウで押しっぱなしになってしまう問題を修正。
+( Up の 処理のあとに、ワンショットの処理を実行するようにした。 )</li>
+<li>キーフックをOFFにしたときに、キーフックの強制解除が検出されてしまっていたのを修正。</li>
+</ul>
+</blockquote>
+<p><strong>1.34</strong></p>
+<blockquote>
+<ul class="simple">
+<li>ウインドウ切り替え直後のモディファイアキーが無視されてしまう問題を修正。
+1.33 に入れた実験的なコードが影響してしまっていた。</li>
+<li>comtypes を同梱するようにした。</li>
+<li>ビルド方法の整理。C++部分は Visual C++ 2008 (Express)を使うようにした。</li>
+<li>ドキュメント生成に使用している Doxygen のバージョンアップ</li>
+</ul>
+</blockquote>
+<p><strong>1.33</strong></p>
+<blockquote>
+<ul class="simple">
+<li>クリップボードのリストウインドウが、Escで閉じなくなってしまうことがあるのを修正。</li>
+<li>タスクトレイのメニューに、フックのON/OFFの項目を追加。</li>
+</ul>
+</blockquote>
+<p><strong>1.32</strong></p>
+<blockquote>
+<ul class="simple">
+<li>1.31 の変更により、keymap.popBalloon で出したバルーンを消すための
+タイマーが解除されなくなってしまっていたのを修正。</li>
+<li>command_ActivateWindow に force 引数を追加。これまで True が与えられたときと
+同じ挙動になっていたが、現在は デフォルト False な点に注意が必要。</li>
+<li>デフォルト設定ファイルに、ActivateOrExecute のサンプルを追加。
+ウインドウをアクティブ化するか、まだであれば起動する、というサンプル。</li>
+<li>command_InputText() で、キー上げイベントを送り忘れていたために、
+同じ文字が連続した入力が正しく行われなかったり、IMEがOnになってしまったり
+する問題があったのを修正。</li>
+</ul>
+</blockquote>
+<p><strong>1.31</strong></p>
+<blockquote>
+<ul class="simple">
+<li>keymap.popBalloon に timeout を与えたときに、
+closeBalloonの呼び出しがエラーになってしまうのを修正</li>
+<li>keyhac を複数起動したときに、エラーをログファイルに書くのではなく、
+メッセージボックスで教えるようにした。</li>
+</ul>
+</blockquote>
+<p><strong>1.30</strong></p>
+<blockquote>
+<ul class="simple">
+<li>クリップボード履歴ウインドウを Esc でキャンセルするときに、
+無関係なウインドウがアクティブになってしまうケースがあったのを修正。</li>
+<li>クリップボードビューアの再インストール処理をするときに、警告ダイアログや
+警告ログを出さないようにした。(ただし内部ログONにしているときは、警告ログは出力される)</li>
+<li>キーフックが強制解除されたことを検出し、フックを再設定するようにした。</li>
+<li>内部ログ OFF のときも、フック再設定のメニューを表示するようにした。</li>
+</ul>
+</blockquote>
+<p><strong>1.29</strong></p>
+<blockquote>
+<ul class="simple">
+<li>クリップボードチェインの後続へのメッセージの転送をやっていなかったのを修正。</li>
+<li>クリップボードのチェイン切れ監視処理を軽量化。</li>
+<li>そのほかクリップボード周りの処理を一部見直し。</li>
+<li>クリップボード履歴ウインドウを表示するときに、フォーカスウインドウが見つからない場合
+があるのに対応</li>
+</ul>
+</blockquote>
+<p><strong>1.28</strong></p>
+<blockquote>
+<ul class="simple">
+<li>Migemo の辞書が配置されてない場合に、アルファベットの大文字を含む文字で
+インクリメンタルサーチをしようとすると、エラーが表示されていたのを修正。</li>
+<li>クリップボード履歴の不整合チェックで、３回連続で失敗した場合だけ、
+失敗とみなすようにした。(タイミングで失敗するケースがあるかもしれないため)</li>
+<li>IMEのOn/Offを取得/設定するための API pyauto.Window.getImeStatus(),
+pyauto.Window.setImeStatus() を追加</li>
+</ul>
+</blockquote>
+<p><strong>1.27</strong></p>
+<blockquote>
+<ul class="simple">
+<li>python27を使うようにした。</li>
+<li>migemo のバージョン 1.3c を使うようにした。</li>
+<li>シャットダウンやログオフ時に、クリップボード履歴が保存されていなかったのを修正。</li>
+<li>クリップボードの更新が行われない状態になったことを検出して、フックの再設定を
+行うようにした。また、この問題の解析のためのメッセージ表示を行うようにした。</li>
+</ul>
+</blockquote>
+<p><strong>1.26</strong></p>
+<blockquote>
+<ul class="simple">
+<li>ユーザモディファイアの単体キー入力をカスタマイズできるようにした。
+これまでは、ワンショットモディファイアのみ検出することができたが、
+UpとDownも検出できるようにした。</li>
+<li>タスクトレイのアイコンから設定ファイルの編集を実行したときに、
+無条件に keyhac.exe と同じディレクトリの config.py を開こうと
+していたのを修正。</li>
+<li>エラーメッセージが出力されたときに、コンソールウインドウを表示するようにした。</li>
+<li>デフォルト設定ファイルに、Window.sendMessage() の使用例を追加。</li>
+<li>Keymap.synccall を追加。サブスレッドからメインスレッドに同期しながら関数呼び出しできるようにした。</li>
+</ul>
+</blockquote>
+<p><strong>1.25</strong></p>
+<blockquote>
+<ul>
+<li><p class="first">設定ファイルの置き場所を keyhac.exe の隣ではなく、アプリケーションデータ
+ディレクトリに変更した。
+( XP では c:/Documents and Settings/Application Data/keyhac、
+Vista/7 では c:/Users/tom/AppData/Roaming/keyhac)</p>
+<p>ただし config.py と keyhac.ini を、keyhac.exe と同じディレクトリにおいておけば、
+そちらを優先的に使用する。</p>
+</li>
+<li><p class="first">ウインドウをアクティブ化するコマンド command_ActivateWindowを追加</p>
+</li>
+<li><p class="first">ソースコードの一部を CraftLaunch などと共有するために整理。</p>
+</li>
+</ul>
+</blockquote>
+<p><strong>1.24</strong></p>
+<blockquote>
+<ul class="simple">
+<li>Winキーを使ったキーのカスタマイズ時、スタートメニューが開いてしまうのを修正。</li>
+<li>1.22で行ったAltキーの対応が十分でなかったのを修正。
+(キーではなく、コマンドやマルチストロークを割り当てていた場合の対策がされていなかった。)</li>
+</ul>
+</blockquote>
+<p><strong>1.23</strong></p>
+<blockquote>
+<ul class="simple">
+<li>モディファイアのおかしな状態を修正する処理を追加
+たとえば Win-L を押して ロック画面に行ったときに、Winキーが押されっぱなしになってしまうような現象を回避するため。</li>
+</ul>
+</blockquote>
+<p><strong>1.22</strong></p>
+<blockquote>
+<ul class="simple">
+<li>Altキーを使ったキーのカスタマイズ時、メニューバーにフォーカスが奪われて
+期待通りの動作にならない場合があるのを修正。</li>
+<li>マルチストロークキーマップのとき、カーソル位置にヘルプを表示するようにした。</li>
+<li>サンプル設定ファイルに、メモ帳を Emacs 風にする設定を追加。</li>
+</ul>
+</blockquote>
+<p><strong>1.21</strong></p>
+<blockquote>
+<ul class="simple">
+<li>クリップボード履歴リストを左右で切り替えたときに、
+ウインドウ位置がおかしくなってしまっていたのを修正。</li>
+<li>pyautoのドキュメントをkeyhacのドキュメントの一部として
+含めるようにした。</li>
+</ul>
+</blockquote>
+<p><strong>1.20</strong></p>
+<blockquote>
+<ul class="simple">
+<li>キーボードマクロ機能を追加。</li>
+</ul>
+</blockquote>
+<p><strong>1.19</strong></p>
+<blockquote>
+<ul class="simple">
+<li>クリップボード履歴リストを、できるだけキャレット位置に出すようにした。</li>
+<li>クリップボードビューアの処理が怪しかったのを修正。
+(ペースト時に、いったんクリップボードビューアを解除し忘れていた)</li>
+</ul>
+</blockquote>
+<p><strong>1.18</strong></p>
+<blockquote>
+<ul class="simple">
+<li>マルチストロークなキー割り当てに対応。</li>
+<li>1.13 の変更で 64bitのアプリケーションにフォーカスがあることを検出できなくなっていたのを修正。</li>
+</ul>
+</blockquote>
+<p><strong>1.17</strong></p>
+<blockquote>
+<ul class="simple">
+<li>ワンショットモディファイアをほかのキー入力に置き換えたとき、モディファイアが押された扱いになっていたのを修正。</li>
+<li>Window.defineWindowKeymap の path 引数を廃止した。( 64bitOSで使えないので廃止予定だった)</li>
+</ul>
+</blockquote>
+<p><strong>1.16</strong></p>
+<blockquote>
+<ul class="simple">
+<li>クリップボード履歴を、Shiftを押しながら決定したときは、クリップボードの内容を更新した後の貼り付けを行わないようにした。</li>
+</ul>
+</blockquote>
+<p><strong>1.15</strong></p>
+<blockquote>
+<ul class="simple">
+<li>テキストエディタの呼び出し時に、引数のファイル名が引用符で括られていなかった
+のを修正。</li>
+<li>キーが仮想的に押されていないことになっている場合に、キーのリリースのイベントを送らないようにした。</li>
+</ul>
+</blockquote>
+<p><strong>1.14</strong></p>
+<blockquote>
+<ul class="simple">
+<li>クリップボード履歴のウインドウが、アクティブにならない場合があったのを修正。</li>
+<li>クリップボード履歴が更新されなくなってしまう場合があったのを修正。</li>
+</ul>
+</blockquote>
+<p><strong>1.13</strong></p>
+<blockquote>
+<ul>
+<li><p class="first">keyhacを使うと、本来は機能するはずの一部のキー操作が出来なくなってしまうのを修正。</p>
+<blockquote>
+<ul class="simple">
+<li>Altキーを短押ししてメニューバーにフォーカスを移動させる動作</li>
+<li>秀丸 や Apsaly の ファンクションキー表示が、Shift や Ctrl を押したときに切り替わる動作。</li>
+</ul>
+</blockquote>
+</li>
+<li><p class="first">keymap.editor に呼び出し可能オブジェクトを設定したときに、エラーになっていたのを修正。</p>
+</li>
+</ul>
+</blockquote>
+<p><strong>1.12</strong></p>
+<blockquote>
+<ul class="simple">
+<li>クリップボード履歴リストの内容をカスタマイズして、定型文やPythonの呼び出し可能オブジェクトを含めることが出来るようにした。</li>
+<li>クリップボード履歴がDeleteキーで削除できなかったのを修正。</li>
+<li>デフォルト設定ファイルで、Ctrl-Shift-X を クリップボード履歴の回転に割り当てる。</li>
+<li>クリップボード履歴を回転させたり削除させたりしたときに、カーソル位置がウインドウの可視範囲外に行ってしまうことがあるのを修正。</li>
+</ul>
+</blockquote>
+<p><strong>1.11</strong></p>
+<blockquote>
+<ul class="simple">
+<li>クリップボード履歴からの引用貼り付け機能を追加</li>
+</ul>
+</blockquote>
+<p><strong>1.10</strong></p>
+<blockquote>
+<ul>
+<li><p class="first">クリップボード履歴機能を追加</p>
+</li>
+<li><p class="first">マウスの擬似的な操作をするためのコマンドを追加</p>
+<blockquote>
+<ul class="simple">
+<li>command_MouseMove</li>
+<li>command_MouseButtonDown</li>
+<li>command_MouseButtonUp</li>
+<li>command_MouseButtonClick</li>
+<li>command_MouseWheel</li>
+</ul>
+</blockquote>
+</li>
+</ul>
+</blockquote>
+<p><strong>1.09</strong></p>
+<blockquote>
+<ul class="simple">
+<li>python26を使うようにした。</li>
+<li>コマンドプロンプトのウインドウで、キーカスタマイズされなかったのを修正。</li>
+<li>アプリケーションの起動を行うコマンド command_ShellExecute を追加。</li>
+<li>デフォルト設定ファイルに、Jobの使い方のサンプルを追加。</li>
+</ul>
+</blockquote>
+<p><strong>1.08</strong></p>
+<blockquote>
+<ul class="simple">
+<li>モディファイアが意図せず離されてしまうことがあったのを修正。</li>
+</ul>
+</blockquote>
+<p><strong>1.07</strong></p>
+<blockquote>
+<ul class="simple">
+<li>モディファイアが押されっぱなしになってしまうことがあったのを修正。</li>
+</ul>
+</blockquote>
+<p><strong>1.06</strong></p>
+<blockquote>
+<ul class="simple">
+<li>ワンショットモディファイアの機能を追加。</li>
+</ul>
+</blockquote>
+<p><strong>1.05</strong></p>
+<blockquote>
+<ul class="simple">
+<li>コンソールウインドウのマウスでの操作性を少し改善。</li>
+<li>タスクトレイアイコンのメニューに、[ 端末のクリア ] コマンドを追加。</li>
+<li>起動オプションにプロファイラを有効にする -p を追加。</li>
+<li>Window.getFocus()がエラーになる可能性があるのに対処した。</li>
+<li>64bit OS に対応。そして 64bit での動作テスト用のAPI enable64bitTest() を削除。</li>
+<li>キー入力を行うコマンド command_InputKey を追加</li>
+</ul>
+</blockquote>
+<p><strong>1.04</strong></p>
+<blockquote>
+<ul class="simple">
+<li>64bit対応テストのとき、getFocus()がNoneを返すことがあり、
+そのときエラーになってしまう問題を修正。</li>
+<li>内部ログONのときのログの出し方を整理し、入力と出力が区別しやすいようにした。</li>
+</ul>
+</blockquote>
+<p><strong>1.03</strong></p>
+<blockquote>
+<ul class="simple">
+<li>設定の再読み込みや、keyhacの終了をするときに、モディファイアキーを全て
+リリースする処理を追加。</li>
+<li>内部ログONのときに、入力されたキーのログ表示で、モディファイアキーが
+表示されないのを修正。</li>
+<li>コンソールウインドウのスクロールバーが、最初、下にはみ出ているのを修正。</li>
+<li>64bitモードで動作するアプリのカスタマイズに対応するため、
+Keymap.enable64bitTest() を追加。テストするには、configure() の中で、
+このメソッドを呼び出す必要がある。</li>
+<li>Window.defineWindowKeymap() に、exe_name 引数を追加。引数 path を廃止予定
+とした。path は、64bitモードで動作するアプリに対して使用することが出来ない
+ため、代わりに exe_name を使用することにした。exe_name には、フルパスではなく、
+実行ファイル名の本体部分のみを指定する。</li>
+</ul>
+</blockquote>
+<p><strong>1.02</strong></p>
+<blockquote>
+<ul class="simple">
+<li>ini ファイル中のバージョン番号が更新されない問題を修正。</li>
+<li>defineWindowKeymap() に check_func を渡したときに、
+フォーカス切り替えイベント処理中にエラーになってしまうのを修正。</li>
+<li>デフォルト設定ファイルに、Editボックスのカスタマイズ例を追加</li>
+</ul>
+</blockquote>
+<p><strong>1.01</strong></p>
+<blockquote>
+<ul class="simple">
+<li>フォーカス切り替えフックの中で、メモリ不足エラーが発生することがあるのを修正。</li>
+</ul>
+</blockquote>
+<p><strong>1.00</strong></p>
+<blockquote>
+<ul class="simple">
+<li>最初のバージョン</li>
+</ul>
+</blockquote>
+</blockquote>
+</div>
+</body>
+</html>
