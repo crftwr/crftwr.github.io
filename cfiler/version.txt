@@ -1,0 +1,3 @@
+version = 2.41
+url     = http://crftwr.github.io/cfiler/download/cfiler_241.exe
+md5     = b926a82557ae369732e144ece04b36f1
