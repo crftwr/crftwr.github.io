@@ -469,7 +469,20 @@ div.highlight {
 <h1 class="title">更新履歴</h1>
 
 <blockquote>
-<p>2.41</p>
+<p>2.43</p>
+<blockquote>
+<ul class="simple">
+<li>Python33 から Python34 に移行</li>
+<li>設定メニュー２の、アプリケーション名の変更と、config のリロードで、エラーが発生していたのを修正</li>
+<li>Grep の検索結果でエディタを開く際、最初にヒットした位置を、window.editor に渡すようにした。(呼び出し可能オブジェクトである場合のみ)</li>
+<li>内蔵テキストビューアからエディタを開く際、行とカラムを window.editor に渡すようにした。(呼び出し可能オブジェクトである場合のみ)</li>
+<li>デフォルト設定ファイルの window.editor に呼び出し可能オブジェクトを設定する例で、行とカラムを渡すようにした。</li>
+<li>WindowsXP の 描画問題 (<a class="reference external" href="http://support.microsoft.com/kb/436093/ja">http://support.microsoft.com/kb/436093/ja</a>) の対処を廃止</li>
+<li>ckit.Window の代わりに ckit.TextWindow を使うようにした。(ckitの設計変更に追従)</li>
+<li>106キーボード設定のときに、Yen キーでルートディレクトリに移動しなかったのを修正。</li>
+</ul>
+</blockquote>
+<p>2.42</p>
 <blockquote>
 <ul class="simple">
 <li>Migemoが使えなくなっていたのを修正。</li>
@@ -478,6 +491,7 @@ div.highlight {
 <li>リファレンスのグループの並びを調整。</li>
 <li>ConsoleWindow を ResultWindow に変名。</li>
 <li>config.py の Google, Eijiro コマンドが Python3 に移行したあと動かなくなっていたのを修正。</li>
+<li>ネットワークアップデートが Python3 に移行したあと動かなくなっていたのを修正。</li>
 </ul>
 </blockquote>
 <p>2.40</p>
