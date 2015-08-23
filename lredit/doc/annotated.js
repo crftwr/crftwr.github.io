@@ -74,7 +74,8 @@ var annotated =
       [ "XmlLexer", "classlredit__lexer_1_1_xml_lexer.html", null ],
       [ "HtmlLexer", "classlredit__lexer_1_1_html_lexer.html", null ],
       [ "MakefileLexer", "classlredit__lexer_1_1_makefile_lexer.html", null ],
-      [ "BatchLexer", "classlredit__lexer_1_1_batch_lexer.html", null ]
+      [ "BatchLexer", "classlredit__lexer_1_1_batch_lexer.html", null ],
+      [ "SqlLexer", "classlredit__lexer_1_1_sql_lexer.html", null ]
     ] ],
     [ "lredit_listwindow", null, [
       [ "ListItem", "classlredit__listwindow_1_1_list_item.html", null ],
@@ -100,7 +101,8 @@ var annotated =
       [ "XmlMode", "classlredit__mode_1_1_xml_mode.html", null ],
       [ "HtmlMode", "classlredit__mode_1_1_html_mode.html", null ],
       [ "MakefileMode", "classlredit__mode_1_1_makefile_mode.html", null ],
-      [ "BatchMode", "classlredit__mode_1_1_batch_mode.html", null ]
+      [ "BatchMode", "classlredit__mode_1_1_batch_mode.html", null ],
+      [ "SqlMode", "classlredit__mode_1_1_sql_mode.html", null ]
     ] ],
     [ "lredit_msgbox", null, [
       [ "MessageBox", "classlredit__msgbox_1_1_message_box.html", null ]

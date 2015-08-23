@@ -18,6 +18,8 @@ var searchData=
   ['splitext',['splitExt',['../group__misc.html#ga38d8f2cb0baa5c3b5b223b3a621da723',1,'ckit::ckit_misc']]],
   ['splitlines',['splitLines',['../group__misc.html#gaf2098eb99450de6163ea308ceaadb44f',1,'ckit::ckit_misc']]],
   ['splitpath',['splitPath',['../group__misc.html#gaa4cfe41223213b27a3605ffdd9ab9108',1,'ckit::ckit_misc']]],
+  ['sqllexer',['SqlLexer',['../classlredit__lexer_1_1_sql_lexer.html',1,'lredit_lexer']]],
+  ['sqlmode',['SqlMode',['../classlredit__mode_1_1_sql_mode.html',1,'lredit_mode']]],
   ['subprocess',['SubProcess',['../classckit_1_1ckit__subprocess_1_1_sub_process.html',1,'ckit::ckit_subprocess']]],
   ['subprocesscall',['subProcessCall',['../classlredit__mainwindow_1_1_main_window.html#a44f019077abd804ffdbe54b295a30b91',1,'lredit_mainwindow::MainWindow']]],
   ['subthreadcall',['subThreadCall',['../classlredit__mainwindow_1_1_main_window.html#ad7b725b28df40abe418fe1c58da3e27b',1,'lredit_mainwindow::MainWindow']]],

@@ -55,6 +55,8 @@ var hierarchy =
     [ "PythonMode", "classlredit__mode_1_1_python_mode.html", null ],
     [ "Search", "classckit_1_1ckit__textwidget_1_1_search.html", null ],
     [ "Selection", "classckit_1_1ckit__textwidget_1_1_selection.html", null ],
+    [ "SqlLexer", "classlredit__lexer_1_1_sql_lexer.html", null ],
+    [ "SqlMode", "classlredit__mode_1_1_sql_mode.html", null ],
     [ "SubProcess", "classckit_1_1ckit__subprocess_1_1_sub_process.html", null ],
     [ "SyncCall", "classckit_1_1ckit__threadutil_1_1_sync_call.html", null ],
     [ "Tags", "classlredit__tags_1_1_tags.html", null ],
