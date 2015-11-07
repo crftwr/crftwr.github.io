@@ -1,10 +1,10 @@
 var group__project =
 [
     [ "Project", "classlredit__project_1_1_project.html", [
-      [ "__init__", "classlredit__project_1_1_project.html#ac775ee34451fdfa742b318538164070e", null ],
-      [ "parse", "classlredit__project_1_1_project.html#a143c53005fa478af7910376b2e108961", null ],
-      [ "enumName", "classlredit__project_1_1_project.html#a6461b6ef7c7d064a28de5d214157edfa", null ],
-      [ "enumFullpath", "classlredit__project_1_1_project.html#a0a9ce14c1a7fda23d10dd5c912859f49", null ],
-      [ "isFileModified", "classlredit__project_1_1_project.html#a28cef46dc09121c1ddad1c31ed17f713", null ]
+      [ "__init__", "classlredit__project_1_1_project.html#ad5de178e9da2711c5bc270200dc25568", null ],
+      [ "parse", "classlredit__project_1_1_project.html#aed1b33c03102a60d1b12f3ec96850149", null ],
+      [ "enumName", "classlredit__project_1_1_project.html#a5faabca902ee32d81e6afead8c404149", null ],
+      [ "enumFullpath", "classlredit__project_1_1_project.html#a4f0494c3fa639e63eb36b74ccef01499", null ],
+      [ "isFileModified", "classlredit__project_1_1_project.html#aa4a3089773d39c9721728b753f498f13", null ]
     ] ]
 ];

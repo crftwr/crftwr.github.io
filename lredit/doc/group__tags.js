@@ -1,11 +1,11 @@
 var group__tags =
 [
     [ "Tags", "classlredit__tags_1_1_tags.html", [
-      [ "__init__", "classlredit__tags_1_1_tags.html#ac775ee34451fdfa742b318538164070e", null ],
-      [ "parse", "classlredit__tags_1_1_tags.html#a143c53005fa478af7910376b2e108961", null ],
-      [ "cancel", "classlredit__tags_1_1_tags.html#a9691897ab0716f1539f3034e6d27ba56", null ],
-      [ "find", "classlredit__tags_1_1_tags.html#a01f90f57b7acd55e177611f5d0f7df23", null ],
-      [ "getFullpath", "classlredit__tags_1_1_tags.html#a206e20fbfc633d78a890a58cc724e8df", null ],
-      [ "isFileModified", "classlredit__tags_1_1_tags.html#a28cef46dc09121c1ddad1c31ed17f713", null ]
+      [ "__init__", "classlredit__tags_1_1_tags.html#ad5de178e9da2711c5bc270200dc25568", null ],
+      [ "parse", "classlredit__tags_1_1_tags.html#aed1b33c03102a60d1b12f3ec96850149", null ],
+      [ "cancel", "classlredit__tags_1_1_tags.html#a807ed97eee69cbd1e4b9077ac361d77c", null ],
+      [ "find", "classlredit__tags_1_1_tags.html#a04f14b2f55bbfca6f84e0c8491d698cc", null ],
+      [ "getFullpath", "classlredit__tags_1_1_tags.html#af3c61659242c1234a892751005f54351", null ],
+      [ "isFileModified", "classlredit__tags_1_1_tags.html#aa4a3089773d39c9721728b753f498f13", null ]
     ] ]
 ];

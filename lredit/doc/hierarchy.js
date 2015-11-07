@@ -4,7 +4,9 @@ var hierarchy =
     [ "BatchMode", "classlredit__mode_1_1_batch_mode.html", null ],
     [ "BookmarkTable", "classlredit__bookmark_1_1_bookmark_table.html", null ],
     [ "candidate_Filename", "classlredit__commandline_1_1candidate___filename.html", null ],
-    [ "CLexer", "classlredit__lexer_1_1_c_lexer.html", null ],
+    [ "CLexer", "classlredit__lexer_1_1_c_lexer.html", [
+      [ "ObjectiveCLexer", "classlredit__lexer_1_1_objective_c_lexer.html", null ]
+    ] ],
     [ "CMode", "classlredit__mode_1_1_c_mode.html", null ],
     [ "CommandInfo", "classckit_1_1ckit__command_1_1_command_info.html", null ],
     [ "commandline_Calculator", "classlredit__commandline_1_1commandline___calculator.html", null ],
@@ -15,7 +17,9 @@ var hierarchy =
     [ "commandline_Mode", "classlredit__commandline_1_1commandline___mode.html", null ],
     [ "commandline_Open", "classlredit__commandline_1_1commandline___open.html", null ],
     [ "CommandSequence", "classckit_1_1ckit__command_1_1_command_sequence.html", null ],
-    [ "CppLexer", "classlredit__lexer_1_1_cpp_lexer.html", null ],
+    [ "CppLexer", "classlredit__lexer_1_1_cpp_lexer.html", [
+      [ "ObjectiveCppLexer", "classlredit__lexer_1_1_objective_cpp_lexer.html", null ]
+    ] ],
     [ "CppMode", "classlredit__mode_1_1_cpp_mode.html", null ],
     [ "CronItem", "classckit_1_1ckit__threadutil_1_1_cron_item.html", null ],
     [ "CronTable", "classckit_1_1ckit__threadutil_1_1_cron_table.html", null ],
@@ -45,10 +49,14 @@ var hierarchy =
     [ "MessageBox", "classlredit__msgbox_1_1_message_box.html", null ],
     [ "MinorMode", "classlredit__minormode_1_1_minor_mode.html", null ],
     [ "Mode", "classckit_1_1ckit__textwidget_1_1_mode.html", null ],
+    [ "ObjectiveCMode", "classlredit__mode_1_1_objective_c_mode.html", null ],
+    [ "ObjectiveCppMode", "classlredit__mode_1_1_objective_cpp_mode.html", null ],
     [ "Pane", "classlredit__mainwindow_1_1_pane.html", [
       [ "EditPane", "classlredit__mainwindow_1_1_edit_pane.html", null ],
       [ "LogPane", "classlredit__mainwindow_1_1_log_pane.html", null ]
     ] ],
+    [ "PerlLexer", "classlredit__lexer_1_1_perl_lexer.html", null ],
+    [ "PerlMode", "classlredit__mode_1_1_perl_mode.html", null ],
     [ "Point", "classckit_1_1ckit__textwidget_1_1_point.html", null ],
     [ "Project", "classlredit__project_1_1_project.html", null ],
     [ "PythonLexer", "classlredit__lexer_1_1_python_lexer.html", null ],
