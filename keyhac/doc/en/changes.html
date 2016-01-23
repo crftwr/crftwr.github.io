@@ -474,6 +474,15 @@ div.highlight {
 
 
 <blockquote>
+<p><strong>1.71</strong></p>
+<blockquote>
+<ul class="simple">
+<li>Allow multiple pyauto.Hook instances, so that Keyhac can co-exist with applications which use pyauto.Hook.</li>
+<li>Fixed the error which happens when a clipboard history item is removed in a state that the clipboard contains non-text object.</li>
+<li>Moved to Python35 from Python34.</li>
+<li>Stopped using cx_Freeze, and started to use own freezing system.</li>
+</ul>
+</blockquote>
 <p><strong>1.70</strong></p>
 <blockquote>
 <ul class="simple">
@@ -485,6 +494,7 @@ div.highlight {
 <p><strong>1.64</strong></p>
 <blockquote>
 <ul class="simple">
+<li>ビルドに Visual Studio 2015 を使うようにした。</li>
 <li>Python33 から Python34 に移行</li>
 <li>ckit.Window の代わりに ckit.TextWindow を使うようにした。(ckitの設計変更に追従)</li>
 <li>デフォルト設定ファイルに、クリップボードのテキストの全角／半角を変換して貼りつける機能の例を追加。(To Half-Width, To Full-Width)</li>
