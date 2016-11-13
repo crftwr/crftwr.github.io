@@ -6,6 +6,7 @@ var classkeyhac__keymap_1_1_keymap =
     [ "configure", "classkeyhac__keymap_1_1_keymap.html#adf02e4896cbf6ef8ebfef2c9e858b65d", null ],
     [ "editTextFile", "classkeyhac__keymap_1_1_keymap.html#ad8bbbe7439892533aacf5d1b539c889f", null ],
     [ "editConfigFile", "classkeyhac__keymap_1_1_keymap.html#a7f5ee8322799f077a71de5544d233087", null ],
+    [ "updateKeymap", "classkeyhac__keymap_1_1_keymap.html#a61809a611ceb531312b9e2f25030b5e9", null ],
     [ "replaceKey", "classkeyhac__keymap_1_1_keymap.html#ace517e49492453615fefe9377f0b5042", null ],
     [ "defineModifier", "classkeyhac__keymap_1_1_keymap.html#a4850444c16bb98600e4bd14a0ee44d5d", null ],
     [ "defineWindowKeymap", "classkeyhac__keymap_1_1_keymap.html#ae92ef21af3fb4973d52ce630bd1145c5", null ],

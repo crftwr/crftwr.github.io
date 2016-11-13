@@ -122,6 +122,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7f5ee8322799f077a71de5544d233087"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkeyhac__keymap_1_1_keymap.html#a7f5ee8322799f077a71de5544d233087">editConfigFile</a> (self)</td></tr>
 <tr class="memdesc:a7f5ee8322799f077a71de5544d233087"><td class="mdescLeft">&#160;</td><td class="mdescRight">config.py を編集する  <a href="#a7f5ee8322799f077a71de5544d233087">More...</a><br /></td></tr>
 <tr class="separator:a7f5ee8322799f077a71de5544d233087"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61809a611ceb531312b9e2f25030b5e9"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkeyhac__keymap_1_1_keymap.html#a61809a611ceb531312b9e2f25030b5e9">updateKeymap</a> (self)</td></tr>
+<tr class="memdesc:a61809a611ceb531312b9e2f25030b5e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在有効なキーマップを再構築する  <a href="#a61809a611ceb531312b9e2f25030b5e9">More...</a><br /></td></tr>
+<tr class="separator:a61809a611ceb531312b9e2f25030b5e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace517e49492453615fefe9377f0b5042"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkeyhac__keymap_1_1_keymap.html#ace517e49492453615fefe9377f0b5042">replaceKey</a> (self, src, dst)</td></tr>
 <tr class="memdesc:ace517e49492453615fefe9377f0b5042"><td class="mdescLeft">&#160;</td><td class="mdescRight">キーの単純な置き換えを指示する  <a href="#ace517e49492453615fefe9377f0b5042">More...</a><br /></td></tr>
 <tr class="separator:ace517e49492453615fefe9377f0b5042"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -428,6 +431,26 @@ Public Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a class="anchor" id="a61809a611ceb531312b9e2f25030b5e9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def updateKeymap </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>現在有効なキーマップを再構築する </p>
+<p>現在キーボードフォーカスを持っているウインドウに従って、有効なキー割り当ての辞書を再構築します。<br />
+ 通常は、キーボードフォーカスが変化したときに、このメソッドが自動的に呼ばれるため、自分で明示的にこのメソッドを呼ぶ必要はありませんが、 defineWindowKeymap などで定義した WindowKeymap オブジェクトのキー割り当て内容を動的に変更するような場合は、 このメソッドを明示的に呼ぶことで即時にキー割り当ての辞書を再構築を実行することができます。 </p>
 
 </div>
 </div>
