@@ -1,5 +1,5 @@
 var group__userconfig =
 [
-    [ "reloadConfigScript", "group__userconfig.html#ga7840a38cb4f95e4fa50637a7c8f38322", null ],
-    [ "callConfigFunc", "group__userconfig.html#ga155832a944dce7dec16b467a9d458544", null ]
+    [ "reloadConfigScript", "group__userconfig.html#gaac23abf0f85b90bfc761d6b1199ad9ca", null ],
+    [ "callConfigFunc", "group__userconfig.html#ga62ec8f746ed7ca90601d42afe6126a04", null ]
 ];
