@@ -479,13 +479,13 @@ div.highlight {
 </tr>
 <tr class="field"><th class="docinfo-name">連絡先:</th><td class="field-body"><a class="reference external" href="mailto:craftware&#64;gmail.com">craftware&#64;gmail.com</a></td>
 </tr>
-<tr class="field"><th class="docinfo-name">開発環境:</th><td class="field-body">Python + VisualC++2010</td>
+<tr class="field"><th class="docinfo-name">開発環境:</th><td class="field-body">Python + VisualC++2015</td>
 </tr>
 <tr class="field"><th class="docinfo-name">種別:</th><td class="field-body">フリーウェア</td>
 </tr>
-<tr class="field"><th class="docinfo-name">動作環境:</th><td class="field-body">Windows XP/Vista/7/8</td>
+<tr class="field"><th class="docinfo-name">動作環境:</th><td class="field-body">Windows Vista/7/8/10</td>
 </tr>
-<tr class="field"><th class="docinfo-name">Webサイト:</th><td class="field-body"><a class="reference external" href="http://sites.google.com/site/craftware/">http://sites.google.com/site/craftware/</a></td>
+<tr class="web field"><th class="docinfo-name">Webサイト:</th><td class="field-body"><a class="reference external" href="http://sites.google.com/site/craftware/">http://sites.google.com/site/craftware/</a></td>
 </tr>
 </tbody>
 </table>
@@ -624,7 +624,7 @@ GREP結果はファイルリストに反映されるので、検索結果を一�
 <h2><a class="toc-backref" href="#id47">動作環境</a></h2>
 <blockquote>
 <p>内骨格の実行には以下の環境が必要です。</p>
-<p>Windows XP/Vista/7/8</p>
+<p>Windows Vista/7/8/10</p>
 </blockquote>
 </div>
 <div class="section" id="id6">
@@ -1641,12 +1641,12 @@ GREP結果はファイルリストに反映されるので、検索結果を一�
 <blockquote>
 <p>内骨格の設定は、設定スクリプト config.py に記述します。config.pyは拡張子が py であるのを見るとわかるとおり、Pythonスクリプトです。</p>
 <p>内骨格は起動すると、config.pyの関数 configure() を呼び出します。</p>
-<div class="highlight"><pre><span class="k">def</span> <span class="nf">configure</span><span class="p">(</span><span class="n">window</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">configure</span><span class="p">(</span><span class="n">window</span><span class="p">):</span>
 </pre></div>
 <p>この関数の中で、設定を記述します。
 引数には、メインウインドウのオブジェクトが渡されます。</p>
 <p>また、内骨格のテキストビューア、バイナリビューアが開くとき、内骨格は config.py の関数 configure_TextViewer() を呼び出します。</p>
-<div class="highlight"><pre><span class="k">def</span> <span class="nf">configure_TextViewer</span><span class="p">(</span><span class="n">window</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">configure_TextViewer</span><span class="p">(</span><span class="n">window</span><span class="p">):</span>
 </pre></div>
 <p>引数には、テキストビューア/バイナリビューアウインドウのオブジェクトが渡されます。</p>
 <p>内骨格のAPIの詳細については <a class="reference external" href="reference/index.html">APIリファレンス</a> を参照してください。</p>
@@ -1656,12 +1656,12 @@ GREP結果はファイルリストに反映されるので、検索結果を一�
 <div class="section" id="id29">
 <h2><a class="toc-backref" href="#id72">テキストエディタ</a></h2>
 <blockquote>
-<div class="highlight"><pre><span class="n">window</span><span class="o">.</span><span class="n">editor</span> <span class="o">=</span> <span class="s">u&quot;notepad.exe&quot;</span>
+<div class="highlight"><pre><span></span><span class="n">window</span><span class="o">.</span><span class="n">editor</span> <span class="o">=</span> <span class="sa">u</span><span class="s2">&quot;notepad.exe&quot;</span>
 </pre></div>
 <p>windowオブジェクトのeditorプロパティにプログラムのパスを代入することによって、好みのテキストエディタを設定することが出来ます。</p>
 <p>editor プロパティには、以下のように呼び出し可能オブジェクトを設定することも出来ます。</p>
-<div class="highlight"><pre><span class="k">def</span> <span class="nf">editor</span><span class="p">(</span> <span class="n">item</span><span class="p">,</span> <span class="n">region</span><span class="p">,</span> <span class="n">location</span> <span class="p">):</span>
-    <span class="n">shellExecute</span><span class="p">(</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="s">u&quot;notepad.exe&quot;</span><span class="p">,</span> <span class="s">&#39;&quot;</span><span class="si">%s</span><span class="s">&quot;&#39;</span><span class="o">%</span> <span class="n">item</span><span class="o">.</span><span class="n">getFullpath</span><span class="p">(),</span> <span class="n">location</span> <span class="p">)</span>
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">editor</span><span class="p">(</span> <span class="n">item</span><span class="p">,</span> <span class="n">region</span><span class="p">,</span> <span class="n">location</span> <span class="p">):</span>
+    <span class="n">shellExecute</span><span class="p">(</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="sa">u</span><span class="s2">&quot;notepad.exe&quot;</span><span class="p">,</span> <span class="s1">&#39;&quot;</span><span class="si">%s</span><span class="s1">&quot;&#39;</span><span class="o">%</span> <span class="n">item</span><span class="o">.</span><span class="n">getFullpath</span><span class="p">(),</span> <span class="n">location</span> <span class="p">)</span>
 <span class="n">window</span><span class="o">.</span><span class="n">editor</span> <span class="o">=</span> <span class="n">editor</span>
 </pre></div>
 <p>引数には、ファイルアイテム、表示領域(上端と下端の行番号)、アクティブペインのディレクトリパスが渡されてきます。</p>
@@ -1670,12 +1670,12 @@ GREP結果はファイルリストに反映されるので、検索結果を一�
 <div class="section" id="id30">
 <h2><a class="toc-backref" href="#id73">テキスト差分エディタ</a></h2>
 <blockquote>
-<div class="highlight"><pre><span class="n">window</span><span class="o">.</span><span class="n">diff_editor</span> <span class="o">=</span> <span class="s">u&quot;c:/ols/winmerge/WinMergeU.exe&quot;</span>
+<div class="highlight"><pre><span></span><span class="n">window</span><span class="o">.</span><span class="n">diff_editor</span> <span class="o">=</span> <span class="sa">u</span><span class="s2">&quot;c:/ols/winmerge/WinMergeU.exe&quot;</span>
 </pre></div>
 <p>windowオブジェクトのdiff_editorプロパティにプログラムのパスを代入することによって、好みのテキスト差分エディタを設定することが出来ます。ここでは、WinMerge (<a class="reference external" href="http://winmerge.org/">http://winmerge.org/</a>) を指定しています。</p>
 <p>diff_editor プロパティには、以下のように呼び出し可能オブジェクトを設定することも出来ます。</p>
-<div class="highlight"><pre><span class="k">def</span> <span class="nf">diffEditor</span><span class="p">(</span> <span class="n">left_item</span><span class="p">,</span> <span class="n">right_item</span><span class="p">,</span> <span class="n">location</span> <span class="p">):</span>
-    <span class="n">shellExecute</span><span class="p">(</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="s">u&quot;c:/ols/winmerge/WinMergeU.exe&quot;</span><span class="p">,</span> <span class="s">&#39;&quot;</span><span class="si">%s</span><span class="s">&quot; &quot;</span><span class="si">%s</span><span class="s">&quot;&#39;</span><span class="o">%</span> <span class="p">(</span> <span class="n">left_item</span><span class="o">.</span><span class="n">getFullpath</span><span class="p">(),</span> <span class="n">right_item</span><span class="o">.</span><span class="n">getFullpath</span><span class="p">()</span> <span class="p">),</span> <span class="n">location</span> <span class="p">)</span>
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">diffEditor</span><span class="p">(</span> <span class="n">left_item</span><span class="p">,</span> <span class="n">right_item</span><span class="p">,</span> <span class="n">location</span> <span class="p">):</span>
+    <span class="n">shellExecute</span><span class="p">(</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="sa">u</span><span class="s2">&quot;c:/ols/winmerge/WinMergeU.exe&quot;</span><span class="p">,</span> <span class="s1">&#39;&quot;</span><span class="si">%s</span><span class="s1">&quot; &quot;</span><span class="si">%s</span><span class="s1">&quot;&#39;</span><span class="o">%</span> <span class="p">(</span> <span class="n">left_item</span><span class="o">.</span><span class="n">getFullpath</span><span class="p">(),</span> <span class="n">right_item</span><span class="o">.</span><span class="n">getFullpath</span><span class="p">()</span> <span class="p">),</span> <span class="n">location</span> <span class="p">)</span>
 <span class="n">window</span><span class="o">.</span><span class="n">diff_editor</span> <span class="o">=</span> <span class="n">diffEditor</span>
 </pre></div>
 <p>引数には、ファイルアイテム２つ、アクティブペインのディレクトリパスが渡されてきます。</p>
@@ -1685,14 +1685,14 @@ GREP結果はファイルリストに反映されるので、検索結果を一�
 <h2><a class="toc-backref" href="#id74">キーの割り当て</a></h2>
 <blockquote>
 <p>キー割り当ては、以下のように記述します。</p>
-<div class="highlight"><pre><span class="c"># F1 キーでヘルプファイルを表示する</span>
-<span class="n">window</span><span class="o">.</span><span class="n">keymap</span><span class="p">[</span> <span class="s">&quot;F1&quot;</span> <span class="p">]</span> <span class="o">=</span> <span class="n">command_Help</span>
+<div class="highlight"><pre><span></span><span class="c1"># F1 キーでヘルプファイルを表示する</span>
+<span class="n">window</span><span class="o">.</span><span class="n">keymap</span><span class="p">[</span> <span class="s2">&quot;F1&quot;</span> <span class="p">]</span> <span class="o">=</span> <span class="n">command_Help</span>
 
-<span class="c"># F5 キーであふを起動する</span>
-<span class="n">window</span><span class="o">.</span><span class="n">keymap</span><span class="p">[</span> <span class="s">&quot;F5&quot;</span> <span class="p">]</span> <span class="o">=</span> <span class="n">command_LaunchAFX</span>
+<span class="c1"># F5 キーであふを起動する</span>
+<span class="n">window</span><span class="o">.</span><span class="n">keymap</span><span class="p">[</span> <span class="s2">&quot;F5&quot;</span> <span class="p">]</span> <span class="o">=</span> <span class="n">command_LaunchAFX</span>
 
-<span class="c"># x キーでプログラム起動メニューを表示する</span>
-<span class="n">window</span><span class="o">.</span><span class="n">keymap</span><span class="p">[</span> <span class="s">&quot;X&quot;</span> <span class="p">]</span> <span class="o">=</span> <span class="n">command_ProgramMenu</span>
+<span class="c1"># x キーでプログラム起動メニューを表示する</span>
+<span class="n">window</span><span class="o">.</span><span class="n">keymap</span><span class="p">[</span> <span class="s2">&quot;X&quot;</span> <span class="p">]</span> <span class="o">=</span> <span class="n">command_ProgramMenu</span>
 </pre></div>
 <p>window オブジェクトの keymap プロパティは、キー入力の条件と、実行するコマンドを関連付けるための辞書オブジェクトです。</p>
 <p>文字列でキー入力条件を定義します。
@@ -2008,10 +2008,10 @@ Ctrl-Shift-Return</blockquote>
 <div class="section" id="id32">
 <h2><a class="toc-backref" href="#id75">ジャンプリスト</a></h2>
 <blockquote>
-<div class="highlight"><pre><span class="n">window</span><span class="o">.</span><span class="n">jump_list</span> <span class="o">+=</span> <span class="p">[</span>
-    <span class="p">(</span> <span class="s">u&quot;OLS&quot;</span><span class="p">,</span>       <span class="s">&quot;c:</span><span class="se">\\</span><span class="s">ols&quot;</span> <span class="p">),</span>
-    <span class="p">(</span> <span class="s">u&quot;PROJECT&quot;</span><span class="p">,</span>   <span class="s">&quot;c:</span><span class="se">\\</span><span class="s">project&quot;</span> <span class="p">),</span>
-    <span class="p">(</span> <span class="s">u&quot;MUSIC&quot;</span><span class="p">,</span>     <span class="s">&quot;e:</span><span class="se">\\</span><span class="s">music&quot;</span> <span class="p">),</span>
+<div class="highlight"><pre><span></span><span class="n">window</span><span class="o">.</span><span class="n">jump_list</span> <span class="o">+=</span> <span class="p">[</span>
+    <span class="p">(</span> <span class="sa">u</span><span class="s2">&quot;OLS&quot;</span><span class="p">,</span>       <span class="s2">&quot;c:</span><span class="se">\\</span><span class="s2">ols&quot;</span> <span class="p">),</span>
+    <span class="p">(</span> <span class="sa">u</span><span class="s2">&quot;PROJECT&quot;</span><span class="p">,</span>   <span class="s2">&quot;c:</span><span class="se">\\</span><span class="s2">project&quot;</span> <span class="p">),</span>
+    <span class="p">(</span> <span class="sa">u</span><span class="s2">&quot;MUSIC&quot;</span><span class="p">,</span>     <span class="s2">&quot;e:</span><span class="se">\\</span><span class="s2">music&quot;</span> <span class="p">),</span>
 <span class="p">]</span>
 </pre></div>
 <p>window オブジェクトの jump_list プロパティは、ディレクトリのジャンプの候補のリストです。</p>
@@ -2021,9 +2021,9 @@ Ctrl-Shift-Return</blockquote>
 <div class="section" id="id33">
 <h2><a class="toc-backref" href="#id76">フィルタリスト</a></h2>
 <blockquote>
-<div class="highlight"><pre><span class="n">window</span><span class="o">.</span><span class="n">filter_list</span> <span class="o">+=</span> <span class="p">[</span>
-    <span class="p">(</span> <span class="s">u&quot;ALL&quot;</span><span class="p">,</span>               <span class="n">filter_Default</span><span class="p">(</span> <span class="s">&quot;*&quot;</span> <span class="p">)</span> <span class="p">),</span>
-    <span class="p">(</span> <span class="s">u&quot;SOURCE&quot;</span><span class="p">,</span>            <span class="n">filter_Default</span><span class="p">(</span> <span class="s">&quot;*.cpp *.c *.h *.py *.pyw *.fx&quot;</span> <span class="p">)</span> <span class="p">),</span>
+<div class="highlight"><pre><span></span><span class="n">window</span><span class="o">.</span><span class="n">filter_list</span> <span class="o">+=</span> <span class="p">[</span>
+    <span class="p">(</span> <span class="sa">u</span><span class="s2">&quot;ALL&quot;</span><span class="p">,</span>               <span class="n">filter_Default</span><span class="p">(</span> <span class="s2">&quot;*&quot;</span> <span class="p">)</span> <span class="p">),</span>
+    <span class="p">(</span> <span class="sa">u</span><span class="s2">&quot;SOURCE&quot;</span><span class="p">,</span>            <span class="n">filter_Default</span><span class="p">(</span> <span class="s2">&quot;*.cpp *.c *.h *.py *.pyw *.fx&quot;</span> <span class="p">)</span> <span class="p">),</span>
 <span class="p">]</span>
 </pre></div>
 <p>window オブジェクトの filter_list プロパティは、ファイルリストの表示に使用するフィルタのリストです。</p>
@@ -2033,13 +2033,13 @@ Ctrl-Shift-Return</blockquote>
 <div class="section" id="id34">
 <h2><a class="toc-backref" href="#id77">アーカイブファイルのファイル名パターンとアーカイバの関連付け</a></h2>
 <blockquote>
-<div class="highlight"><pre><span class="n">window</span><span class="o">.</span><span class="n">archiver_list</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="p">(</span> <span class="s">&quot;*.zip *.jar *.apk&quot;</span><span class="p">,</span>  <span class="n">ZipArchiver</span> <span class="p">),</span>
-    <span class="p">(</span> <span class="s">&quot;*.7z&quot;</span><span class="p">,</span>               <span class="n">SevenZipArchiver</span> <span class="p">),</span>
-    <span class="p">(</span> <span class="s">&quot;*.tgz *.tar.gz&quot;</span><span class="p">,</span>     <span class="n">TgzArchiver</span> <span class="p">),</span>
-    <span class="p">(</span> <span class="s">&quot;*.tbz2 *.tar.bz2&quot;</span><span class="p">,</span>   <span class="n">Bz2Archiver</span> <span class="p">),</span>
-    <span class="p">(</span> <span class="s">&quot;*.lzh&quot;</span><span class="p">,</span>              <span class="n">LhaArchiver</span> <span class="p">),</span>
-    <span class="p">(</span> <span class="s">&quot;*.rar&quot;</span><span class="p">,</span>              <span class="n">RarArchiver</span> <span class="p">),</span>
+<div class="highlight"><pre><span></span><span class="n">window</span><span class="o">.</span><span class="n">archiver_list</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">(</span> <span class="s2">&quot;*.zip *.jar *.apk&quot;</span><span class="p">,</span>  <span class="n">ZipArchiver</span> <span class="p">),</span>
+    <span class="p">(</span> <span class="s2">&quot;*.7z&quot;</span><span class="p">,</span>               <span class="n">SevenZipArchiver</span> <span class="p">),</span>
+    <span class="p">(</span> <span class="s2">&quot;*.tgz *.tar.gz&quot;</span><span class="p">,</span>     <span class="n">TgzArchiver</span> <span class="p">),</span>
+    <span class="p">(</span> <span class="s2">&quot;*.tbz2 *.tar.bz2&quot;</span><span class="p">,</span>   <span class="n">Bz2Archiver</span> <span class="p">),</span>
+    <span class="p">(</span> <span class="s2">&quot;*.lzh&quot;</span><span class="p">,</span>              <span class="n">LhaArchiver</span> <span class="p">),</span>
+    <span class="p">(</span> <span class="s2">&quot;*.rar&quot;</span><span class="p">,</span>              <span class="n">RarArchiver</span> <span class="p">),</span>
 <span class="p">]</span>
 </pre></div>
 <p>window オブジェクトの archiver_list プロパティは、ファイル名パターンとアーカイバクラスを関連付けるリストです。</p>
@@ -2050,8 +2050,8 @@ Ctrl-Shift-Return</blockquote>
 <div class="section" id="id35">
 <h2><a class="toc-backref" href="#id78">ファイル名パターンによる関連付け実行</a></h2>
 <blockquote>
-<div class="highlight"><pre><span class="n">window</span><span class="o">.</span><span class="n">association_list</span> <span class="o">+=</span> <span class="p">[</span>
-    <span class="p">(</span> <span class="s">&quot;*.mpg *.mpeg *.avi *.wmv&quot;</span><span class="p">,</span> <span class="n">association_Video</span> <span class="p">),</span>
+<div class="highlight"><pre><span></span><span class="n">window</span><span class="o">.</span><span class="n">association_list</span> <span class="o">+=</span> <span class="p">[</span>
+    <span class="p">(</span> <span class="s2">&quot;*.mpg *.mpeg *.avi *.wmv&quot;</span><span class="p">,</span> <span class="n">association_Video</span> <span class="p">),</span>
 <span class="p">]</span>
 </pre></div>
 <p>window オブジェクトの association_list プロパティは、ファイル名パターンとEnter時の動作を関連付けるリストです。</p>
@@ -2061,20 +2061,20 @@ Ctrl-Shift-Return</blockquote>
 <div class="section" id="id36">
 <h2><a class="toc-backref" href="#id79">ファイルの表示形式</a></h2>
 <blockquote>
-<div class="highlight"><pre><span class="n">window</span><span class="o">.</span><span class="n">itemformat</span> <span class="o">=</span> <span class="n">itemformat_Name_Ext_Size_YYMMDD_HHMM</span>
+<div class="highlight"><pre><span></span><span class="n">window</span><span class="o">.</span><span class="n">itemformat</span> <span class="o">=</span> <span class="n">itemformat_Name_Ext_Size_YYMMDD_HHMM</span>
 </pre></div>
 <p>windowオブジェクトのitemformatプロパティに、アイテムフォーマット関数(後述)を代入することによって、起動直後のファイルの表示形式を設定することが出来ます。</p>
-<div class="highlight"><pre><span class="n">window</span><span class="o">.</span><span class="n">itemformat_list</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="p">(</span> <span class="s">u&quot;1 : 全て表示 : filename  .ext  99.9K YY/MM/DD HH:MM:SS&quot;</span><span class="p">,</span> <span class="n">itemformat_Name_Ext_Size_YYMMDD_HHMMSS</span> <span class="p">),</span>
-    <span class="p">(</span> <span class="s">u&quot;2 : 秒を省略 : filename  .ext  99.9K YY/MM/DD HH:MM&quot;</span><span class="p">,</span>    <span class="n">itemformat_Name_Ext_Size_YYMMDD_HHMM</span> <span class="p">),</span>
-    <span class="p">(</span> <span class="s">u&quot;3 : 日 or 時 : filename  .ext  99.9K YYYY/MM/DD&quot;</span><span class="p">,</span>        <span class="n">itemformat_Name_Ext_Size_YYYYMMDDorHHMMSS</span> <span class="p">),</span>
-    <span class="p">(</span> <span class="s">u&quot;0 : 名前のみ : filename.ext&quot;</span><span class="p">,</span>                            <span class="n">itemformat_NameExt</span> <span class="p">),</span>
+<div class="highlight"><pre><span></span><span class="n">window</span><span class="o">.</span><span class="n">itemformat_list</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">(</span> <span class="sa">u</span><span class="s2">&quot;1 : 全て表示 : filename  .ext  99.9K YY/MM/DD HH:MM:SS&quot;</span><span class="p">,</span> <span class="n">itemformat_Name_Ext_Size_YYMMDD_HHMMSS</span> <span class="p">),</span>
+    <span class="p">(</span> <span class="sa">u</span><span class="s2">&quot;2 : 秒を省略 : filename  .ext  99.9K YY/MM/DD HH:MM&quot;</span><span class="p">,</span>    <span class="n">itemformat_Name_Ext_Size_YYMMDD_HHMM</span> <span class="p">),</span>
+    <span class="p">(</span> <span class="sa">u</span><span class="s2">&quot;3 : 日 or 時 : filename  .ext  99.9K YYYY/MM/DD&quot;</span><span class="p">,</span>        <span class="n">itemformat_Name_Ext_Size_YYYYMMDDorHHMMSS</span> <span class="p">),</span>
+    <span class="p">(</span> <span class="sa">u</span><span class="s2">&quot;0 : 名前のみ : filename.ext&quot;</span><span class="p">,</span>                            <span class="n">itemformat_NameExt</span> <span class="p">),</span>
 <span class="p">]</span>
 </pre></div>
 <p>window オブジェクトの itemformat_list プロパティは、ファイルの表示形式のリストです。</p>
 <p>リストの各エントリは、表示形式の名前とアイテムフォーマット関数のタプルです。</p>
 <p>アイテムフォーマット関数としては、以下のように <cite>itemformat_</cite> というプレフィックス付の関数や呼び出し可能オブジェクトを渡します。</p>
-<div class="highlight"><pre><span class="k">def</span> <span class="nf">itemformat_Name_Ext_Size_YYYYMMDDorHHMMSS</span><span class="p">(</span> <span class="n">window</span><span class="p">,</span> <span class="n">item</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="n">userdata</span> <span class="p">):</span>
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">itemformat_Name_Ext_Size_YYYYMMDDorHHMMSS</span><span class="p">(</span> <span class="n">window</span><span class="p">,</span> <span class="n">item</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="n">userdata</span> <span class="p">):</span>
 </pre></div>
 <p>引数には、メインウインドウ、アイテムオブジェクト、表示領域の幅、ユーザデータオブジェクト が渡されます。</p>
 </blockquote>
@@ -2082,9 +2082,9 @@ Ctrl-Shift-Return</blockquote>
 <div class="section" id="id37">
 <h2><a class="toc-backref" href="#id80">コマンドランチャにコマンドを登録</a></h2>
 <blockquote>
-<div class="highlight"><pre><span class="n">window</span><span class="o">.</span><span class="n">launcher</span><span class="o">.</span><span class="n">command_list</span> <span class="o">+=</span> <span class="p">[</span>
-    <span class="p">(</span> <span class="s">u&quot;Help&quot;</span><span class="p">,</span>    <span class="n">command_Help</span> <span class="p">),</span>
-    <span class="p">(</span> <span class="s">u&quot;AFX&quot;</span><span class="p">,</span>     <span class="n">command_LaunchAFX</span> <span class="p">),</span>
+<div class="highlight"><pre><span></span><span class="n">window</span><span class="o">.</span><span class="n">launcher</span><span class="o">.</span><span class="n">command_list</span> <span class="o">+=</span> <span class="p">[</span>
+    <span class="p">(</span> <span class="sa">u</span><span class="s2">&quot;Help&quot;</span><span class="p">,</span>    <span class="n">command_Help</span> <span class="p">),</span>
+    <span class="p">(</span> <span class="sa">u</span><span class="s2">&quot;AFX&quot;</span><span class="p">,</span>     <span class="n">command_LaunchAFX</span> <span class="p">),</span>
 <span class="p">]</span>
 </pre></div>
 <p>window オブジェクトの launcher プロパティは、コマンドラインランチャ機能の役割を果たすオブジェクトです。</p>
@@ -2147,7 +2147,7 @@ sin, cos, tan, acos, asin, atan, e, fabs, log, log10, pi, pow, sqrt
 </pre>
 <p>Ctrlキーを押しながらEnterキーを押すことで、16進数で結果を表示することが出来ます。</p>
 <p><strong>ex)</strong></p>
-<div class="highlight"><pre>12+34+45 =&gt; 91
+<div class="highlight"><pre><span></span>12+34+45 =&gt; 91
 
 12*34+45 =&gt; 453
 
@@ -2171,7 +2171,7 @@ log(10) =&gt; 2.302585
 <dd><p class="first">-L と -R を使って、起動時の左右のファイルリストのディレクトリを
 指定することができます。</p>
 <p><strong>ex)</strong></p>
-<div class="last"><div class="highlight"><pre>cfiler.exe -L&quot;c:/aaa&quot; -R&quot;c:/bbb/ccc&quot;
+<div class="last"><div class="highlight"><pre><span></span>cfiler.exe -L&quot;c:/aaa&quot; -R&quot;c:/bbb/ccc&quot;
 </pre></div>
 </div></dd>
 <dt><strong>-d</strong></dt>

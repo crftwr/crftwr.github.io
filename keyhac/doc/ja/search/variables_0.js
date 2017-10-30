@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['clipboard',['clipboard',['../classpyauto_1_1_hook.html#a95ade847ec56787e57c4ed52764a16dd',1,'pyauto::Hook']]]
+  ['applying_5ffunc',['applying_func',['../classkeyhac__keymap_1_1_window_keymap.html#aef5c801218a3382a832ca4a35f115c61',1,'keyhac_keymap::WindowKeymap']]]
 ];

@@ -22,7 +22,8 @@ var annotated_dup =
       [ "cblister_FixedPhrase", "classkeyhac__clipboard_1_1cblister___fixed_phrase.html", null ]
     ] ],
     [ "keyhac_keymap", null, [
-      [ "Keymap", "classkeyhac__keymap_1_1_keymap.html", "classkeyhac__keymap_1_1_keymap" ]
+      [ "Keymap", "classkeyhac__keymap_1_1_keymap.html", "classkeyhac__keymap_1_1_keymap" ],
+      [ "WindowKeymap", "classkeyhac__keymap_1_1_window_keymap.html", "classkeyhac__keymap_1_1_window_keymap" ]
     ] ],
     [ "keyhac_listwindow", null, [
       [ "ListWindow", "classkeyhac__listwindow_1_1_list_window.html", "classkeyhac__listwindow_1_1_list_window" ]

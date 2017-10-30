@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>keyhac: Class Members - Variables</title>
+<title>keyhac: WindowKeymap Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -72,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('functions_vars.html','');});
+$(document).ready(function(){initNavTree('classkeyhac__keymap_1_1_window_keymap.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -89,39 +89,49 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 </iframe>
 </div>
 
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="classkeyhac__keymap_1_1_window_keymap-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">WindowKeymap Class Reference<div class="ingroups"><a class="el" href="group__keymap.html">Keymap feature</a></div></div>  </div>
+</div><!--header-->
 <div class="contents">
-&#160;<ul>
-<li>applying_func
-: <a class="el" href="classkeyhac__keymap_1_1_window_keymap.html#aef5c801218a3382a832ca4a35f115c61">WindowKeymap</a>
-</li>
-<li>clipboard
-: <a class="el" href="classpyauto_1_1_hook.html#a95ade847ec56787e57c4ed52764a16dd">Hook</a>
-</li>
-<li>keydown
-: <a class="el" href="classpyauto_1_1_hook.html#a43d29355655de874832be35d4996cb62">Hook</a>
-</li>
-<li>keyup
-: <a class="el" href="classpyauto_1_1_hook.html#aa11d75694b2143577226165e3d804da4">Hook</a>
-</li>
-<li>mousedblclk
-: <a class="el" href="classpyauto_1_1_hook.html#a2da48503eb44feeb5cd2a1a60209b098">Hook</a>
-</li>
-<li>mousedown
-: <a class="el" href="classpyauto_1_1_hook.html#a496d20f44cc2608f34c8eadf22392567">Hook</a>
-</li>
-<li>mouseup
-: <a class="el" href="classpyauto_1_1_hook.html#a31ded90aead2fee9735fdc12db1f06c0">Hook</a>
-</li>
-<li>synccall
-: <a class="el" href="classkeyhac__keymap_1_1_keymap.html#a6f1ce55347c81d4f3e7a8cb7d0beb1d7">Keymap</a>
-</li>
-</ul>
+
+<p><a class="el" href="classkeyhac__keymap_1_1_keymap.html#ae92ef21af3fb4973d52ce630bd1145c5" title="特定条件のウインドウのキーマップを定義する ">Keymap.defineWindowKeymap</a> や <a class="el" href="classkeyhac__keymap_1_1_keymap.html#ae7e211a2cc8a31f80ef64bb94b4c682c" title="マルチストローク用のキーマップを定義する ">Keymap.defineMultiStrokeKeymap</a> によって作られる ウインドウ条件ごとのキーマップ定義  
+ <a href="classkeyhac__keymap_1_1_window_keymap.html#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:aef5c801218a3382a832ca4a35f115c61"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkeyhac__keymap_1_1_window_keymap.html#aef5c801218a3382a832ca4a35f115c61">applying_func</a></td></tr>
+<tr class="memdesc:aef5c801218a3382a832ca4a35f115c61"><td class="mdescLeft">&#160;</td><td class="mdescRight">キーマップの適用直前に呼ばれるコールバック関数  <a href="#aef5c801218a3382a832ca4a35f115c61">More...</a><br /></td></tr>
+<tr class="separator:aef5c801218a3382a832ca4a35f115c61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="classkeyhac__keymap_1_1_keymap.html#ae92ef21af3fb4973d52ce630bd1145c5" title="特定条件のウインドウのキーマップを定義する ">Keymap.defineWindowKeymap</a> や <a class="el" href="classkeyhac__keymap_1_1_keymap.html#ae7e211a2cc8a31f80ef64bb94b4c682c" title="マルチストローク用のキーマップを定義する ">Keymap.defineMultiStrokeKeymap</a> によって作られる ウインドウ条件ごとのキーマップ定義 </p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="aef5c801218a3382a832ca4a35f115c61"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">applying_func</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>キーマップの適用直前に呼ばれるコールバック関数 </p>
+<p>applying_func に設定された関数は、キーマップが適用される直前に呼び出され、 必要に応じて、キーマップの内容を変更することができます。 関数には、引数や返値はありません。 </p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.3.1-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><b>keyhac_keymap</b></li><li class="navelem"><a class="el" href="classkeyhac__keymap_1_1_window_keymap.html">WindowKeymap</a></li>
     <li class="footer">Copyright &copy; 2015 craftware. All rights reserved.</li>
   </ul>
 </div>

@@ -479,13 +479,13 @@ div.highlight {
 <td>craftware</td></tr>
 <tr><th class="docinfo-name">Contact:</th>
 <td><a class="first last reference external" href="mailto:craftware&#64;gmail.com">craftware&#64;gmail.com</a></td></tr>
-<tr class="field"><th class="docinfo-name">Software type:</th><td class="field-body">Free software</td>
+<tr class="software-type field"><th class="docinfo-name">Software type:</th><td class="field-body">Free software</td>
 </tr>
-<tr class="field"><th class="docinfo-name">Supported OS:</th><td class="field-body">Windows Vista/7/8/10  32bit/64bit</td>
+<tr class="supported-os field"><th class="docinfo-name">Supported OS:</th><td class="field-body">Windows Vista/7/8/10  32bit/64bit</td>
 </tr>
-<tr class="field"><th class="docinfo-name">Dev env:</th><td class="field-body">Python + VisualC++2015</td>
+<tr class="dev-env field"><th class="docinfo-name">Dev env:</th><td class="field-body">Python + VisualC++2015</td>
 </tr>
-<tr class="field"><th class="docinfo-name">Website:</th><td class="field-body"><a class="reference external" href="http://sites.google.com/site/craftware/">http://sites.google.com/site/craftware/</a></td>
+<tr class="website field"><th class="docinfo-name">Website:</th><td class="field-body"><a class="reference external" href="http://sites.google.com/site/craftware/">http://sites.google.com/site/craftware/</a></td>
 </tr>
 </tbody>
 </table>
@@ -803,16 +803,16 @@ but it is recommended to use a text editor which can display Python source code 
 <p>In config.py, a function named configure() is defined as below.
 Keymap object is passed as an argument of configure(). And you can define the key customization by manipulating the Keymap object.</p>
 <p><strong>Definition of configure function</strong></p>
-<div class="highlight"><pre><span class="k">def</span> <span class="nf">configure</span><span class="p">(</span><span class="n">keymap</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">configure</span><span class="p">(</span><span class="n">keymap</span><span class="p">):</span>
 </pre></div>
 </blockquote>
 <p><strong>Simple replacement of keys</strong></p>
 <blockquote>
 <p>By calling keymap.replaceKey() method in configure(), you can replace the meaning of keys.</p>
 <p><strong>Example of replaceKey()</strong></p>
-<div class="highlight"><pre><span class="c"># Simple key replacement</span>
-<span class="n">keymap</span><span class="o">.</span><span class="n">replaceKey</span><span class="p">(</span> <span class="s">&quot;LWin&quot;</span><span class="p">,</span> <span class="mi">235</span> <span class="p">)</span>
-<span class="n">keymap</span><span class="o">.</span><span class="n">replaceKey</span><span class="p">(</span> <span class="s">&quot;RWin&quot;</span><span class="p">,</span> <span class="s">&quot;Space&quot;</span> <span class="p">)</span>
+<div class="highlight"><pre><span></span><span class="c1"># Simple key replacement</span>
+<span class="n">keymap</span><span class="o">.</span><span class="n">replaceKey</span><span class="p">(</span> <span class="s2">&quot;LWin&quot;</span><span class="p">,</span> <span class="mi">235</span> <span class="p">)</span>
+<span class="n">keymap</span><span class="o">.</span><span class="n">replaceKey</span><span class="p">(</span> <span class="s2">&quot;RWin&quot;</span><span class="p">,</span> <span class="s2">&quot;Space&quot;</span> <span class="p">)</span>
 </pre></div>
 <p>This example is re-assigning Left-Windows key to virtual keycode 235, Right-Windows key to Space key.</p>
 <p>You can pass both key-name(string) and virtual-keycode(integer) as arguments of replaceKey().</p>
@@ -823,8 +823,8 @@ Keymap object is passed as an argument of configure(). And you can define the ke
 <p>By calling keymap.defineModifier() method in configure(), you can define modifier keys additionally.</p>
 <p>Modifier key is a key like Shift, Ctrl, which let key inputs have different meaning by pressing at the same time.</p>
 <p><strong>Example of defineModifier()</strong></p>
-<div class="highlight"><pre><span class="c"># Defining modifier key</span>
-<span class="n">keymap</span><span class="o">.</span><span class="n">defineModifier</span><span class="p">(</span> <span class="mi">235</span><span class="p">,</span> <span class="s">&quot;User0&quot;</span> <span class="p">)</span>
+<div class="highlight"><pre><span></span><span class="c1"># Defining modifier key</span>
+<span class="n">keymap</span><span class="o">.</span><span class="n">defineModifier</span><span class="p">(</span> <span class="mi">235</span><span class="p">,</span> <span class="s2">&quot;User0&quot;</span> <span class="p">)</span>
 </pre></div>
 <p>This example is defining virtual keycode 235 (which is replaced from Left-Windows key in previous example) as User-modifier-0.</p>
 <p>By default, there are four modifier keys of Alt, Ctrl, Shift, Win, and you can define up to 4 user modifier keys ( User0 - User3 ) additionally.</p>
@@ -835,16 +835,16 @@ Keymap object is passed as an argument of configure(). And you can define the ke
 however this document explains firstly how to define the global keymap which affects all the windows.</p>
 <p>You can call keymap.defineWindowKeymap() method without arguments to define the global keymap.</p>
 <p><strong>Example of defineWindowKeymap()</strong></p>
-<div class="highlight"><pre><span class="n">keymap_global</span> <span class="o">=</span> <span class="n">keymap</span><span class="o">.</span><span class="n">defineWindowKeymap</span><span class="p">()</span>
+<div class="highlight"><pre><span></span><span class="n">keymap_global</span> <span class="o">=</span> <span class="n">keymap</span><span class="o">.</span><span class="n">defineWindowKeymap</span><span class="p">()</span>
 </pre></div>
 <p>keymap.defineWindowKeymap() returns WindowKeymap object.
 You can assign actions for key inputs by using WindowKeymap object in Python dictionary manner.</p>
 <p><strong>How to assign actions</strong></p>
-<div class="highlight"><pre><span class="c"># USER0-Up/Down/Left/Right : Move window by 10pixel unit</span>
-<span class="n">keymap_global</span><span class="p">[</span> <span class="s">&quot;U0-Left&quot;</span>  <span class="p">]</span> <span class="o">=</span> <span class="n">keymap</span><span class="o">.</span><span class="n">MoveWindowCommand</span><span class="p">(</span> <span class="o">-</span><span class="mi">10</span><span class="p">,</span> <span class="mi">0</span> <span class="p">)</span>
-<span class="n">keymap_global</span><span class="p">[</span> <span class="s">&quot;U0-Right&quot;</span> <span class="p">]</span> <span class="o">=</span> <span class="n">keymap</span><span class="o">.</span><span class="n">MoveWindowCommand</span><span class="p">(</span> <span class="o">+</span><span class="mi">10</span><span class="p">,</span> <span class="mi">0</span> <span class="p">)</span>
-<span class="n">keymap_global</span><span class="p">[</span> <span class="s">&quot;U0-Up&quot;</span>    <span class="p">]</span> <span class="o">=</span> <span class="n">keymap</span><span class="o">.</span><span class="n">MoveWindowCommand</span><span class="p">(</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">10</span> <span class="p">)</span>
-<span class="n">keymap_global</span><span class="p">[</span> <span class="s">&quot;U0-Down&quot;</span>  <span class="p">]</span> <span class="o">=</span> <span class="n">keymap</span><span class="o">.</span><span class="n">MoveWindowCommand</span><span class="p">(</span> <span class="mi">0</span><span class="p">,</span> <span class="o">+</span><span class="mi">10</span> <span class="p">)</span>
+<div class="highlight"><pre><span></span><span class="c1"># USER0-Up/Down/Left/Right : Move window by 10pixel unit</span>
+<span class="n">keymap_global</span><span class="p">[</span> <span class="s2">&quot;U0-Left&quot;</span>  <span class="p">]</span> <span class="o">=</span> <span class="n">keymap</span><span class="o">.</span><span class="n">MoveWindowCommand</span><span class="p">(</span> <span class="o">-</span><span class="mi">10</span><span class="p">,</span> <span class="mi">0</span> <span class="p">)</span>
+<span class="n">keymap_global</span><span class="p">[</span> <span class="s2">&quot;U0-Right&quot;</span> <span class="p">]</span> <span class="o">=</span> <span class="n">keymap</span><span class="o">.</span><span class="n">MoveWindowCommand</span><span class="p">(</span> <span class="o">+</span><span class="mi">10</span><span class="p">,</span> <span class="mi">0</span> <span class="p">)</span>
+<span class="n">keymap_global</span><span class="p">[</span> <span class="s2">&quot;U0-Up&quot;</span>    <span class="p">]</span> <span class="o">=</span> <span class="n">keymap</span><span class="o">.</span><span class="n">MoveWindowCommand</span><span class="p">(</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">10</span> <span class="p">)</span>
+<span class="n">keymap_global</span><span class="p">[</span> <span class="s2">&quot;U0-Down&quot;</span>  <span class="p">]</span> <span class="o">=</span> <span class="n">keymap</span><span class="o">.</span><span class="n">MoveWindowCommand</span><span class="p">(</span> <span class="mi">0</span><span class="p">,</span> <span class="o">+</span><span class="mi">10</span> <span class="p">)</span>
 </pre></div>
 <p>This example is assigning the movement of active window to the combination of User-modifier-0 and directional keys.</p>
 </blockquote>
@@ -852,12 +852,12 @@ You can assign actions for key inputs by using WindowKeymap object in Python dic
 <blockquote>
 <p>By calling defineWindowKeymap() with arguments, you can define a keymap for specific window type.</p>
 <p><strong>Example of defineWindowKeymap()</strong></p>
-<div class="highlight"><pre><span class="n">keymap_notepad</span> <span class="o">=</span> <span class="n">keymap</span><span class="o">.</span><span class="n">defineWindowKeymap</span><span class="p">(</span> <span class="n">exe_name</span><span class="o">=</span><span class="s">&quot;notepad.exe&quot;</span><span class="p">,</span> <span class="n">class_name</span><span class="o">=</span><span class="s">&quot;Edit&quot;</span> <span class="p">)</span>
+<div class="highlight"><pre><span></span><span class="n">keymap_notepad</span> <span class="o">=</span> <span class="n">keymap</span><span class="o">.</span><span class="n">defineWindowKeymap</span><span class="p">(</span> <span class="n">exe_name</span><span class="o">=</span><span class="s2">&quot;notepad.exe&quot;</span><span class="p">,</span> <span class="n">class_name</span><span class="o">=</span><span class="s2">&quot;Edit&quot;</span> <span class="p">)</span>
 </pre></div>
 <p>This example is defining a keymap for the window which has program name &quot;notepad.exe&quot; and window class name &quot;Edit&quot;.</p>
 <p>You can know the window class name and program name, by enabling the internal log output from tasktray icon menu, and inputting key on target window.
 You will see log output like following.</p>
-<div class="highlight"><pre>Window : exe   : cfiler.exe
+<div class="highlight"><pre><span></span>Window : exe   : cfiler.exe
        : class : CfilerWindowClass
        : text  : Craft Commander
 </pre></div>
@@ -867,35 +867,35 @@ You will see log output like following.</p>
 <blockquote>
 <p><strong>Callable object</strong></p>
 <p>You can assign any callable objects like this.</p>
-<div class="highlight"><pre><span class="k">def</span> <span class="nf">command_HelloWorld</span><span class="p">():</span>
-    <span class="k">print</span> <span class="s">&quot;Hello World!&quot;</span>
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">command_HelloWorld</span><span class="p">():</span>
+    <span class="k">print</span> <span class="s2">&quot;Hello World!&quot;</span>
 
-<span class="n">keymap_notepad</span><span class="p">[</span> <span class="s">&quot;C-A&quot;</span> <span class="p">]</span> <span class="o">=</span> <span class="n">command_HelloWorld</span>
-<span class="n">keymap_notepad</span><span class="p">[</span> <span class="s">&quot;C-F&quot;</span> <span class="p">]</span> <span class="o">=</span> <span class="n">keymap</span><span class="o">.</span><span class="n">InputTextCommand</span><span class="p">(</span> <span class="s">&quot;qwerty&quot;</span> <span class="p">)</span>
-<span class="n">keymap_notepad</span><span class="p">[</span> <span class="s">&quot;C-G&quot;</span> <span class="p">]</span> <span class="o">=</span> <span class="n">keymap</span><span class="o">.</span><span class="n">InputTextCommand</span><span class="p">(</span> <span class="s">&quot;Test&quot;</span> <span class="p">)</span>
+<span class="n">keymap_notepad</span><span class="p">[</span> <span class="s2">&quot;C-A&quot;</span> <span class="p">]</span> <span class="o">=</span> <span class="n">command_HelloWorld</span>
+<span class="n">keymap_notepad</span><span class="p">[</span> <span class="s2">&quot;C-F&quot;</span> <span class="p">]</span> <span class="o">=</span> <span class="n">keymap</span><span class="o">.</span><span class="n">InputTextCommand</span><span class="p">(</span> <span class="s2">&quot;qwerty&quot;</span> <span class="p">)</span>
+<span class="n">keymap_notepad</span><span class="p">[</span> <span class="s2">&quot;C-G&quot;</span> <span class="p">]</span> <span class="o">=</span> <span class="n">keymap</span><span class="o">.</span><span class="n">InputTextCommand</span><span class="p">(</span> <span class="s2">&quot;Test&quot;</span> <span class="p">)</span>
 </pre></div>
 <p><strong>Alternative key input</strong></p>
 <p>By passing a string which represents key input,
 you can let a key input has a same effect with different key input.</p>
-<div class="highlight"><pre><span class="n">keymap_notepad</span><span class="p">[</span> <span class="s">&quot;C-C&quot;</span> <span class="p">]</span> <span class="o">=</span> <span class="s">&quot;Return&quot;</span>
-<span class="n">keymap_notepad</span><span class="p">[</span> <span class="s">&quot;C-D&quot;</span> <span class="p">]</span> <span class="o">=</span> <span class="s">&quot;C-F&quot;</span>
+<div class="highlight"><pre><span></span><span class="n">keymap_notepad</span><span class="p">[</span> <span class="s2">&quot;C-C&quot;</span> <span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Return&quot;</span>
+<span class="n">keymap_notepad</span><span class="p">[</span> <span class="s2">&quot;C-D&quot;</span> <span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;C-F&quot;</span>
 </pre></div>
 <p><strong>Alternative multiple key inputs</strong></p>
 <p>By passing multiple key expression strings,
 you can emit multiple consecutive key input events virtually.</p>
-<div class="highlight"><pre><span class="n">keymap_notepad</span><span class="p">[</span> <span class="s">&quot;C-E&quot;</span> <span class="p">]</span> <span class="o">=</span> <span class="s">&quot;A-V&quot;</span><span class="p">,</span> <span class="s">&quot;A-S&quot;</span>
+<div class="highlight"><pre><span></span><span class="n">keymap_notepad</span><span class="p">[</span> <span class="s2">&quot;C-E&quot;</span> <span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;A-V&quot;</span><span class="p">,</span> <span class="s2">&quot;A-S&quot;</span>
 </pre></div>
 </blockquote>
 <p><strong>Setting of text editor</strong></p>
 <blockquote>
 <p>You can set the path of your favorite text editor to keymap.editor.</p>
 <p><strong>Example of setting text editor</strong></p>
-<div class="highlight"><pre><span class="n">keymap</span><span class="o">.</span><span class="n">editor</span> <span class="o">=</span> <span class="s">&quot;notepad.exe&quot;</span>
+<div class="highlight"><pre><span></span><span class="n">keymap</span><span class="o">.</span><span class="n">editor</span> <span class="o">=</span> <span class="s2">&quot;notepad.exe&quot;</span>
 </pre></div>
 <p>You can set callable object also as below.</p>
 <p><strong>Example of setting text editor with callable object</strong></p>
-<div class="highlight"><pre><span class="k">def</span> <span class="nf">editor</span><span class="p">(</span><span class="n">path</span><span class="p">):</span>
-    <span class="n">shellExecute</span><span class="p">(</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="s">&quot;notepad.exe&quot;</span><span class="p">,</span> <span class="s">&#39;&quot;</span><span class="si">%s</span><span class="s">&quot;&#39;</span><span class="o">%</span> <span class="n">path</span><span class="p">,</span> <span class="s">&quot;&quot;</span> <span class="p">)</span>
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">editor</span><span class="p">(</span><span class="n">path</span><span class="p">):</span>
+    <span class="n">shellExecute</span><span class="p">(</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="s2">&quot;notepad.exe&quot;</span><span class="p">,</span> <span class="s1">&#39;&quot;</span><span class="si">%s</span><span class="s1">&quot;&#39;</span><span class="o">%</span> <span class="n">path</span><span class="p">,</span> <span class="s2">&quot;&quot;</span> <span class="p">)</span>
 <span class="n">keymap</span><span class="o">.</span><span class="n">editor</span> <span class="o">=</span> <span class="n">editor</span>
 </pre></div>
 <p>This text editor setting affects the behavior of when &quot;Edit config file&quot; of tasktray icon menu is selected.
@@ -905,11 +905,11 @@ config.py file is opened by the specified text editor.</p>
 <blockquote>
 <p>You can customize the font and color of clipboard history list window and console window.</p>
 <p><strong>Example of font setting</strong></p>
-<div class="highlight"><pre><span class="n">keymap</span><span class="o">.</span><span class="n">setFont</span><span class="p">(</span> <span class="s">&quot;MS Gothic&quot;</span><span class="p">,</span> <span class="mi">12</span> <span class="p">)</span>
+<div class="highlight"><pre><span></span><span class="n">keymap</span><span class="o">.</span><span class="n">setFont</span><span class="p">(</span> <span class="s2">&quot;MS Gothic&quot;</span><span class="p">,</span> <span class="mi">12</span> <span class="p">)</span>
 </pre></div>
 <p>Font name and font size can be passed as arguments of keymap.setFont().</p>
 <p><strong>Example of theme setting</strong></p>
-<div class="highlight"><pre><span class="n">keymap</span><span class="o">.</span><span class="n">setTheme</span><span class="p">(</span><span class="s">&quot;black&quot;</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><span class="n">keymap</span><span class="o">.</span><span class="n">setTheme</span><span class="p">(</span><span class="s2">&quot;black&quot;</span><span class="p">)</span>
 </pre></div>
 <p>Theme name can be passed to keymap.setTheme().
 Themes are defined as directories in &quot;theme&quot; directory.</p>
@@ -917,7 +917,7 @@ Themes are defined as directories in &quot;theme&quot; directory.</p>
 <p><strong>Setting of quote mark</strong></p>
 <blockquote>
 <p><strong>Example of quote mark setting</strong></p>
-<div class="highlight"><pre><span class="n">keymap</span><span class="o">.</span><span class="n">quote_mark</span> <span class="o">=</span> <span class="s">&quot;&gt; &quot;</span>
+<div class="highlight"><pre><span></span><span class="n">keymap</span><span class="o">.</span><span class="n">quote_mark</span> <span class="o">=</span> <span class="s2">&quot;&gt; &quot;</span>
 </pre></div>
 <p>To keymap.quote_mark, you set the mark for quote-pasting from clipboard.</p>
 </blockquote>
@@ -925,9 +925,9 @@ Themes are defined as directories in &quot;theme&quot; directory.</p>
 <blockquote>
 <p>In config.py, you express the key input condition, key event generated virtually, by string expression.</p>
 <p>If required, the key expression string can be a combination of modifier keys and main key separated by hyphen, as following examples.</p>
-<div class="highlight"><pre><span class="s">&quot;C-S-Return&quot;</span>
+<div class="highlight"><pre><span></span><span class="s2">&quot;C-S-Return&quot;</span>
 </pre></div>
-<div class="highlight"><pre><span class="s">&quot;Ctrl-Shift-Return&quot;</span>
+<div class="highlight"><pre><span></span><span class="s2">&quot;Ctrl-Shift-Return&quot;</span>
 </pre></div>
 <p>Available modifier expression is as below.</p>
 <table border="1" class="docutils">
@@ -989,9 +989,9 @@ Themes are defined as directories in &quot;theme&quot; directory.</p>
 </tbody>
 </table>
 <p>Other than modifiers, you can describe extra conditions as below.</p>
-<div class="highlight"><pre><span class="s">&quot;D-S-Return&quot;</span>
-<span class="s">&quot;U-S-Return&quot;</span>
-<span class="s">&quot;O-LShift&quot;</span>
+<div class="highlight"><pre><span></span><span class="s2">&quot;D-S-Return&quot;</span>
+<span class="s2">&quot;U-S-Return&quot;</span>
+<span class="s2">&quot;O-LShift&quot;</span>
 </pre></div>
 <table border="1" class="docutils">
 <colgroup>
@@ -1290,7 +1290,7 @@ Themes are defined as directories in &quot;theme&quot; directory.</p>
 <p>One-shot modifier is a system to execute action when other keys are not manipulated
 between when the modifier key is pressed and when the modifier key is released.</p>
 <p><strong>Example of one-shot modifier setting</strong></p>
-<div class="highlight"><pre><span class="n">keymap_global</span><span class="p">[</span> <span class="s">&quot;O-LCtrl&quot;</span> <span class="p">]</span> <span class="o">=</span> <span class="n">command_Test</span>
+<div class="highlight"><pre><span></span><span class="n">keymap_global</span><span class="p">[</span> <span class="s2">&quot;O-LCtrl&quot;</span> <span class="p">]</span> <span class="o">=</span> <span class="n">command_Test</span>
 </pre></div>
 <p>Like this example, using the &quot;O-&quot; qualifier, you define one-shot modifier.
 by this example, pressing and releasing left Ctrl key solely, the function command_Test is invoked.</p>
@@ -1298,8 +1298,8 @@ by this example, pressing and releasing left Ctrl key solely, the function comma
 <p><strong>Assining action to multi-stroke key inputs</strong></p>
 <blockquote>
 <p><strong>Example of multi-stroke key setting</strong></p>
-<div class="highlight"><pre><span class="n">keymap_global</span><span class="p">[</span> <span class="s">&quot;C-X&quot;</span> <span class="p">]</span> <span class="o">=</span> <span class="n">keymap</span><span class="o">.</span><span class="n">defineMultiStrokeKeymap</span><span class="p">(</span> <span class="s">&quot;C-X&quot;</span> <span class="p">)</span>
-<span class="n">keymap_global</span><span class="p">[</span> <span class="s">&quot;C-X&quot;</span> <span class="p">][</span> <span class="s">&quot;C-F&quot;</span> <span class="p">]</span> <span class="o">=</span> <span class="s">&quot;C-O&quot;</span>
+<div class="highlight"><pre><span></span><span class="n">keymap_global</span><span class="p">[</span> <span class="s2">&quot;C-X&quot;</span> <span class="p">]</span> <span class="o">=</span> <span class="n">keymap</span><span class="o">.</span><span class="n">defineMultiStrokeKeymap</span><span class="p">(</span> <span class="s2">&quot;C-X&quot;</span> <span class="p">)</span>
+<span class="n">keymap_global</span><span class="p">[</span> <span class="s2">&quot;C-X&quot;</span> <span class="p">][</span> <span class="s2">&quot;C-F&quot;</span> <span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;C-O&quot;</span>
 </pre></div>
 <p>This example is defining a multi-stroke key input Ctrl-X, Ctrl-F, and assigning C-O.</p>
 <p>Like this, by generating the keymap by defineMultiStrokeKeymap() method,
@@ -1312,11 +1312,11 @@ and assigning it to the key in other keymap, you can customize the muti-stroke k
 This is called Keyboard Macro feature.</p>
 <p>Recording of the keyboard macro can be started/stopped either tasktray icon menu - &quot;Start/Stop recording key input&quot; or key assigned command.</p>
 <p><strong>Example of Keyboard macro start/stop/replay setting</strong></p>
-<div class="highlight"><pre><span class="n">keymap_global</span><span class="p">[</span> <span class="s">&quot;U0-0&quot;</span> <span class="p">]</span> <span class="o">=</span> <span class="n">keymap</span><span class="o">.</span><span class="n">command_RecordToggle</span>
-<span class="n">keymap_global</span><span class="p">[</span> <span class="s">&quot;U0-1&quot;</span> <span class="p">]</span> <span class="o">=</span> <span class="n">keymap</span><span class="o">.</span><span class="n">command_RecordStart</span>
-<span class="n">keymap_global</span><span class="p">[</span> <span class="s">&quot;U0-2&quot;</span> <span class="p">]</span> <span class="o">=</span> <span class="n">keymap</span><span class="o">.</span><span class="n">command_RecordStop</span>
-<span class="n">keymap_global</span><span class="p">[</span> <span class="s">&quot;U0-3&quot;</span> <span class="p">]</span> <span class="o">=</span> <span class="n">keymap</span><span class="o">.</span><span class="n">command_RecordPlay</span>
-<span class="n">keymap_global</span><span class="p">[</span> <span class="s">&quot;U0-4&quot;</span> <span class="p">]</span> <span class="o">=</span> <span class="n">keymap</span><span class="o">.</span><span class="n">command_RecordClear</span>
+<div class="highlight"><pre><span></span><span class="n">keymap_global</span><span class="p">[</span> <span class="s2">&quot;U0-0&quot;</span> <span class="p">]</span> <span class="o">=</span> <span class="n">keymap</span><span class="o">.</span><span class="n">command_RecordToggle</span>
+<span class="n">keymap_global</span><span class="p">[</span> <span class="s2">&quot;U0-1&quot;</span> <span class="p">]</span> <span class="o">=</span> <span class="n">keymap</span><span class="o">.</span><span class="n">command_RecordStart</span>
+<span class="n">keymap_global</span><span class="p">[</span> <span class="s2">&quot;U0-2&quot;</span> <span class="p">]</span> <span class="o">=</span> <span class="n">keymap</span><span class="o">.</span><span class="n">command_RecordStop</span>
+<span class="n">keymap_global</span><span class="p">[</span> <span class="s2">&quot;U0-3&quot;</span> <span class="p">]</span> <span class="o">=</span> <span class="n">keymap</span><span class="o">.</span><span class="n">command_RecordPlay</span>
+<span class="n">keymap_global</span><span class="p">[</span> <span class="s2">&quot;U0-4&quot;</span> <span class="p">]</span> <span class="o">=</span> <span class="n">keymap</span><span class="o">.</span><span class="n">command_RecordClear</span>
 </pre></div>
 <p>Keyboard macro doesn't differenciate the window type, and replay the same key input sequence on any window types.
 So you need to be careful about that the meaning of the key input can mean differently on other window types.</p>
@@ -1326,36 +1326,36 @@ So you need to be careful about that the meaning of the key input can mean diffe
 <p>Keyhac's clipboard history feature can be extended by customizing config.py.
 You can add fixed-phrase items and date-time items, in addition to clipboard history list.</p>
 <p><strong>Example of clipboard history list setting</strong></p>
-<div class="highlight"><pre><span class="kn">import</span> <span class="nn">datetime</span>
+<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">datetime</span>
 
-<span class="c"># Fixed phrases</span>
+<span class="c1"># Fixed phrases</span>
 <span class="n">fixed_items</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="p">(</span> <span class="s">&quot;name@server.net&quot;</span><span class="p">,</span>           <span class="s">&quot;name@server.net&quot;</span> <span class="p">),</span>
-    <span class="p">(</span> <span class="s">&quot;Address&quot;</span><span class="p">,</span>                   <span class="s">&quot;San Francisco, CA 94128&quot;</span> <span class="p">),</span>
-    <span class="p">(</span> <span class="s">&quot;Phone number&quot;</span><span class="p">,</span>              <span class="s">&quot;03-4567-8901&quot;</span> <span class="p">),</span>
-    <span class="p">(</span> <span class="s">&quot;Edit config.py&quot;</span><span class="p">,</span>            <span class="n">keymap</span><span class="o">.</span><span class="n">command_EditConfig</span> <span class="p">),</span>
-    <span class="p">(</span> <span class="s">&quot;Reload config.py&quot;</span><span class="p">,</span>          <span class="n">keymap</span><span class="o">.</span><span class="n">command_ReloadConfig</span> <span class="p">),</span>
+    <span class="p">(</span> <span class="s2">&quot;name@server.net&quot;</span><span class="p">,</span>           <span class="s2">&quot;name@server.net&quot;</span> <span class="p">),</span>
+    <span class="p">(</span> <span class="s2">&quot;Address&quot;</span><span class="p">,</span>                   <span class="s2">&quot;San Francisco, CA 94128&quot;</span> <span class="p">),</span>
+    <span class="p">(</span> <span class="s2">&quot;Phone number&quot;</span><span class="p">,</span>              <span class="s2">&quot;03-4567-8901&quot;</span> <span class="p">),</span>
+    <span class="p">(</span> <span class="s2">&quot;Edit config.py&quot;</span><span class="p">,</span>            <span class="n">keymap</span><span class="o">.</span><span class="n">command_EditConfig</span> <span class="p">),</span>
+    <span class="p">(</span> <span class="s2">&quot;Reload config.py&quot;</span><span class="p">,</span>          <span class="n">keymap</span><span class="o">.</span><span class="n">command_ReloadConfig</span> <span class="p">),</span>
 <span class="p">]</span>
 
-<span class="c"># Return a formatted date-time string</span>
+<span class="c1"># Return a formatted date-time string</span>
 <span class="k">def</span> <span class="nf">dateAndTime</span><span class="p">(</span><span class="n">fmt</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">_dateAndTime</span><span class="p">():</span>
         <span class="k">return</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="n">fmt</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">_dateAndTime</span>
 
-<span class="c"># Date-time</span>
+<span class="c1"># Date-time</span>
 <span class="n">date_and_time_items</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="p">(</span> <span class="s">&quot;YYYY/MM/DD HH:MM:SS&quot;</span><span class="p">,</span>   <span class="n">dateAndTime</span><span class="p">(</span><span class="s">&quot;%Y/%m/</span><span class="si">%d</span><span class="s"> %H:%M:%S&quot;</span><span class="p">)</span> <span class="p">),</span>
-    <span class="p">(</span> <span class="s">&quot;YYYY/MM/DD&quot;</span><span class="p">,</span>            <span class="n">dateAndTime</span><span class="p">(</span><span class="s">&quot;%Y/%m/</span><span class="si">%d</span><span class="s">&quot;</span><span class="p">)</span> <span class="p">),</span>
-    <span class="p">(</span> <span class="s">&quot;HH:MM:SS&quot;</span><span class="p">,</span>              <span class="n">dateAndTime</span><span class="p">(</span><span class="s">&quot;%H:%M:%S&quot;</span><span class="p">)</span> <span class="p">),</span>
-    <span class="p">(</span> <span class="s">&quot;YYYYMMDD_HHMMSS&quot;</span><span class="p">,</span>       <span class="n">dateAndTime</span><span class="p">(</span><span class="s">&quot;%Y%m</span><span class="si">%d</span><span class="s">_%H%M%S&quot;</span><span class="p">)</span> <span class="p">),</span>
-    <span class="p">(</span> <span class="s">&quot;YYYYMMDD&quot;</span><span class="p">,</span>              <span class="n">dateAndTime</span><span class="p">(</span><span class="s">&quot;%Y%m</span><span class="si">%d</span><span class="s">&quot;</span><span class="p">)</span> <span class="p">),</span>
-    <span class="p">(</span> <span class="s">&quot;HHMMSS&quot;</span><span class="p">,</span>                <span class="n">dateAndTime</span><span class="p">(</span><span class="s">&quot;%H%M%S&quot;</span><span class="p">)</span> <span class="p">),</span>
+    <span class="p">(</span> <span class="s2">&quot;YYYY/MM/DD HH:MM:SS&quot;</span><span class="p">,</span>   <span class="n">dateAndTime</span><span class="p">(</span><span class="s2">&quot;%Y/%m/</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">)</span> <span class="p">),</span>
+    <span class="p">(</span> <span class="s2">&quot;YYYY/MM/DD&quot;</span><span class="p">,</span>            <span class="n">dateAndTime</span><span class="p">(</span><span class="s2">&quot;%Y/%m/</span><span class="si">%d</span><span class="s2">&quot;</span><span class="p">)</span> <span class="p">),</span>
+    <span class="p">(</span> <span class="s2">&quot;HH:MM:SS&quot;</span><span class="p">,</span>              <span class="n">dateAndTime</span><span class="p">(</span><span class="s2">&quot;%H:%M:%S&quot;</span><span class="p">)</span> <span class="p">),</span>
+    <span class="p">(</span> <span class="s2">&quot;YYYYMMDD_HHMMSS&quot;</span><span class="p">,</span>       <span class="n">dateAndTime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2">_%H%M%S&quot;</span><span class="p">)</span> <span class="p">),</span>
+    <span class="p">(</span> <span class="s2">&quot;YYYYMMDD&quot;</span><span class="p">,</span>              <span class="n">dateAndTime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2">&quot;</span><span class="p">)</span> <span class="p">),</span>
+    <span class="p">(</span> <span class="s2">&quot;HHMMSS&quot;</span><span class="p">,</span>                <span class="n">dateAndTime</span><span class="p">(</span><span class="s2">&quot;%H%M%S&quot;</span><span class="p">)</span> <span class="p">),</span>
 <span class="p">]</span>
 
 <span class="n">keymap</span><span class="o">.</span><span class="n">cblisters</span> <span class="o">+=</span> <span class="p">[</span>
-    <span class="p">(</span> <span class="s">&quot;Fixed phrases&quot;</span><span class="p">,</span>         <span class="n">cblister_FixedPhrase</span><span class="p">(</span><span class="n">fixed_items</span><span class="p">)</span> <span class="p">),</span>
-    <span class="p">(</span> <span class="s">&quot;Date-time&quot;</span><span class="p">,</span>             <span class="n">cblister_FixedPhrase</span><span class="p">(</span><span class="n">date_and_time_items</span><span class="p">)</span> <span class="p">),</span>
+    <span class="p">(</span> <span class="s2">&quot;Fixed phrases&quot;</span><span class="p">,</span>         <span class="n">cblister_FixedPhrase</span><span class="p">(</span><span class="n">fixed_items</span><span class="p">)</span> <span class="p">),</span>
+    <span class="p">(</span> <span class="s2">&quot;Date-time&quot;</span><span class="p">,</span>             <span class="n">cblister_FixedPhrase</span><span class="p">(</span><span class="n">date_and_time_items</span><span class="p">)</span> <span class="p">),</span>
     <span class="p">]</span>
 </pre></div>
 <p>By adding the item listing up object to keymap.cblisters, you can add the features in addition to clipboard history.
@@ -1370,12 +1370,12 @@ Doing like this, you can add the command execution feature in the clipboard hist
 <blockquote>
 <p>You describe as below to specify the maximum number of clipboard history.</p>
 <p><strong>Example of clipboard history maximum number setting</strong></p>
-<div class="highlight"><pre><span class="n">keymap</span><span class="o">.</span><span class="n">clipboard_history</span><span class="o">.</span><span class="n">maxnum</span> <span class="o">=</span> <span class="mi">10000</span>
+<div class="highlight"><pre><span></span><span class="n">keymap</span><span class="o">.</span><span class="n">clipboard_history</span><span class="o">.</span><span class="n">maxnum</span> <span class="o">=</span> <span class="mi">10000</span>
 </pre></div>
 <p>By default, up to 1000 histories are stored.</p>
 <p>And you describe as below to specify the maximum total size of clipboard history.</p>
 <p><strong>Example of clipboard history maximum total size setting</strong></p>
-<div class="highlight"><pre><span class="n">keymap</span><span class="o">.</span><span class="n">clipboard_history</span><span class="o">.</span><span class="n">quota</span> <span class="o">=</span> <span class="mi">10</span> <span class="o">*</span> <span class="mi">1024</span> <span class="o">*</span> <span class="mi">1024</span>
+<div class="highlight"><pre><span></span><span class="n">keymap</span><span class="o">.</span><span class="n">clipboard_history</span><span class="o">.</span><span class="n">quota</span> <span class="o">=</span> <span class="mi">10</span> <span class="o">*</span> <span class="mi">1024</span> <span class="o">*</span> <span class="mi">1024</span>
 </pre></div>
 <p>By default, up to total 10MB histories are stored.</p>
 </blockquote>

@@ -485,7 +485,7 @@ div.highlight {
 </tr>
 <tr class="field"><th class="docinfo-name">開発環境:</th><td class="field-body">Python + Visual Studio 2015</td>
 </tr>
-<tr class="field"><th class="docinfo-name">Webサイト:</th><td class="field-body"><a class="reference external" href="http://sites.google.com/site/craftware/">http://sites.google.com/site/craftware/</a></td>
+<tr class="web field"><th class="docinfo-name">Webサイト:</th><td class="field-body"><a class="reference external" href="http://sites.google.com/site/craftware/">http://sites.google.com/site/craftware/</a></td>
 </tr>
 </tbody>
 </table>
@@ -810,7 +810,7 @@ div.highlight {
 configure()の引数には、Keymap オブジェクトが渡され、この Keymap オブジェクト
 を操作することにより、キーをカスタマイズすることが出来ます。</p>
 <p><strong>configure関数の定義</strong></p>
-<div class="highlight"><pre><span class="k">def</span> <span class="nf">configure</span><span class="p">(</span><span class="n">keymap</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">configure</span><span class="p">(</span><span class="n">keymap</span><span class="p">):</span>
 </pre></div>
 </blockquote>
 <p><strong>単純なキーの置き換え</strong></p>
@@ -818,9 +818,9 @@ configure()の引数には、Keymap オブジェクトが渡され、この Keym
 <p>configure() の中で、keymap.replaceKey() メソッドを呼び出すことで、
 キーの意味を置き換えることが出来ます。</p>
 <p><strong>replaceKey()の例</strong></p>
-<div class="highlight"><pre><span class="c"># キーの単純な置き換え</span>
-<span class="n">keymap</span><span class="o">.</span><span class="n">replaceKey</span><span class="p">(</span> <span class="s">&quot;LWin&quot;</span><span class="p">,</span> <span class="mi">235</span> <span class="p">)</span>
-<span class="n">keymap</span><span class="o">.</span><span class="n">replaceKey</span><span class="p">(</span> <span class="s">&quot;RWin&quot;</span><span class="p">,</span> <span class="s">&quot;Space&quot;</span> <span class="p">)</span>
+<div class="highlight"><pre><span></span><span class="c1"># キーの単純な置き換え</span>
+<span class="n">keymap</span><span class="o">.</span><span class="n">replaceKey</span><span class="p">(</span> <span class="s2">&quot;LWin&quot;</span><span class="p">,</span> <span class="mi">235</span> <span class="p">)</span>
+<span class="n">keymap</span><span class="o">.</span><span class="n">replaceKey</span><span class="p">(</span> <span class="s2">&quot;RWin&quot;</span><span class="p">,</span> <span class="s2">&quot;Space&quot;</span> <span class="p">)</span>
 </pre></div>
 <p>ここでは、左Windowsキーを仮想キーコード235番、右WindowsキーをSpaceキー
 に割り当てなおしています。</p>
@@ -835,8 +835,8 @@ configure()の引数には、Keymap オブジェクトが渡され、この Keym
 <p>モディファイアキーとは、Shift や Ctrl のように、同時に押しておくことで、
 キー入力に別の意味を持たせるためのキーのことです。</p>
 <p><strong>defineModifier()の例</strong></p>
-<div class="highlight"><pre><span class="c"># ユーザモディファイアキーの定義</span>
-<span class="n">keymap</span><span class="o">.</span><span class="n">defineModifier</span><span class="p">(</span> <span class="mi">235</span><span class="p">,</span> <span class="s">&quot;User0&quot;</span> <span class="p">)</span>
+<div class="highlight"><pre><span></span><span class="c1"># ユーザモディファイアキーの定義</span>
+<span class="n">keymap</span><span class="o">.</span><span class="n">defineModifier</span><span class="p">(</span> <span class="mi">235</span><span class="p">,</span> <span class="s2">&quot;User0&quot;</span> <span class="p">)</span>
 </pre></div>
 <p>ここでは、先ほど replaceKey を使って左Windowsキーから置き換えた、
 仮想キーコード 235 番を、ユーザモディファイア 0 番に割り当てています。</p>
@@ -852,17 +852,17 @@ configure()の引数には、Keymap オブジェクトが渡され、この Keym
 <p>グローバルキーマップを定義するには、keymap.defineWindowKeymap() を
 引数を渡さずに呼び出します。</p>
 <p><strong>defineWindowKeymap()の例</strong></p>
-<div class="highlight"><pre><span class="n">keymap_global</span> <span class="o">=</span> <span class="n">keymap</span><span class="o">.</span><span class="n">defineWindowKeymap</span><span class="p">()</span>
+<div class="highlight"><pre><span></span><span class="n">keymap_global</span> <span class="o">=</span> <span class="n">keymap</span><span class="o">.</span><span class="n">defineWindowKeymap</span><span class="p">()</span>
 </pre></div>
 <p>keymap.defineWindowKeymap() は、WindowKeymapオブジェクトを返します。
 WindowKeymap オブジェクトに対して、以下のように辞書方式でキー入力
 に対するアクションを割り当てます。</p>
 <p><strong>アクションの割り当て方</strong></p>
-<div class="highlight"><pre><span class="c"># USER0-↑↓←→ : 10pixel単位のウインドウの移動</span>
-<span class="n">keymap_global</span><span class="p">[</span> <span class="s">&quot;U0-Left&quot;</span>  <span class="p">]</span> <span class="o">=</span> <span class="n">keymap</span><span class="o">.</span><span class="n">MoveWindowCommand</span><span class="p">(</span> <span class="o">-</span><span class="mi">10</span><span class="p">,</span> <span class="mi">0</span> <span class="p">)</span>
-<span class="n">keymap_global</span><span class="p">[</span> <span class="s">&quot;U0-Right&quot;</span> <span class="p">]</span> <span class="o">=</span> <span class="n">keymap</span><span class="o">.</span><span class="n">MoveWindowCommand</span><span class="p">(</span> <span class="o">+</span><span class="mi">10</span><span class="p">,</span> <span class="mi">0</span> <span class="p">)</span>
-<span class="n">keymap_global</span><span class="p">[</span> <span class="s">&quot;U0-Up&quot;</span>    <span class="p">]</span> <span class="o">=</span> <span class="n">keymap</span><span class="o">.</span><span class="n">MoveWindowCommand</span><span class="p">(</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">10</span> <span class="p">)</span>
-<span class="n">keymap_global</span><span class="p">[</span> <span class="s">&quot;U0-Down&quot;</span>  <span class="p">]</span> <span class="o">=</span> <span class="n">keymap</span><span class="o">.</span><span class="n">MoveWindowCommand</span><span class="p">(</span> <span class="mi">0</span><span class="p">,</span> <span class="o">+</span><span class="mi">10</span> <span class="p">)</span>
+<div class="highlight"><pre><span></span><span class="c1"># USER0-↑↓←→ : 10pixel単位のウインドウの移動</span>
+<span class="n">keymap_global</span><span class="p">[</span> <span class="s2">&quot;U0-Left&quot;</span>  <span class="p">]</span> <span class="o">=</span> <span class="n">keymap</span><span class="o">.</span><span class="n">MoveWindowCommand</span><span class="p">(</span> <span class="o">-</span><span class="mi">10</span><span class="p">,</span> <span class="mi">0</span> <span class="p">)</span>
+<span class="n">keymap_global</span><span class="p">[</span> <span class="s2">&quot;U0-Right&quot;</span> <span class="p">]</span> <span class="o">=</span> <span class="n">keymap</span><span class="o">.</span><span class="n">MoveWindowCommand</span><span class="p">(</span> <span class="o">+</span><span class="mi">10</span><span class="p">,</span> <span class="mi">0</span> <span class="p">)</span>
+<span class="n">keymap_global</span><span class="p">[</span> <span class="s2">&quot;U0-Up&quot;</span>    <span class="p">]</span> <span class="o">=</span> <span class="n">keymap</span><span class="o">.</span><span class="n">MoveWindowCommand</span><span class="p">(</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">10</span> <span class="p">)</span>
+<span class="n">keymap_global</span><span class="p">[</span> <span class="s2">&quot;U0-Down&quot;</span>  <span class="p">]</span> <span class="o">=</span> <span class="n">keymap</span><span class="o">.</span><span class="n">MoveWindowCommand</span><span class="p">(</span> <span class="mi">0</span><span class="p">,</span> <span class="o">+</span><span class="mi">10</span> <span class="p">)</span>
 </pre></div>
 <p>ここでは、先ほど defineModifier を使って定義した、ユーザモディファイア0番
 と、カーソルキーの同時押しに、アクティブなウインドウの移動を割り当てています。</p>
@@ -872,13 +872,13 @@ WindowKeymap オブジェクトに対して、以下のように辞書方式で�
 <p>defineWindowKeymap() に引数を渡すことによって、特定のウインドウのキーマップ
 を定義することが出来ます。</p>
 <p><strong>defineWindowKeymap()の例</strong></p>
-<div class="highlight"><pre><span class="n">keymap_notepad</span> <span class="o">=</span> <span class="n">keymap</span><span class="o">.</span><span class="n">defineWindowKeymap</span><span class="p">(</span> <span class="n">exe_name</span><span class="o">=</span><span class="s">&quot;notepad.exe&quot;</span><span class="p">,</span> <span class="n">class_name</span><span class="o">=</span><span class="s">&quot;Edit&quot;</span> <span class="p">)</span>
+<div class="highlight"><pre><span></span><span class="n">keymap_notepad</span> <span class="o">=</span> <span class="n">keymap</span><span class="o">.</span><span class="n">defineWindowKeymap</span><span class="p">(</span> <span class="n">exe_name</span><span class="o">=</span><span class="s2">&quot;notepad.exe&quot;</span><span class="p">,</span> <span class="n">class_name</span><span class="o">=</span><span class="s2">&quot;Edit&quot;</span> <span class="p">)</span>
 </pre></div>
 <p>ここでは、プログラム名が notepad.exe であり、
 ウインドウクラス名が Edit であるようなウインドウのキーマップを定義しています。</p>
 <p>ウインドウのクラス名やプログラム名を確認するには、タスクトレイアイコンのメニューで内部ログをONにして、目的のウインドウでキー操作を行います。
 コンソールウインドウに以下のようなログが出力されます。</p>
-<div class="highlight"><pre>Window : exe   : cfiler.exe
+<div class="highlight"><pre><span></span>Window : exe   : cfiler.exe
        : class : CfilerWindowClass
        : text  : 内骨格
 </pre></div>
@@ -888,22 +888,22 @@ WindowKeymap オブジェクトに対して、以下のように辞書方式で�
 <p><strong>さまざまなアクションの割り当て</strong></p>
 <blockquote>
 <p><strong>呼び出し可能オブジェクトの割り当て</strong></p>
-<div class="highlight"><pre><span class="k">def</span> <span class="nf">command_HelloWorld</span><span class="p">():</span>
-    <span class="k">print</span> <span class="s">&quot;Hello World!&quot;</span>
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">command_HelloWorld</span><span class="p">():</span>
+    <span class="k">print</span> <span class="s2">&quot;Hello World!&quot;</span>
 
-<span class="n">keymap_notepad</span><span class="p">[</span> <span class="s">&quot;C-A&quot;</span> <span class="p">]</span> <span class="o">=</span> <span class="n">command_HelloWorld</span>
-<span class="n">keymap_notepad</span><span class="p">[</span> <span class="s">&quot;C-F&quot;</span> <span class="p">]</span> <span class="o">=</span> <span class="n">keymap</span><span class="o">.</span><span class="n">InputTextCommand</span><span class="p">(</span> <span class="s">&quot;qwerty&quot;</span> <span class="p">)</span>
-<span class="n">keymap_notepad</span><span class="p">[</span> <span class="s">&quot;C-G&quot;</span> <span class="p">]</span> <span class="o">=</span> <span class="n">keymap</span><span class="o">.</span><span class="n">InputTextCommand</span><span class="p">(</span> <span class="s">&quot;テストTESTテスト&quot;</span> <span class="p">)</span>
+<span class="n">keymap_notepad</span><span class="p">[</span> <span class="s2">&quot;C-A&quot;</span> <span class="p">]</span> <span class="o">=</span> <span class="n">command_HelloWorld</span>
+<span class="n">keymap_notepad</span><span class="p">[</span> <span class="s2">&quot;C-F&quot;</span> <span class="p">]</span> <span class="o">=</span> <span class="n">keymap</span><span class="o">.</span><span class="n">InputTextCommand</span><span class="p">(</span> <span class="s2">&quot;qwerty&quot;</span> <span class="p">)</span>
+<span class="n">keymap_notepad</span><span class="p">[</span> <span class="s2">&quot;C-G&quot;</span> <span class="p">]</span> <span class="o">=</span> <span class="n">keymap</span><span class="o">.</span><span class="n">InputTextCommand</span><span class="p">(</span> <span class="s2">&quot;テストTESTテスト&quot;</span> <span class="p">)</span>
 </pre></div>
 <p>このように任意の呼び出し可能オブジェクトを割り当てることが出来ます。</p>
 <p><strong>代わりのキー入力の割り当て</strong></p>
-<div class="highlight"><pre><span class="n">keymap_notepad</span><span class="p">[</span> <span class="s">&quot;C-C&quot;</span> <span class="p">]</span> <span class="o">=</span> <span class="s">&quot;Return&quot;</span>
-<span class="n">keymap_notepad</span><span class="p">[</span> <span class="s">&quot;C-D&quot;</span> <span class="p">]</span> <span class="o">=</span> <span class="s">&quot;C-F&quot;</span>
+<div class="highlight"><pre><span></span><span class="n">keymap_notepad</span><span class="p">[</span> <span class="s2">&quot;C-C&quot;</span> <span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Return&quot;</span>
+<span class="n">keymap_notepad</span><span class="p">[</span> <span class="s2">&quot;C-D&quot;</span> <span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;C-F&quot;</span>
 </pre></div>
 <p>キー入力を表す文字列を渡すことで、別のキーを入力したのと同じ効果を
 持たせることが出来ます。</p>
 <p><strong>代わりのキー入力の割り当て(複数)</strong></p>
-<div class="highlight"><pre><span class="n">keymap_notepad</span><span class="p">[</span> <span class="s">&quot;C-E&quot;</span> <span class="p">]</span> <span class="o">=</span> <span class="s">&quot;A-V&quot;</span><span class="p">,</span> <span class="s">&quot;A-S&quot;</span>
+<div class="highlight"><pre><span></span><span class="n">keymap_notepad</span><span class="p">[</span> <span class="s2">&quot;C-E&quot;</span> <span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;A-V&quot;</span><span class="p">,</span> <span class="s2">&quot;A-S&quot;</span>
 </pre></div>
 <p>このように、カンマ区切りで複数の文字列を渡すことで、複数の連続した
 キー入力イベントを擬似的に発生させることが出来ます。</p>
@@ -911,13 +911,13 @@ WindowKeymap オブジェクトに対して、以下のように辞書方式で�
 <p><strong>テキストエディタの設定</strong></p>
 <blockquote>
 <p><strong>テキストエディタの設定例</strong></p>
-<div class="highlight"><pre><span class="n">keymap</span><span class="o">.</span><span class="n">editor</span> <span class="o">=</span> <span class="s">&quot;notepad.exe&quot;</span>
+<div class="highlight"><pre><span></span><span class="n">keymap</span><span class="o">.</span><span class="n">editor</span> <span class="o">=</span> <span class="s2">&quot;notepad.exe&quot;</span>
 </pre></div>
 <p>keymap.editorに、好きなテキストエディタのパスを設定します。</p>
 <p>以下のように、呼び出し可能オブジェクトを設定することも出来ます。</p>
 <p><strong>呼び出し可能オブジェクトを使った、テキストエディタの設定例</strong></p>
-<div class="highlight"><pre><span class="k">def</span> <span class="nf">editor</span><span class="p">(</span><span class="n">path</span><span class="p">):</span>
-    <span class="n">shellExecute</span><span class="p">(</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="s">&quot;notepad.exe&quot;</span><span class="p">,</span> <span class="s">&#39;&quot;</span><span class="si">%s</span><span class="s">&quot;&#39;</span><span class="o">%</span> <span class="n">path</span><span class="p">,</span> <span class="s">&quot;&quot;</span> <span class="p">)</span>
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">editor</span><span class="p">(</span><span class="n">path</span><span class="p">):</span>
+    <span class="n">shellExecute</span><span class="p">(</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="s2">&quot;notepad.exe&quot;</span><span class="p">,</span> <span class="s1">&#39;&quot;</span><span class="si">%s</span><span class="s1">&quot;&#39;</span><span class="o">%</span> <span class="n">path</span><span class="p">,</span> <span class="s2">&quot;&quot;</span> <span class="p">)</span>
 <span class="n">keymap</span><span class="o">.</span><span class="n">editor</span> <span class="o">=</span> <span class="n">editor</span>
 </pre></div>
 <p>この設定は、タスクトレイの Keyhac アイコンを右クリックして表示される
@@ -928,18 +928,18 @@ WindowKeymap オブジェクトに対して、以下のように辞書方式で�
 <blockquote>
 <p>クリップボード履歴リストのウインドウと、コンソールウインドウの、フォントや表示色をカスタマイズすることができます。</p>
 <p><strong>フォントの設定例</strong></p>
-<div class="highlight"><pre><span class="n">keymap</span><span class="o">.</span><span class="n">setFont</span><span class="p">(</span> <span class="s">&quot;ＭＳ ゴシック&quot;</span><span class="p">,</span> <span class="mi">12</span> <span class="p">)</span>
+<div class="highlight"><pre><span></span><span class="n">keymap</span><span class="o">.</span><span class="n">setFont</span><span class="p">(</span> <span class="s2">&quot;ＭＳ ゴシック&quot;</span><span class="p">,</span> <span class="mi">12</span> <span class="p">)</span>
 </pre></div>
 <p>keymap.setFont()に、フォント名とフォントサイズを引数として渡します。</p>
 <p><strong>テーマの設定例</strong></p>
-<div class="highlight"><pre><span class="n">keymap</span><span class="o">.</span><span class="n">setTheme</span><span class="p">(</span><span class="s">&quot;black&quot;</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><span class="n">keymap</span><span class="o">.</span><span class="n">setTheme</span><span class="p">(</span><span class="s2">&quot;black&quot;</span><span class="p">)</span>
 </pre></div>
 <p>keymap.setTheme()に、テーマ名を引数として渡します。テーマは theme ディレクトリ以下に配置されているディレクトリによって定義されています。</p>
 </blockquote>
 <p><strong>引用記号の設定</strong></p>
 <blockquote>
 <p><strong>引用記号の設定例</strong></p>
-<div class="highlight"><pre><span class="n">keymap</span><span class="o">.</span><span class="n">quote_mark</span> <span class="o">=</span> <span class="s">&quot;&gt; &quot;</span>
+<div class="highlight"><pre><span></span><span class="n">keymap</span><span class="o">.</span><span class="n">quote_mark</span> <span class="o">=</span> <span class="s2">&quot;&gt; &quot;</span>
 </pre></div>
 <p>keymap.quote_markに、クリップボードからの引用貼り付け時の記号を設定します。</p>
 </blockquote>
@@ -948,10 +948,10 @@ WindowKeymap オブジェクトに対して、以下のように辞書方式で�
 <p>config.py では、キーの入力条件や、生成する仮想のキーイベントを、
 文字列で表現します。</p>
 <p>文字列は、</p>
-<div class="highlight"><pre><span class="s">&quot;C-S-Return&quot;</span>
+<div class="highlight"><pre><span></span><span class="s2">&quot;C-S-Return&quot;</span>
 </pre></div>
 <p>や</p>
-<div class="highlight"><pre><span class="s">&quot;Ctrl-Shift-Return&quot;</span>
+<div class="highlight"><pre><span></span><span class="s2">&quot;Ctrl-Shift-Return&quot;</span>
 </pre></div>
 <p>のように、ハイフンで区切って、モディファイアとメインのキーを組み合わせて
 表現します。</p>
@@ -1015,9 +1015,9 @@ WindowKeymap オブジェクトに対して、以下のように辞書方式で�
 </tbody>
 </table>
 <p>モディファイア以外に、次のような条件を記述することが出来ます。</p>
-<div class="highlight"><pre><span class="s">&quot;D-S-Return&quot;</span>
-<span class="s">&quot;U-S-Return&quot;</span>
-<span class="s">&quot;O-LShift&quot;</span>
+<div class="highlight"><pre><span></span><span class="s2">&quot;D-S-Return&quot;</span>
+<span class="s2">&quot;U-S-Return&quot;</span>
+<span class="s2">&quot;O-LShift&quot;</span>
 </pre></div>
 <table border="1" class="docutils">
 <colgroup>
@@ -1317,7 +1317,7 @@ WindowKeymap オブジェクトに対して、以下のように辞書方式で�
 押されて離されるまでの間に、ほかのキーが押されなかった場合に、任意の動作を実行
 するための仕組みです。</p>
 <p><strong>ワンショットモディファイアの割り当ての例</strong></p>
-<div class="highlight"><pre><span class="n">keymap_global</span><span class="p">[</span> <span class="s">&quot;O-LCtrl&quot;</span> <span class="p">]</span> <span class="o">=</span> <span class="n">command_Test</span>
+<div class="highlight"><pre><span></span><span class="n">keymap_global</span><span class="p">[</span> <span class="s2">&quot;O-LCtrl&quot;</span> <span class="p">]</span> <span class="o">=</span> <span class="n">command_Test</span>
 </pre></div>
 <p>このように、 O- という修飾子を使用することで、ワンショットモディファイアを設定
 します。この例では、左Ctrlキーを単体で押して離したときに、command_Test
@@ -1326,8 +1326,8 @@ WindowKeymap オブジェクトに対して、以下のように辞書方式で�
 <p><strong>複数のキー入力へのアクションの割り当て</strong></p>
 <blockquote>
 <p><strong>複数のキー入力へのアクションの設定例</strong></p>
-<div class="highlight"><pre><span class="n">keymap_global</span><span class="p">[</span> <span class="s">&quot;C-X&quot;</span> <span class="p">]</span> <span class="o">=</span> <span class="n">keymap</span><span class="o">.</span><span class="n">defineMultiStrokeKeymap</span><span class="p">(</span> <span class="s">&quot;C-X&quot;</span> <span class="p">)</span>
-<span class="n">keymap_global</span><span class="p">[</span> <span class="s">&quot;C-X&quot;</span> <span class="p">][</span> <span class="s">&quot;C-F&quot;</span> <span class="p">]</span> <span class="o">=</span> <span class="s">&quot;C-O&quot;</span>
+<div class="highlight"><pre><span></span><span class="n">keymap_global</span><span class="p">[</span> <span class="s2">&quot;C-X&quot;</span> <span class="p">]</span> <span class="o">=</span> <span class="n">keymap</span><span class="o">.</span><span class="n">defineMultiStrokeKeymap</span><span class="p">(</span> <span class="s2">&quot;C-X&quot;</span> <span class="p">)</span>
+<span class="n">keymap_global</span><span class="p">[</span> <span class="s2">&quot;C-X&quot;</span> <span class="p">][</span> <span class="s2">&quot;C-F&quot;</span> <span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;C-O&quot;</span>
 </pre></div>
 <p>この例では、Ctrl-X を押した後に Ctrl-F を押したときに、Ctrl-O を押したことにする
 設定を行っています。</p>
@@ -1344,11 +1344,11 @@ WindowKeymap オブジェクトに対して、以下のように辞書方式で�
 <p>キーボードマクロの記録は、タスクトレイアイコンのメニュー [キー操作 記録開始] / [キー操作 記録終了] からと、
 キー割り当てを行ったコマンドのどちらかから行うことができます。</p>
 <p><strong>キーボードマクロの開始/終了/再生の設定例</strong></p>
-<div class="highlight"><pre><span class="n">keymap_global</span><span class="p">[</span> <span class="s">&quot;U0-0&quot;</span> <span class="p">]</span> <span class="o">=</span> <span class="n">keymap</span><span class="o">.</span><span class="n">command_RecordToggle</span>
-<span class="n">keymap_global</span><span class="p">[</span> <span class="s">&quot;U0-1&quot;</span> <span class="p">]</span> <span class="o">=</span> <span class="n">keymap</span><span class="o">.</span><span class="n">command_RecordStart</span>
-<span class="n">keymap_global</span><span class="p">[</span> <span class="s">&quot;U0-2&quot;</span> <span class="p">]</span> <span class="o">=</span> <span class="n">keymap</span><span class="o">.</span><span class="n">command_RecordStop</span>
-<span class="n">keymap_global</span><span class="p">[</span> <span class="s">&quot;U0-3&quot;</span> <span class="p">]</span> <span class="o">=</span> <span class="n">keymap</span><span class="o">.</span><span class="n">command_RecordPlay</span>
-<span class="n">keymap_global</span><span class="p">[</span> <span class="s">&quot;U0-4&quot;</span> <span class="p">]</span> <span class="o">=</span> <span class="n">keymap</span><span class="o">.</span><span class="n">command_RecordClear</span>
+<div class="highlight"><pre><span></span><span class="n">keymap_global</span><span class="p">[</span> <span class="s2">&quot;U0-0&quot;</span> <span class="p">]</span> <span class="o">=</span> <span class="n">keymap</span><span class="o">.</span><span class="n">command_RecordToggle</span>
+<span class="n">keymap_global</span><span class="p">[</span> <span class="s2">&quot;U0-1&quot;</span> <span class="p">]</span> <span class="o">=</span> <span class="n">keymap</span><span class="o">.</span><span class="n">command_RecordStart</span>
+<span class="n">keymap_global</span><span class="p">[</span> <span class="s2">&quot;U0-2&quot;</span> <span class="p">]</span> <span class="o">=</span> <span class="n">keymap</span><span class="o">.</span><span class="n">command_RecordStop</span>
+<span class="n">keymap_global</span><span class="p">[</span> <span class="s2">&quot;U0-3&quot;</span> <span class="p">]</span> <span class="o">=</span> <span class="n">keymap</span><span class="o">.</span><span class="n">command_RecordPlay</span>
+<span class="n">keymap_global</span><span class="p">[</span> <span class="s2">&quot;U0-4&quot;</span> <span class="p">]</span> <span class="o">=</span> <span class="n">keymap</span><span class="o">.</span><span class="n">command_RecordClear</span>
 </pre></div>
 <p>キーボードマクロは、ウインドウを判別せず、すべてのウインドウで同じキーシーケンスが
 再生されます。キーの意味が、ウインドウによって異なる場合があるため、注意が必要です。</p>
@@ -1359,36 +1359,36 @@ WindowKeymap オブジェクトに対して、以下のように辞書方式で�
 クリップボードの履歴だけではなく、定型文や日時などの、さまざまなテキストの貼り付け機能を
 追加することができます。</p>
 <p><strong>クリップボード履歴リストの設定例</strong></p>
-<div class="highlight"><pre><span class="kn">import</span> <span class="nn">datetime</span>
+<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">datetime</span>
 
-<span class="c"># 定型文</span>
+<span class="c1"># 定型文</span>
 <span class="n">fixed_items</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="p">(</span> <span class="s">&quot;name@server.net&quot;</span><span class="p">,</span>           <span class="s">&quot;name@server.net&quot;</span> <span class="p">),</span>
-    <span class="p">(</span> <span class="s">&quot;住所&quot;</span><span class="p">,</span>                      <span class="s">&quot;〒東京都品川区123-456&quot;</span> <span class="p">),</span>
-    <span class="p">(</span> <span class="s">&quot;電話番号&quot;</span><span class="p">,</span>                  <span class="s">&quot;03-4567-8901&quot;</span> <span class="p">),</span>
-    <span class="p">(</span> <span class="s">&quot;config.pyを編集&quot;</span><span class="p">,</span>           <span class="n">keymap</span><span class="o">.</span><span class="n">command_EditConfig</span> <span class="p">),</span>
-    <span class="p">(</span> <span class="s">&quot;config.pyをリロード&quot;</span><span class="p">,</span>       <span class="n">keymap</span><span class="o">.</span><span class="n">command_ReloadConfig</span> <span class="p">),</span>
+    <span class="p">(</span> <span class="s2">&quot;name@server.net&quot;</span><span class="p">,</span>           <span class="s2">&quot;name@server.net&quot;</span> <span class="p">),</span>
+    <span class="p">(</span> <span class="s2">&quot;住所&quot;</span><span class="p">,</span>                      <span class="s2">&quot;〒東京都品川区123-456&quot;</span> <span class="p">),</span>
+    <span class="p">(</span> <span class="s2">&quot;電話番号&quot;</span><span class="p">,</span>                  <span class="s2">&quot;03-4567-8901&quot;</span> <span class="p">),</span>
+    <span class="p">(</span> <span class="s2">&quot;config.pyを編集&quot;</span><span class="p">,</span>           <span class="n">keymap</span><span class="o">.</span><span class="n">command_EditConfig</span> <span class="p">),</span>
+    <span class="p">(</span> <span class="s2">&quot;config.pyをリロード&quot;</span><span class="p">,</span>       <span class="n">keymap</span><span class="o">.</span><span class="n">command_ReloadConfig</span> <span class="p">),</span>
 <span class="p">]</span>
 
-<span class="c"># 日時をペーストする機能</span>
+<span class="c1"># 日時をペーストする機能</span>
 <span class="k">def</span> <span class="nf">dateAndTime</span><span class="p">(</span><span class="n">fmt</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">_dateAndTime</span><span class="p">():</span>
         <span class="k">return</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="n">fmt</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">_dateAndTime</span>
 
-<span class="c"># 日時</span>
+<span class="c1"># 日時</span>
 <span class="n">date_and_time_items</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="p">(</span> <span class="s">&quot;YYYY/MM/DD HH:MM:SS&quot;</span><span class="p">,</span>   <span class="n">dateAndTime</span><span class="p">(</span><span class="s">&quot;%Y/%m/</span><span class="si">%d</span><span class="s"> %H:%M:%S&quot;</span><span class="p">)</span> <span class="p">),</span>
-    <span class="p">(</span> <span class="s">&quot;YYYY/MM/DD&quot;</span><span class="p">,</span>            <span class="n">dateAndTime</span><span class="p">(</span><span class="s">&quot;%Y/%m/</span><span class="si">%d</span><span class="s">&quot;</span><span class="p">)</span> <span class="p">),</span>
-    <span class="p">(</span> <span class="s">&quot;HH:MM:SS&quot;</span><span class="p">,</span>              <span class="n">dateAndTime</span><span class="p">(</span><span class="s">&quot;%H:%M:%S&quot;</span><span class="p">)</span> <span class="p">),</span>
-    <span class="p">(</span> <span class="s">&quot;YYYYMMDD_HHMMSS&quot;</span><span class="p">,</span>       <span class="n">dateAndTime</span><span class="p">(</span><span class="s">&quot;%Y%m</span><span class="si">%d</span><span class="s">_%H%M%S&quot;</span><span class="p">)</span> <span class="p">),</span>
-    <span class="p">(</span> <span class="s">&quot;YYYYMMDD&quot;</span><span class="p">,</span>              <span class="n">dateAndTime</span><span class="p">(</span><span class="s">&quot;%Y%m</span><span class="si">%d</span><span class="s">&quot;</span><span class="p">)</span> <span class="p">),</span>
-    <span class="p">(</span> <span class="s">&quot;HHMMSS&quot;</span><span class="p">,</span>                <span class="n">dateAndTime</span><span class="p">(</span><span class="s">&quot;%H%M%S&quot;</span><span class="p">)</span> <span class="p">),</span>
+    <span class="p">(</span> <span class="s2">&quot;YYYY/MM/DD HH:MM:SS&quot;</span><span class="p">,</span>   <span class="n">dateAndTime</span><span class="p">(</span><span class="s2">&quot;%Y/%m/</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">)</span> <span class="p">),</span>
+    <span class="p">(</span> <span class="s2">&quot;YYYY/MM/DD&quot;</span><span class="p">,</span>            <span class="n">dateAndTime</span><span class="p">(</span><span class="s2">&quot;%Y/%m/</span><span class="si">%d</span><span class="s2">&quot;</span><span class="p">)</span> <span class="p">),</span>
+    <span class="p">(</span> <span class="s2">&quot;HH:MM:SS&quot;</span><span class="p">,</span>              <span class="n">dateAndTime</span><span class="p">(</span><span class="s2">&quot;%H:%M:%S&quot;</span><span class="p">)</span> <span class="p">),</span>
+    <span class="p">(</span> <span class="s2">&quot;YYYYMMDD_HHMMSS&quot;</span><span class="p">,</span>       <span class="n">dateAndTime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2">_%H%M%S&quot;</span><span class="p">)</span> <span class="p">),</span>
+    <span class="p">(</span> <span class="s2">&quot;YYYYMMDD&quot;</span><span class="p">,</span>              <span class="n">dateAndTime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2">&quot;</span><span class="p">)</span> <span class="p">),</span>
+    <span class="p">(</span> <span class="s2">&quot;HHMMSS&quot;</span><span class="p">,</span>                <span class="n">dateAndTime</span><span class="p">(</span><span class="s2">&quot;%H%M%S&quot;</span><span class="p">)</span> <span class="p">),</span>
 <span class="p">]</span>
 
 <span class="n">keymap</span><span class="o">.</span><span class="n">cblisters</span> <span class="o">+=</span> <span class="p">[</span>
-    <span class="p">(</span> <span class="s">&quot;定型文&quot;</span><span class="p">,</span>         <span class="n">cblister_FixedPhrase</span><span class="p">(</span><span class="n">fixed_items</span><span class="p">)</span> <span class="p">),</span>
-    <span class="p">(</span> <span class="s">&quot;日時&quot;</span><span class="p">,</span>           <span class="n">cblister_FixedPhrase</span><span class="p">(</span><span class="n">date_and_time_items</span><span class="p">)</span> <span class="p">),</span>
+    <span class="p">(</span> <span class="s2">&quot;定型文&quot;</span><span class="p">,</span>         <span class="n">cblister_FixedPhrase</span><span class="p">(</span><span class="n">fixed_items</span><span class="p">)</span> <span class="p">),</span>
+    <span class="p">(</span> <span class="s2">&quot;日時&quot;</span><span class="p">,</span>           <span class="n">cblister_FixedPhrase</span><span class="p">(</span><span class="n">date_and_time_items</span><span class="p">)</span> <span class="p">),</span>
     <span class="p">]</span>
 </pre></div>
 <p>keymap.cblisters に、クリップボード履歴ウインドウへのアイテムリストアップ
@@ -1405,12 +1405,12 @@ WindowKeymap オブジェクトに対して、以下のように辞書方式で�
 <blockquote>
 <p>クリップボード履歴の最大数を設定するには、以下のように記述します。</p>
 <p><strong>クリップボード履歴の最大数の設定例</strong></p>
-<div class="highlight"><pre><span class="n">keymap</span><span class="o">.</span><span class="n">clipboard_history</span><span class="o">.</span><span class="n">maxnum</span> <span class="o">=</span> <span class="mi">10000</span>
+<div class="highlight"><pre><span></span><span class="n">keymap</span><span class="o">.</span><span class="n">clipboard_history</span><span class="o">.</span><span class="n">maxnum</span> <span class="o">=</span> <span class="mi">10000</span>
 </pre></div>
 <p>デフォルトでは 1000 個の履歴が保存されます。</p>
 <p>また、クリップボード履歴として保存する最大サイズを設定するには、以下のように記述します。</p>
 <p><strong>クリップボード履歴として保存する最大サイズの設定例</strong></p>
-<div class="highlight"><pre><span class="n">keymap</span><span class="o">.</span><span class="n">clipboard_history</span><span class="o">.</span><span class="n">quota</span> <span class="o">=</span> <span class="mi">10</span> <span class="o">*</span> <span class="mi">1024</span> <span class="o">*</span> <span class="mi">1024</span>
+<div class="highlight"><pre><span></span><span class="n">keymap</span><span class="o">.</span><span class="n">clipboard_history</span><span class="o">.</span><span class="n">quota</span> <span class="o">=</span> <span class="mi">10</span> <span class="o">*</span> <span class="mi">1024</span> <span class="o">*</span> <span class="mi">1024</span>
 </pre></div>
 <p>デフォルトでは 10MB の履歴が保存されます。</p>
 </blockquote>

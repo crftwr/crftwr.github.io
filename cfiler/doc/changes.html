@@ -474,6 +474,16 @@ div.highlight {
 
 
 <blockquote>
+<p>2.46</p>
+<blockquote>
+<ul class="simple">
+<li>Python35 から Python36 に移行</li>
+<li>シンボリックリンクやジャンクションの削除時に、再帰で削除してしまっていた問題を修正</li>
+<li>USBメモリなどのルートディレクトリにファイルをコピーしようとするとエラーになっていたのを修正</li>
+<li>ckit.KeyEvent 型で、keymap の削除と取得ができるようにした。</li>
+<li>ckit.KeyEvent 型で指定したキーマップが、文字列で上書きできないケースがあったのを修正。</li>
+</ul>
+</blockquote>
 <p>2.45</p>
 <blockquote>
 <ul class="simple">
@@ -1535,10 +1545,10 @@ config.py の configure_TextViewer() を呼び出す。</li>
 </blockquote>
 <p>1.22</p>
 <blockquote>
-<ul>
+<ul class="simple">
 <li><dl class="first docutils">
 <dt>ファイル名補完の挙動をCraftLaunchの挙動に近づくように調整。</dt>
-<dd><ul class="first last simple">
+<dd><ul class="first last">
 <li>補完候補ウインドウを出した瞬間、補完されないのを修正。</li>
 <li>補完するとき、リストの選択位置がトップにリセットされないように修正。</li>
 <li>BackSpaceなどで補完候補ウインドウを出したときは、なにも選択されていない状態にする。</li>
@@ -1548,10 +1558,8 @@ config.py の configure_TextViewer() を呼び出す。</li>
 </dd>
 </dl>
 </li>
-<li><p class="first">サーチ結果表示ウインドウのタイトル文字列が、[Grep完了]になっていたで、[Search完了]と修正。</p>
-</li>
-<li><p class="first">makefileを修正して cfiler_native.pyd と ctermcore.pyd のサイズを小さく。</p>
-</li>
+<li>サーチ結果表示ウインドウのタイトル文字列が、[Grep完了]になっていたで、[Search完了]と修正。</li>
+<li>makefileを修正して cfiler_native.pyd と ctermcore.pyd のサイズを小さく。</li>
 </ul>
 </blockquote>
 <p>1.21</p>

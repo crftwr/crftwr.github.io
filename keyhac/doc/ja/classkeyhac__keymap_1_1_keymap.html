@@ -450,7 +450,7 @@ Public Attributes</h2></td></tr>
 
 <p>現在有効なキーマップを再構築する </p>
 <p>現在キーボードフォーカスを持っているウインドウに従って、有効なキー割り当ての辞書を再構築します。<br />
- 通常は、キーボードフォーカスが変化したときに、このメソッドが自動的に呼ばれるため、自分で明示的にこのメソッドを呼ぶ必要はありませんが、 defineWindowKeymap などで定義した WindowKeymap オブジェクトのキー割り当て内容を動的に変更するような場合は、 このメソッドを明示的に呼ぶことで即時にキー割り当ての辞書を再構築を実行することができます。 </p>
+ 通常は、キーボードフォーカスが変化したときに、このメソッドが自動的に呼ばれるため、自分で明示的にこのメソッドを呼ぶ必要はありませんが、 defineWindowKeymap などで定義した <a class="el" href="classkeyhac__keymap_1_1_window_keymap.html" title="Keymap.defineWindowKeymap や Keymap.defineMultiStrokeKeymap によって作られる ウインドウ条件ごとのキー...">WindowKeymap</a> オブジェクトのキー割り当て内容を動的に変更するような場合は、 このメソッドを明示的に呼ぶことで即時にキー割り当ての辞書を再構築を実行することができます。 </p>
 
 </div>
 </div>
@@ -1389,7 +1389,7 @@ Public Attributes</h2></td></tr>
 <p>引数 exe_name, class_name, window_text には、ワイルドカード ( * ? ) を使うことが出来ます。</p>
 <p>check_func には、pyauto.Window オブジェクトを受け取り、True か False を返す関数を渡します。 <a class="el" href="classpyauto_1_1_window.html" title="ウインドウを表すクラス ">pyauto.Window</a> クラスについては、pyauto のリファレンスを参照してください。 <a href="http://hp.vector.co.jp/authors/VA012411/pyauto/doc/">http://hp.vector.co.jp/authors/VA012411/pyauto/doc/</a></p>
 <p>引数 force に True を与えると、スレッドのインプット状態を切り替えてから、ウインドウをフォアグラウンド化します。ウインドウをフォアグラウンドにしても、タスクバーのボタンが点滅する場合は、引数 force に True を与えてみてください。</p>
-<p>ウインドウをアクティブ化する機能を持っているのは、この関数から返される関数であり、 この関数自体はその機能を持っていないことに注意が必要です。 </p>
+<p>ウインドウをアクティブ化する機能を持っているのは、この関数から返される関数であり、 この関数自体はその機能を持っていないことに注意が必要です。 また、ウインドウをアクティブ化する関数は、アクティブ化したWindow、または該当するWindowが見つからなかった場合はNoneを返します。 </p>
 
 </div>
 </div>

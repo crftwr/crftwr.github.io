@@ -1,5 +1,8 @@
 var group__keymap =
 [
+    [ "WindowKeymap", "classkeyhac__keymap_1_1_window_keymap.html", [
+      [ "applying_func", "classkeyhac__keymap_1_1_window_keymap.html#aef5c801218a3382a832ca4a35f115c61", null ]
+    ] ],
     [ "Keymap", "classkeyhac__keymap_1_1_keymap.html", [
       [ "enableHook", "classkeyhac__keymap_1_1_keymap.html#a8883edf21f54286742b4553cda7e6975", null ],
       [ "setFont", "classkeyhac__keymap_1_1_keymap.html#adafb2db10bb19e6341323eba988644ad", null ],
