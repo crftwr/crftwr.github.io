@@ -700,7 +700,7 @@ div.highlight {
 <tr><td>lredit.exe</td>
 <td>プログラム本体</td>
 </tr>
-<tr><td>python34.dll</td>
+<tr><td>python35.dll</td>
 <td>Pythonランタイムライブラリ</td>
 </tr>
 <tr><td>library.zip</td>
@@ -1465,10 +1465,10 @@ Ctrl キーを押したまま、連続で Ctrl + TAB を押すと、タブの切
 </blockquote>
 <p>Open や Mode など、いくつかのコマンドは、コマンドラインから引数を受け取ることができます。
 引数は、以下のようにセミコロンで区切って渡します。</p>
-<div class="highlight"><pre>Open;c:/project/foo/bar.txt
+<div class="highlight"><pre><span></span>Open;c:/project/foo/bar.txt
 </pre></div>
 <p>引数を渡さなかった場合は、インタラクティブにパラメタを入力します。</p>
-<div class="highlight"><pre>Open
+<div class="highlight"><pre><span></span>Open
 c:/project/foo/bar.txt
 </pre></div>
 <p>LREditには他にもたくさんコマンドがあります。 Alt + X でコマンドラインを開き、
@@ -1481,10 +1481,10 @@ c:/project/foo/bar.txt
 <blockquote>
 <p>ファイル名を入力して、ファイルをオープンする機能です。
 Open コマンドの動作と同等です。</p>
-<div class="highlight"><pre>c:/project/foo/bar.txt
+<div class="highlight"><pre><span></span>c:/project/foo/bar.txt
 </pre></div>
 <p>セミコロンで区切って、複数のファイルをオープンすることもできます。</p>
-<div class="highlight"><pre>c:/project/foo1.txt;c:/project/foo2.txt
+<div class="highlight"><pre><span></span>c:/project/foo1.txt;c:/project/foo2.txt
 </pre></div>
 <p>コマンド名と同様に、ファイル名も自動補完されます。</p>
 </blockquote>
@@ -1494,7 +1494,7 @@ Open コマンドの動作と同等です。</p>
 <blockquote>
 <p>ドキュメント名を入力して、ドキュメントアクティブ化する機能です。
 Document コマンドの動作と同等です。</p>
-<div class="highlight"><pre>bar.txt
+<div class="highlight"><pre><span></span>bar.txt
 </pre></div>
 <p>コマンド名と同様に、ドキュメント名も自動補完されます。</p>
 </blockquote>
@@ -1509,7 +1509,7 @@ Document コマンドの動作と同等です。</p>
 sin, cos, tan, acos, asin, atan, e, fabs, log, log10, pi, pow, sqrt
 </pre>
 <p>複数回 Enterキーを押すことで、10進と16進で結果を切り替えて表示することが出来ます。</p>
-<div class="highlight"><pre>12+34+45 =&gt; 91
+<div class="highlight"><pre><span></span>12+34+45 =&gt; 91
 
 12*34+45 =&gt; 453
 
@@ -1736,12 +1736,12 @@ log(10) =&gt; 2.302585
 <p>検索するファイル名のパターンと、除外するディレクトリ名のパターンでは、* と ? を
 のようなワイルドカードを使用することができます。また複数のパターンをスペース文字で区切って
 指定することができます。</p>
-<div class="highlight"><pre>*
+<div class="highlight"><pre><span></span>*
 *.cpp *.c *.h makefile
 .svn CVS RCS
 </pre></div>
 <p>またファイル名パターンに関しては ! を使って除外するパターンを指定することができます。</p>
-<div class="highlight"><pre>* !*.obj !*.exe !tags
+<div class="highlight"><pre><span></span>* !*.obj !*.exe !tags
 </pre></div>
 <p>検索は、バックグラウンドで実行され、テキストの編集作業を中断することなく実行されます。
 検索にヒットした位置は、ログペインに出力されます。</p>
@@ -1838,12 +1838,12 @@ log(10) =&gt; 2.302585
 LREdit で現在オープンしている全てのテキストファイル中の単語を使って、
 補完入力が行われます。</p>
 <p>たとえば、</p>
-<div class="highlight"><pre><span class="k">def</span> <span class="nf">Hello</span><span class="p">():</span>
-    <span class="k">print</span><span class="p">(</span> <span class="s">&quot;He</span>
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">Hello</span><span class="p">():</span>
+    <span class="k">print</span><span class="p">(</span> <span class="s2">&quot;He</span>
 </pre></div>
 <p>このように He まで入力したところで、Ctrl-Space を押すと、</p>
-<div class="highlight"><pre><span class="k">def</span> <span class="nf">Hello</span><span class="p">():</span>
-    <span class="k">print</span><span class="p">(</span> <span class="s">&quot;Hello</span>
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">Hello</span><span class="p">():</span>
+    <span class="k">print</span><span class="p">(</span> <span class="s2">&quot;Hello</span>
 </pre></div>
 <p>のように、Hello と補完されます。</p>
 <blockquote>
@@ -1935,7 +1935,7 @@ LREdit で現在オープンしている全てのテキストファイル中の�
 プロジェクトの編集は、テキストエディタで行います。</p>
 <p>ファイル名には、次の例のようにワイルドカードを使用することができます。また、ファイル名はプロジェクトファイルからの相対パスで記述できます。</p>
 <blockquote>
-<div class="highlight"><pre>*.py
+<div class="highlight"><pre><span></span>*.py
 native/*.cpp *.h
 doc/index.txt
 doc/changes.txt
@@ -2161,16 +2161,16 @@ LREdit自身に config.py がオープンされます。config.pyの記述方法
 [ツール] &gt; [config.pyの再読み込み] を選択します。
 config.py の記述内容に間違いがあった場合は、以下のようなメッセージがログペインに
 出力されます。注意してください。</p>
-<div class="highlight"><pre>ERROR : 設定ファイルの読み込み中にエラーが発生しました.
+<div class="highlight"><pre><span></span>ERROR : 設定ファイルの読み込み中にエラーが発生しました.
 </pre></div>
 <p>config.pyの再読み込みに成功した場合は、以下のようなメッセージが出力されます。</p>
-<div class="highlight"><pre>設定スクリプトをリロードしました.
+<div class="highlight"><pre><span></span>設定スクリプトをリロードしました.
 </pre></div>
 </blockquote>
 <p><strong>config.pyの書き方</strong></p>
 <blockquote>
 <p>config.py のなかには、configure() という関数を定義します。</p>
-<div class="highlight"><pre><span class="k">def</span> <span class="nf">configure</span><span class="p">(</span><span class="n">window</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">configure</span><span class="p">(</span><span class="n">window</span><span class="p">):</span>
 </pre></div>
 <p>configure() は、config.py が読み込まれた直後に呼ばれる関数で、
 この関数の中で、グローバルなキー割り当てなどを変更することができます。</p>
@@ -2184,10 +2184,10 @@ MainWindow をカスタマイズすることができます。</p>
 <h2><a class="toc-backref" href="#id97">キーの割り当て</a></h2>
 <blockquote>
 <p>キー割り当ては、以下のように記述します。</p>
-<div class="highlight"><pre><span class="n">window</span><span class="o">.</span><span class="n">keymap</span><span class="p">[</span> <span class="s">&quot;F3&quot;</span> <span class="p">]</span> <span class="o">=</span> <span class="n">window</span><span class="o">.</span><span class="n">command</span><span class="o">.</span><span class="n">SearchNext</span>
-<span class="n">window</span><span class="o">.</span><span class="n">keymap</span><span class="p">[</span> <span class="s">&quot;S-F3&quot;</span> <span class="p">]</span> <span class="o">=</span> <span class="n">window</span><span class="o">.</span><span class="n">command</span><span class="o">.</span><span class="n">SearchPrev</span>
-<span class="n">window</span><span class="o">.</span><span class="n">keymap</span><span class="p">[</span> <span class="s">&quot;C-N&quot;</span> <span class="p">]</span> <span class="o">=</span> <span class="n">window</span><span class="o">.</span><span class="n">command</span><span class="o">.</span><span class="n">SearchNext</span>
-<span class="n">window</span><span class="o">.</span><span class="n">keymap</span><span class="p">[</span> <span class="s">&quot;C-S-N&quot;</span> <span class="p">]</span> <span class="o">=</span> <span class="n">window</span><span class="o">.</span><span class="n">command</span><span class="o">.</span><span class="n">SearchPrev</span>
+<div class="highlight"><pre><span></span><span class="n">window</span><span class="o">.</span><span class="n">keymap</span><span class="p">[</span> <span class="s2">&quot;F3&quot;</span> <span class="p">]</span> <span class="o">=</span> <span class="n">window</span><span class="o">.</span><span class="n">command</span><span class="o">.</span><span class="n">SearchNext</span>
+<span class="n">window</span><span class="o">.</span><span class="n">keymap</span><span class="p">[</span> <span class="s2">&quot;S-F3&quot;</span> <span class="p">]</span> <span class="o">=</span> <span class="n">window</span><span class="o">.</span><span class="n">command</span><span class="o">.</span><span class="n">SearchPrev</span>
+<span class="n">window</span><span class="o">.</span><span class="n">keymap</span><span class="p">[</span> <span class="s2">&quot;C-N&quot;</span> <span class="p">]</span> <span class="o">=</span> <span class="n">window</span><span class="o">.</span><span class="n">command</span><span class="o">.</span><span class="n">SearchNext</span>
+<span class="n">window</span><span class="o">.</span><span class="n">keymap</span><span class="p">[</span> <span class="s2">&quot;C-S-N&quot;</span> <span class="p">]</span> <span class="o">=</span> <span class="n">window</span><span class="o">.</span><span class="n">command</span><span class="o">.</span><span class="n">SearchPrev</span>
 </pre></div>
 <p>window.keymap は、キー割り当てを定義するためのプロパティです。</p>
 <p>文字列でキー入力条件を定義します。</p>
@@ -2507,9 +2507,9 @@ LREdit が持っている全てのコマンドにアクセスすることがで�
 <h2><a class="toc-backref" href="#id98">拡張メニューのカスタマイズ</a></h2>
 <blockquote>
 <p>拡張メニューの項目をカスタマイズするには、以下のように記述します。</p>
-<div class="highlight"><pre><span class="n">window</span><span class="o">.</span><span class="n">ext_menu_items</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="p">(</span> <span class="s">u&quot;他方のペイン&quot;</span><span class="p">,</span> <span class="s">&quot;C-W&quot;</span><span class="p">,</span> <span class="n">window</span><span class="o">.</span><span class="n">command</span><span class="o">.</span><span class="n">AnotherPane</span> <span class="p">),</span>
-    <span class="p">(</span> <span class="s">u&quot;文書リスト&quot;</span><span class="p">,</span>   <span class="s">&quot;C-D&quot;</span><span class="p">,</span> <span class="n">window</span><span class="o">.</span><span class="n">command</span><span class="o">.</span><span class="n">DocumentList</span> <span class="p">),</span>
+<div class="highlight"><pre><span></span><span class="n">window</span><span class="o">.</span><span class="n">ext_menu_items</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">(</span> <span class="sa">u</span><span class="s2">&quot;他方のペイン&quot;</span><span class="p">,</span> <span class="s2">&quot;C-W&quot;</span><span class="p">,</span> <span class="n">window</span><span class="o">.</span><span class="n">command</span><span class="o">.</span><span class="n">AnotherPane</span> <span class="p">),</span>
+    <span class="p">(</span> <span class="sa">u</span><span class="s2">&quot;文書リスト&quot;</span><span class="p">,</span>   <span class="s2">&quot;C-D&quot;</span><span class="p">,</span> <span class="n">window</span><span class="o">.</span><span class="n">command</span><span class="o">.</span><span class="n">DocumentList</span> <span class="p">),</span>
 <span class="p">]</span>
 </pre></div>
 <p>window.ext_menu_items は、拡張メニューの項目を定義するためのプロパティです。</p>
@@ -2520,16 +2520,16 @@ LREdit が持っている全てのコマンドにアクセスすることがで�
 <h2><a class="toc-backref" href="#id99">独自のメニューを追加する</a></h2>
 <blockquote>
 <p>拡張メニューとは別に、独自のメニューを追加するには、以下のように記述します。</p>
-<div class="highlight"><pre><span class="k">def</span> <span class="nf">command_MyMenu</span><span class="p">(</span><span class="n">info</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">command_MyMenu</span><span class="p">(</span><span class="n">info</span><span class="p">):</span>
 
     <span class="n">items</span> <span class="o">=</span> <span class="p">[</span>
-        <span class="p">(</span> <span class="s">u&quot;自分ツール１&quot;</span><span class="p">,</span> <span class="s">&quot;C-1&quot;</span><span class="p">,</span> <span class="n">command_MyTool1</span> <span class="p">),</span>
-        <span class="p">(</span> <span class="s">u&quot;自分ツール２&quot;</span><span class="p">,</span> <span class="s">&quot;C-2&quot;</span><span class="p">,</span> <span class="n">command_MyTool2</span> <span class="p">),</span>
+        <span class="p">(</span> <span class="sa">u</span><span class="s2">&quot;自分ツール１&quot;</span><span class="p">,</span> <span class="s2">&quot;C-1&quot;</span><span class="p">,</span> <span class="n">command_MyTool1</span> <span class="p">),</span>
+        <span class="p">(</span> <span class="sa">u</span><span class="s2">&quot;自分ツール２&quot;</span><span class="p">,</span> <span class="s2">&quot;C-2&quot;</span><span class="p">,</span> <span class="n">command_MyTool2</span> <span class="p">),</span>
     <span class="p">]</span>
 
     <span class="n">window</span><span class="o">.</span><span class="n">menu</span><span class="p">(</span> <span class="bp">None</span><span class="p">,</span> <span class="n">items</span> <span class="p">)</span>
 
-<span class="n">window</span><span class="o">.</span><span class="n">keymap</span><span class="p">[</span> <span class="s">&quot;C-T&quot;</span> <span class="p">]</span> <span class="o">=</span> <span class="n">command_MyMenu</span>
+<span class="n">window</span><span class="o">.</span><span class="n">keymap</span><span class="p">[</span> <span class="s2">&quot;C-T&quot;</span> <span class="p">]</span> <span class="o">=</span> <span class="n">command_MyMenu</span>
 </pre></div>
 <p>この例では、command_MyMenu という 独自のメニューを表示するためのコマンドを作成し、
 Ctrl + T に割当てています。</p>
@@ -2540,7 +2540,7 @@ Ctrl + T に割当てています。</p>
 <h2><a class="toc-backref" href="#id100">メニューバーのカスタマイズ</a></h2>
 <blockquote>
 <p>以下のように記述することで、メニューバーに項目を追加することが可能です。</p>
-<div class="highlight"><pre><span class="n">window</span><span class="o">.</span><span class="n">appendMenu</span><span class="p">(</span> <span class="p">(</span><span class="s">&quot;view&quot;</span><span class="p">,),</span> <span class="n">MenuNode</span><span class="p">(</span> <span class="s">&quot;duplicate&quot;</span><span class="p">,</span> <span class="s">u&quot;もうひとつ編集(&amp;D)&quot;</span><span class="p">,</span> <span class="n">window</span><span class="o">.</span><span class="n">command</span><span class="o">.</span><span class="n">Duplicate</span> <span class="p">)</span> <span class="p">)</span>
+<div class="highlight"><pre><span></span><span class="n">window</span><span class="o">.</span><span class="n">appendMenu</span><span class="p">(</span> <span class="p">(</span><span class="s2">&quot;view&quot;</span><span class="p">,),</span> <span class="n">MenuNode</span><span class="p">(</span> <span class="s2">&quot;duplicate&quot;</span><span class="p">,</span> <span class="sa">u</span><span class="s2">&quot;もうひとつ編集(&amp;D)&quot;</span><span class="p">,</span> <span class="n">window</span><span class="o">.</span><span class="n">command</span><span class="o">.</span><span class="n">Duplicate</span> <span class="p">)</span> <span class="p">)</span>
 </pre></div>
 <p>メニューの各アイテムは、MenuNode というクラスのオブジェクトで表します。
 メニューには、項目ごとに文字列の ID が付けられています。</p>
@@ -2548,24 +2548,24 @@ Ctrl + T に割当てています。</p>
 &quot;duplicate&quot; という ID が付けられた [もうひとつ編集] という項目を追加します。
 このメニュー項目を選択すると、Duplicate コマンドが実行されます。</p>
 <p>以下のように記述すると、階層化されたメニューを追加することができます。</p>
-<div class="highlight"><pre><span class="n">window</span><span class="o">.</span><span class="n">insertMenu</span><span class="p">(</span> <span class="p">(</span><span class="s">&quot;tool&quot;</span><span class="p">,</span><span class="s">&quot;custom_tools_end&quot;</span><span class="p">),</span>
+<div class="highlight"><pre><span></span><span class="n">window</span><span class="o">.</span><span class="n">insertMenu</span><span class="p">(</span> <span class="p">(</span><span class="s2">&quot;tool&quot;</span><span class="p">,</span><span class="s2">&quot;custom_tools_end&quot;</span><span class="p">),</span>
     <span class="n">MenuNode</span><span class="p">(</span>
-        <span class="s">&quot;mytools&quot;</span><span class="p">,</span> <span class="s">u&quot;自分ツール(&amp;M)&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;mytools&quot;</span><span class="p">,</span> <span class="sa">u</span><span class="s2">&quot;自分ツール(&amp;M)&quot;</span><span class="p">,</span>
         <span class="n">items</span><span class="o">=</span><span class="p">[</span>
-            <span class="n">MenuNode</span><span class="p">(</span> <span class="s">&quot;focus_left&quot;</span><span class="p">,</span>   <span class="s">u&quot;左にフォーカス(&amp;L)&quot;</span><span class="p">,</span> <span class="n">window</span><span class="o">.</span><span class="n">command</span><span class="o">.</span><span class="n">FocusLeft</span> <span class="p">),</span>
-            <span class="n">MenuNode</span><span class="p">(</span> <span class="s">&quot;focus_right&quot;</span><span class="p">,</span>  <span class="s">u&quot;右にフォーカス(&amp;R)&quot;</span><span class="p">,</span> <span class="n">window</span><span class="o">.</span><span class="n">command</span><span class="o">.</span><span class="n">FocusRight</span> <span class="p">),</span>
+            <span class="n">MenuNode</span><span class="p">(</span> <span class="s2">&quot;focus_left&quot;</span><span class="p">,</span>   <span class="sa">u</span><span class="s2">&quot;左にフォーカス(&amp;L)&quot;</span><span class="p">,</span> <span class="n">window</span><span class="o">.</span><span class="n">command</span><span class="o">.</span><span class="n">FocusLeft</span> <span class="p">),</span>
+            <span class="n">MenuNode</span><span class="p">(</span> <span class="s2">&quot;focus_right&quot;</span><span class="p">,</span>  <span class="sa">u</span><span class="s2">&quot;右にフォーカス(&amp;R)&quot;</span><span class="p">,</span> <span class="n">window</span><span class="o">.</span><span class="n">command</span><span class="o">.</span><span class="n">FocusRight</span> <span class="p">),</span>
         <span class="p">]</span>
     <span class="p">)</span>
 <span class="p">)</span>
 </pre></div>
 <p>また、MenuNodeオブジェクトの代わりに、呼び出し可能オブジェクトを渡すと、メニューが開くタイミングで
 動的にメニュー項目を追加することができます。これは、オープンしている文書をメニュー項目として表示する例です。</p>
-<div class="highlight"><pre><span class="k">class</span> <span class="nc">command_SwitchDocument</span><span class="p">:</span>
+<div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">command_SwitchDocument</span><span class="p">:</span>
 
-    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span> <span class="bp">self</span><span class="p">,</span> <span class="n">doc</span> <span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span> <span class="bp">self</span><span class="p">,</span> <span class="n">doc</span> <span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">doc</span> <span class="o">=</span> <span class="n">doc</span>
 
-    <span class="k">def</span> <span class="nf">__call__</span><span class="p">(</span> <span class="bp">self</span><span class="p">,</span> <span class="n">info</span> <span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__call__</span><span class="p">(</span> <span class="bp">self</span><span class="p">,</span> <span class="n">info</span> <span class="p">):</span>
         <span class="n">window</span><span class="o">.</span><span class="n">activeOpen</span><span class="p">(</span> <span class="n">doc</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">doc</span> <span class="p">)</span>
 
 <span class="k">def</span> <span class="nf">menuitems_Documents</span><span class="p">():</span>
@@ -2574,12 +2574,12 @@ Ctrl + T に割当てています。</p>
     <span class="n">items</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="n">MenuNode</span><span class="p">(</span> <span class="n">separator</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span> <span class="p">)</span>
     <span class="k">for</span> <span class="n">edit</span> <span class="ow">in</span> <span class="n">window</span><span class="o">.</span><span class="n">edit_list</span><span class="p">:</span>
         <span class="n">name</span> <span class="o">=</span> <span class="n">edit</span><span class="o">.</span><span class="n">doc</span><span class="o">.</span><span class="n">getName</span><span class="p">()</span>
-        <span class="n">items</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="n">MenuNode</span><span class="p">(</span> <span class="s">&quot;doc_</span><span class="si">%d</span><span class="s">&quot;</span><span class="o">%</span><span class="n">i</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">command_SwitchDocument</span><span class="p">(</span><span class="n">edit</span><span class="o">.</span><span class="n">doc</span><span class="p">)</span> <span class="p">)</span> <span class="p">)</span>
+        <span class="n">items</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="n">MenuNode</span><span class="p">(</span> <span class="s2">&quot;doc_</span><span class="si">%d</span><span class="s2">&quot;</span><span class="o">%</span><span class="n">i</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">command_SwitchDocument</span><span class="p">(</span><span class="n">edit</span><span class="o">.</span><span class="n">doc</span><span class="p">)</span> <span class="p">)</span> <span class="p">)</span>
         <span class="n">i</span><span class="o">+=</span><span class="mi">1</span>
     <span class="n">items</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="n">MenuNode</span><span class="p">(</span> <span class="n">separator</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span> <span class="p">)</span>
     <span class="k">return</span> <span class="n">items</span>
 
-<span class="n">window</span><span class="o">.</span><span class="n">appendMenu</span><span class="p">(</span> <span class="p">(</span><span class="s">&quot;view&quot;</span><span class="p">,),</span> <span class="n">menuitems_Documents</span> <span class="p">)</span>
+<span class="n">window</span><span class="o">.</span><span class="n">appendMenu</span><span class="p">(</span> <span class="p">(</span><span class="s2">&quot;view&quot;</span><span class="p">,),</span> <span class="n">menuitems_Documents</span> <span class="p">)</span>
 </pre></div>
 <p>また上の例では、MenuNode( separator=True ) のように、上下にセパレータを追加しています。
 メニューをグループ化したい場合にセパレータを使うことができます。</p>
@@ -2596,7 +2596,7 @@ Ctrl + T に割当てています。</p>
 検索パスに登録されているので、config.py のなかで以下のように記述することで、
 使用することができます。</p>
 <blockquote>
-<div class="highlight"><pre><span class="kn">import</span> <span class="nn">ini_mode</span>
+<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">ini_mode</span>
 </pre></div>
 </blockquote>
 <p>このように記述した場合、extension/ini_mode.py がロードされ、config.py にインポートされます。</p>
@@ -2615,22 +2615,22 @@ extension ディレクトリ以下にインストールするような形で配�
 <p>モードは、編集するファイルのファイル名のパターンによって、自動的に割り当てられます。
 config.py の configure() のなかで、以下のように記述することで、ファイル名のパターンとモードの
 マッピングをカスタマイズすることができます。</p>
-<div class="highlight"><pre><span class="n">window</span><span class="o">.</span><span class="n">fileext_list</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="p">(</span> <span class="s">&quot;*.py *.pyw *.pys&quot;</span><span class="p">,</span> <span class="s">&quot;python&quot;</span> <span class="p">),</span>
-    <span class="p">(</span> <span class="s">&quot;*.js&quot;</span><span class="p">,</span> <span class="s">&quot;javascript&quot;</span> <span class="p">),</span>
-    <span class="p">(</span> <span class="s">&quot;*.cpp *.cc *.cxx *.hpp *.hh *.hxx *.h&quot;</span><span class="p">,</span> <span class="s">&quot;c++&quot;</span> <span class="p">),</span>
-    <span class="p">(</span> <span class="s">&quot;*.c *.h&quot;</span><span class="p">,</span> <span class="s">&quot;c&quot;</span> <span class="p">),</span>
-    <span class="p">(</span> <span class="s">&quot;*.mm *.h&quot;</span><span class="p">,</span> <span class="s">&quot;objective-c++&quot;</span> <span class="p">),</span>
-    <span class="p">(</span> <span class="s">&quot;*.m *.h&quot;</span><span class="p">,</span> <span class="s">&quot;objective-c&quot;</span> <span class="p">),</span>
-    <span class="p">(</span> <span class="s">&quot;*.cs&quot;</span><span class="p">,</span> <span class="s">&quot;c#&quot;</span> <span class="p">),</span>
-    <span class="p">(</span> <span class="s">&quot;*.java&quot;</span><span class="p">,</span> <span class="s">&quot;java&quot;</span> <span class="p">),</span>
-    <span class="p">(</span> <span class="s">&quot;*.vert *.frag *.geo&quot;</span><span class="p">,</span> <span class="s">&quot;glsl&quot;</span> <span class="p">),</span>
-    <span class="p">(</span> <span class="s">&quot;*.xml&quot;</span><span class="p">,</span> <span class="s">&quot;xml&quot;</span> <span class="p">),</span>
-    <span class="p">(</span> <span class="s">&quot;*.html *.htm&quot;</span><span class="p">,</span> <span class="s">&quot;html&quot;</span> <span class="p">),</span>
-    <span class="p">(</span> <span class="s">&quot;makefile *.mk&quot;</span><span class="p">,</span> <span class="s">&quot;makefile&quot;</span> <span class="p">),</span>
-    <span class="p">(</span> <span class="s">&quot;*.bat&quot;</span><span class="p">,</span> <span class="s">&quot;batch&quot;</span> <span class="p">),</span>
-    <span class="p">(</span> <span class="s">&quot;*.sql&quot;</span><span class="p">,</span> <span class="s">&quot;sql&quot;</span> <span class="p">),</span>
-    <span class="p">(</span> <span class="s">&quot;*&quot;</span><span class="p">,</span> <span class="s">&quot;text&quot;</span> <span class="p">),</span>
+<div class="highlight"><pre><span></span><span class="n">window</span><span class="o">.</span><span class="n">fileext_list</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">(</span> <span class="s2">&quot;*.py *.pyw *.pys&quot;</span><span class="p">,</span> <span class="s2">&quot;python&quot;</span> <span class="p">),</span>
+    <span class="p">(</span> <span class="s2">&quot;*.js&quot;</span><span class="p">,</span> <span class="s2">&quot;javascript&quot;</span> <span class="p">),</span>
+    <span class="p">(</span> <span class="s2">&quot;*.cpp *.cc *.cxx *.hpp *.hh *.hxx *.h&quot;</span><span class="p">,</span> <span class="s2">&quot;c++&quot;</span> <span class="p">),</span>
+    <span class="p">(</span> <span class="s2">&quot;*.c *.h&quot;</span><span class="p">,</span> <span class="s2">&quot;c&quot;</span> <span class="p">),</span>
+    <span class="p">(</span> <span class="s2">&quot;*.mm *.h&quot;</span><span class="p">,</span> <span class="s2">&quot;objective-c++&quot;</span> <span class="p">),</span>
+    <span class="p">(</span> <span class="s2">&quot;*.m *.h&quot;</span><span class="p">,</span> <span class="s2">&quot;objective-c&quot;</span> <span class="p">),</span>
+    <span class="p">(</span> <span class="s2">&quot;*.cs&quot;</span><span class="p">,</span> <span class="s2">&quot;c#&quot;</span> <span class="p">),</span>
+    <span class="p">(</span> <span class="s2">&quot;*.java&quot;</span><span class="p">,</span> <span class="s2">&quot;java&quot;</span> <span class="p">),</span>
+    <span class="p">(</span> <span class="s2">&quot;*.vert *.frag *.geo&quot;</span><span class="p">,</span> <span class="s2">&quot;glsl&quot;</span> <span class="p">),</span>
+    <span class="p">(</span> <span class="s2">&quot;*.xml&quot;</span><span class="p">,</span> <span class="s2">&quot;xml&quot;</span> <span class="p">),</span>
+    <span class="p">(</span> <span class="s2">&quot;*.html *.htm&quot;</span><span class="p">,</span> <span class="s2">&quot;html&quot;</span> <span class="p">),</span>
+    <span class="p">(</span> <span class="s2">&quot;makefile *.mk&quot;</span><span class="p">,</span> <span class="s2">&quot;makefile&quot;</span> <span class="p">),</span>
+    <span class="p">(</span> <span class="s2">&quot;*.bat&quot;</span><span class="p">,</span> <span class="s2">&quot;batch&quot;</span> <span class="p">),</span>
+    <span class="p">(</span> <span class="s2">&quot;*.sql&quot;</span><span class="p">,</span> <span class="s2">&quot;sql&quot;</span> <span class="p">),</span>
+    <span class="p">(</span> <span class="s2">&quot;*&quot;</span><span class="p">,</span> <span class="s2">&quot;text&quot;</span> <span class="p">),</span>
 <span class="p">]</span>
 </pre></div>
 </blockquote>
@@ -2648,37 +2648,37 @@ XmlMode
 <p>モードは、ユーザ自身が作成、追加することができます。これは高度なカスタマイズですので、
 よくわからない場合はスキップしてかまいません。</p>
 <p>iniファイルのモードを追加してみましょう。</p>
-<div class="highlight"><pre><span class="k">class</span> <span class="nc">IniLexer</span><span class="p">(</span><span class="n">RegexLexer</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">IniLexer</span><span class="p">(</span><span class="n">RegexLexer</span><span class="p">):</span>
 
-    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 
-        <span class="n">RegexLexer</span><span class="o">.</span><span class="n">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="n">RegexLexer</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
 
-        <span class="bp">self</span><span class="o">.</span><span class="n">rule_map</span><span class="p">[</span><span class="s">&#39;root&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span>
-            <span class="p">(</span><span class="s">r&#39;\s+&#39;</span><span class="p">,</span> <span class="n">Text</span><span class="p">),</span>
-            <span class="p">(</span><span class="s">r&#39;[;#].*?$&#39;</span><span class="p">,</span> <span class="n">Comment</span><span class="p">),</span>
-            <span class="p">(</span><span class="s">r&#39;\[.*?\]$&#39;</span><span class="p">,</span> <span class="n">Keyword</span><span class="p">),</span>
-            <span class="p">(</span><span class="s">r&#39;(.*?)([ \t]*=[ \t]*)(.*?)$&#39;</span><span class="p">,</span> <span class="p">(</span> <span class="n">Name</span><span class="p">,</span> <span class="n">Text</span><span class="p">,</span> <span class="n">String</span><span class="p">)</span> <span class="p">),</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">rule_map</span><span class="p">[</span><span class="s1">&#39;root&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span>
+            <span class="p">(</span><span class="sa">r</span><span class="s1">&#39;\s+&#39;</span><span class="p">,</span> <span class="n">Text</span><span class="p">),</span>
+            <span class="p">(</span><span class="sa">r</span><span class="s1">&#39;[;#].*?$&#39;</span><span class="p">,</span> <span class="n">Comment</span><span class="p">),</span>
+            <span class="p">(</span><span class="sa">r</span><span class="s1">&#39;\[.*?\]$&#39;</span><span class="p">,</span> <span class="n">Keyword</span><span class="p">),</span>
+            <span class="p">(</span><span class="sa">r</span><span class="s1">&#39;(.*?)([ \t]*=[ \t]*)(.*?)$&#39;</span><span class="p">,</span> <span class="p">(</span> <span class="n">Name</span><span class="p">,</span> <span class="n">Text</span><span class="p">,</span> <span class="n">String</span><span class="p">)</span> <span class="p">),</span>
             <span class="p">(</span><span class="bp">None</span><span class="p">,</span><span class="n">Text</span><span class="p">)</span>
         <span class="p">]</span>
 
 <span class="k">class</span> <span class="nc">IniMode</span><span class="p">(</span><span class="n">Mode</span><span class="p">):</span>
 
-    <span class="n">name</span> <span class="o">=</span> <span class="s">&quot;ini&quot;</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;ini&quot;</span>
 
-    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="n">Mode</span><span class="o">.</span><span class="n">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">Mode</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">lexer</span> <span class="o">=</span> <span class="n">IniLexer</span><span class="p">()</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">completion</span> <span class="o">=</span> <span class="n">lredit_completion</span><span class="o">.</span><span class="n">WordCompletion</span><span class="p">()</span>
 
     <span class="nd">@staticmethod</span>
     <span class="k">def</span> <span class="nf">staticconfigure</span><span class="p">(</span><span class="n">window</span><span class="p">):</span>
         <span class="n">Mode</span><span class="o">.</span><span class="n">staticconfigure</span><span class="p">(</span><span class="n">window</span><span class="p">)</span>
-        <span class="n">callConfigFunc</span><span class="p">(</span><span class="s">&quot;staticconfigure_IniMode&quot;</span><span class="p">,</span><span class="n">window</span><span class="p">)</span>
+        <span class="n">callConfigFunc</span><span class="p">(</span><span class="s2">&quot;staticconfigure_IniMode&quot;</span><span class="p">,</span><span class="n">window</span><span class="p">)</span>
 
     <span class="k">def</span> <span class="nf">configure</span><span class="p">(</span> <span class="bp">self</span><span class="p">,</span> <span class="n">edit</span> <span class="p">):</span>
         <span class="n">Mode</span><span class="o">.</span><span class="n">configure</span><span class="p">(</span> <span class="bp">self</span><span class="p">,</span> <span class="n">edit</span> <span class="p">)</span>
-        <span class="n">callConfigFunc</span><span class="p">(</span><span class="s">&quot;configure_IniMode&quot;</span><span class="p">,</span><span class="bp">self</span><span class="p">,</span><span class="n">edit</span><span class="p">)</span>
+        <span class="n">callConfigFunc</span><span class="p">(</span><span class="s2">&quot;configure_IniMode&quot;</span><span class="p">,</span><span class="bp">self</span><span class="p">,</span><span class="n">edit</span><span class="p">)</span>
 </pre></div>
 <p>モードを追加するには、モード自身を表すクラスと、シンタックスハイライトのための
 字句解析を行うクラスの2つを作成する必要があります。
@@ -2706,7 +2706,7 @@ config.py のなかの、staticconfigure_XxxxMode() を呼び出します。
 そうすることによって、ユーザにモードの動作のカスタマイズの機会を与えます。</p>
 <p>このようにして作成されたモードは、MainWindow オブジェクトの mode_list に登録
 することで、実際に利用可能になります。</p>
-<div class="highlight"><pre><span class="n">window</span><span class="o">.</span><span class="n">mode_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="n">IniMode</span> <span class="p">)</span>
+<div class="highlight"><pre><span></span><span class="n">window</span><span class="o">.</span><span class="n">mode_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="n">IniMode</span> <span class="p">)</span>
 </pre></div>
 </blockquote>
 </blockquote>
@@ -2736,8 +2736,8 @@ TestMode
 <blockquote>
 <p>キーに割り当てる機能や、メニューバーに追加する機能は、 <strong>コマンド</strong> という決まった
 書式の呼び出し可能オブジェクトです。コマンドは以下のような型で定義する必要があります。</p>
-<div class="highlight"><pre><span class="k">def</span> <span class="nf">command_Hello</span><span class="p">(</span> <span class="n">info</span> <span class="p">):</span>
-    <span class="k">print</span><span class="p">(</span> <span class="s">u&quot;Hello!&quot;</span> <span class="p">)</span>
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">command_Hello</span><span class="p">(</span> <span class="n">info</span> <span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span> <span class="sa">u</span><span class="s2">&quot;Hello!&quot;</span> <span class="p">)</span>
 </pre></div>
 <p>コマンドの関数名は、command_ でスタートします。
 引数には、CommandInfo オブジェクトを受け取ります。</p>
@@ -2747,21 +2747,21 @@ TestMode
 <p>MainWindow の command プロパティは、CommandMap オブジェクトです。このオブジェクトを使うと、
 MainWindow だけでなく、TextEditWidget や モードクラス、マイナーモードクラスの
 メソッドとして定義されているコマンドを、透過的に取得したり呼び出したりすることができます。</p>
-<div class="highlight"><pre><span class="n">window</span><span class="o">.</span><span class="n">keymap</span><span class="p">[</span> <span class="s">&quot;C-O&quot;</span> <span class="p">]</span> <span class="o">=</span> <span class="n">window</span><span class="o">.</span><span class="n">command</span><span class="o">.</span><span class="n">Open</span>           <span class="c"># MainWindowが提供しているコマンド</span>
-<span class="n">window</span><span class="o">.</span><span class="n">keymap</span><span class="p">[</span> <span class="s">&quot;C-A&quot;</span> <span class="p">]</span> <span class="o">=</span> <span class="n">window</span><span class="o">.</span><span class="n">command</span><span class="o">.</span><span class="n">SelectDocument</span> <span class="c"># TextEditWidgetが提供しているコマンド</span>
+<div class="highlight"><pre><span></span><span class="n">window</span><span class="o">.</span><span class="n">keymap</span><span class="p">[</span> <span class="s2">&quot;C-O&quot;</span> <span class="p">]</span> <span class="o">=</span> <span class="n">window</span><span class="o">.</span><span class="n">command</span><span class="o">.</span><span class="n">Open</span>           <span class="c1"># MainWindowが提供しているコマンド</span>
+<span class="n">window</span><span class="o">.</span><span class="n">keymap</span><span class="p">[</span> <span class="s2">&quot;C-A&quot;</span> <span class="p">]</span> <span class="o">=</span> <span class="n">window</span><span class="o">.</span><span class="n">command</span><span class="o">.</span><span class="n">SelectDocument</span> <span class="c1"># TextEditWidgetが提供しているコマンド</span>
 </pre></div>
 <p>コマンドが受け取る CommandInfo オブジェクトには、コマンドの引数や、押されていたモディファイアキー
 といった情報が格納されています。</p>
 <p>コマンドの引数は、コマンドラインからコマンドを実行したときに、セミコロンで区切って渡すことができます。</p>
-<div class="highlight"><pre>Open;c:/ols/lredit/readme.txt
+<div class="highlight"><pre><span></span>Open;c:/ols/lredit/readme.txt
 </pre></div>
 <p>引数は、CommandInfo の args プロパティに格納されています。</p>
-<div class="highlight"><pre><span class="n">filename</span> <span class="o">=</span> <span class="n">info</span><span class="o">.</span><span class="n">args</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<div class="highlight"><pre><span></span><span class="n">filename</span> <span class="o">=</span> <span class="n">info</span><span class="o">.</span><span class="n">args</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 </pre></div>
 <p>CommandInfo の mod プロパティには、コマンドラインからコマンドが実行されたときのモディファイアキーが
 格納されています。モディファイアキーの状態によってコマンドの実行内容を切り替えたい場合に利用することが
 できます。</p>
-<div class="highlight"><pre><span class="k">if</span> <span class="n">info</span><span class="o">.</span><span class="n">mod</span> <span class="o">&amp;</span> <span class="n">MODKEY_CTRL</span><span class="p">:</span>
+<div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">info</span><span class="o">.</span><span class="n">mod</span> <span class="o">&amp;</span> <span class="n">MODKEY_CTRL</span><span class="p">:</span>
     <span class="n">do_something</span><span class="p">()</span>
 </pre></div>
 </blockquote>
@@ -2778,13 +2778,13 @@ MainWindow だけでなく、TextEditWidget や モードクラス、マイナ�
 独自のコマンドの入力ルールを追加することができます。</p>
 <p>commandline のオブジェクトは、以下のように onCandidate() onEnter() の
 2つのメソッドを備えるオブジェクトである必要があります。</p>
-<div class="highlight"><pre><span class="c"># 固定のコマンドを3つ追加するテスト</span>
+<div class="highlight"><pre><span></span><span class="c1"># 固定のコマンドを3つ追加するテスト</span>
 <span class="k">class</span> <span class="nc">commandline_Test</span><span class="p">:</span>
 
-    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">items</span> <span class="o">=</span> <span class="p">[</span> <span class="s">&quot;Xxxx&quot;</span><span class="p">,</span> <span class="s">&quot;Yyyy&quot;</span><span class="p">,</span> <span class="s">&quot;Zzzz&quot;</span> <span class="p">]</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">items</span> <span class="o">=</span> <span class="p">[</span> <span class="s2">&quot;Xxxx&quot;</span><span class="p">,</span> <span class="s2">&quot;Yyyy&quot;</span><span class="p">,</span> <span class="s2">&quot;Zzzz&quot;</span> <span class="p">]</span>
 
-    <span class="c"># 入力される内容から補完候補を列挙する</span>
+    <span class="c1"># 入力される内容から補完候補を列挙する</span>
     <span class="k">def</span> <span class="nf">onCandidate</span><span class="p">(</span> <span class="bp">self</span><span class="p">,</span> <span class="n">update_info</span> <span class="p">):</span>
 
         <span class="n">left</span> <span class="o">=</span> <span class="n">update_info</span><span class="o">.</span><span class="n">text</span><span class="p">[</span> <span class="p">:</span> <span class="n">update_info</span><span class="o">.</span><span class="n">selectionLeft</span><span class="p">()</span> <span class="p">]</span>
@@ -2800,7 +2800,7 @@ MainWindow だけでなく、TextEditWidget や モードクラス、マイナ�
 
         <span class="k">return</span> <span class="n">cand_list</span>
 
-    <span class="c"># 決定されたコマンドを解釈し可能なら実行する</span>
+    <span class="c1"># 決定されたコマンドを解釈し可能なら実行する</span>
     <span class="k">def</span> <span class="nf">onEnter</span><span class="p">(</span> <span class="bp">self</span><span class="p">,</span> <span class="n">commandline</span><span class="p">,</span> <span class="n">text</span><span class="p">,</span> <span class="n">mod</span> <span class="p">):</span>
 
         <span class="n">text_lower</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
@@ -2810,7 +2810,7 @@ MainWindow だけでなく、TextEditWidget や モードクラス、マイナ�
             <span class="k">if</span> <span class="n">item</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">!=</span> <span class="n">text_lower</span><span class="p">:</span>
                 <span class="k">continue</span>
 
-            <span class="k">print</span><span class="p">(</span> <span class="s">&quot;Execute:&quot;</span><span class="p">,</span> <span class="n">item</span> <span class="p">)</span>
+            <span class="k">print</span><span class="p">(</span> <span class="s2">&quot;Execute:&quot;</span><span class="p">,</span> <span class="n">item</span> <span class="p">)</span>
 
             <span class="n">commandline</span><span class="o">.</span><span class="n">appendHistory</span><span class="p">(</span> <span class="n">text</span> <span class="p">)</span>
 
@@ -2820,7 +2820,7 @@ MainWindow だけでなく、TextEditWidget や モードクラス、マイナ�
 
         <span class="k">return</span> <span class="bp">False</span>
 
-<span class="c"># commandline_listの先頭に登録する</span>
+<span class="c1"># commandline_listの先頭に登録する</span>
 <span class="n">window</span><span class="o">.</span><span class="n">commandline_list</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span> <span class="mi">0</span><span class="p">,</span> <span class="n">commandline_Test</span><span class="p">()</span> <span class="p">);</span>
 </pre></div>
 </blockquote>
@@ -2842,7 +2842,7 @@ MainWindow だけでなく、TextEditWidget や モードクラス、マイナ�
 <p><strong>起動オプション一覧</strong></p>
 <blockquote>
 <p>lredit.exe に引数を渡して、LREditの動作を変更することができます。</p>
-<div class="highlight"><pre>usage: lredit_main.py [-h] [--debug] [--profile] [--multi] [--single]
+<div class="highlight"><pre><span></span>usage: lredit_main.py [-h] [--debug] [--profile] [--multi] [--single]
                       [--readonly] [--text FILENAME [LINE[:INDEX] ...]]
                       [--project FILENAME] [--compare FILENAME FILENAME]
                       [file [file ...]]

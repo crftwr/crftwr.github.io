@@ -27,9 +27,12 @@ var NAVTREEINDEX0 =
 "classckit_1_1ckit__command_1_1_command_info.html#a8187411843a6284ffb964ef3fb9fcab3":[1,3,0,1],
 "classckit_1_1ckit__command_1_1_command_info.html#ae64f0875afe3067b97ba370b354b9213":[1,3,0,0],
 "classckit_1_1ckit__command_1_1_command_sequence.html":[1,3,1],
+"classckit_1_1ckit__misc_1_1_file_reader_lock.html":[1,14,1],
+"classckit_1_1ckit__misc_1_1_file_reader_lock.html#a3164cf6799ee225be22b2beb6bdf219d":[1,14,1,0],
+"classckit_1_1ckit__misc_1_1_file_reader_lock.html#a3aa5c7a8b194766605bd44948ae9588c":[1,14,1,1],
 "classckit_1_1ckit__misc_1_1_text_encoding.html":[1,14,0],
-"classckit_1_1ckit__misc_1_1_unicode_range.html":[1,14,2],
-"classckit_1_1ckit__misc_1_1_word_break.html":[1,14,1],
+"classckit_1_1ckit__misc_1_1_unicode_range.html":[1,14,3],
+"classckit_1_1ckit__misc_1_1_word_break.html":[1,14,2],
 "classckit_1_1ckit__subprocess_1_1_sub_process.html":[1,10,0],
 "classckit_1_1ckit__subprocess_1_1_sub_process.html#a66b2fc5e7e096cac91755849fbf6de76":[1,10,0,1],
 "classckit_1_1ckit__subprocess_1_1_sub_process.html#a807ed97eee69cbd1e4b9077ac361d77c":[1,10,0,2],
@@ -246,8 +249,5 @@ var NAVTREEINDEX0 =
 "classlredit__mainwindow_1_1_main_window.html#aafe6b108f9ab2e279bbbccef1be87251":[1,0,3,106],
 "classlredit__mainwindow_1_1_main_window.html#ab1bd676e86a8179509ec778099c68fd1":[1,0,3,13],
 "classlredit__mainwindow_1_1_main_window.html#ab3c01fbe1c1168eb0f3b16e3dbed59d9":[1,0,3,104],
-"classlredit__mainwindow_1_1_main_window.html#ab3c2f114d7f00db11746656300d44ad3":[1,0,3,44],
-"classlredit__mainwindow_1_1_main_window.html#ab7034ef2c266b2043dcd87605177bdb1":[1,0,3,79],
-"classlredit__mainwindow_1_1_main_window.html#ab77749701bc215504261490992d82a32":[1,0,3,19],
-"classlredit__mainwindow_1_1_main_window.html#ab81c0483981de33d674b297309545bfd":[1,0,3,42]
+"classlredit__mainwindow_1_1_main_window.html#ab3c2f114d7f00db11746656300d44ad3":[1,0,3,44]
 };

@@ -474,6 +474,23 @@ div.highlight {
 
 
 <blockquote>
+<p>1.78 beta 1</p>
+<blockquote>
+<ul class="simple">
+<li><dl class="first docutils">
+<dt>巨大なファイルへの対応。5GB 程度の大きなファイルを開けるようにした。まだ下記の制限あり:</dt>
+<dd><ul class="first last">
+<li>現状、ファイルの読み込みと書き出しに時間がかかっている間、アプリが無反応になる。今後プログレスバーを出すなどの変更を予定。</li>
+<li>巨大なファイルを複数開いた場合や、巨大なファイルの内容を広範囲にわたって編集した場合など、MemoryError になってしまうケースがある。穏便に処理するよう対応予定。</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li>Python36 に移行</li>
+<li>ビルドに Visual Studio 2015 を使うようにした。</li>
+<li>cx_Freeze の使用を止め、独自の方法で配布パッケージを生成するようにした。</li>
+</ul>
+</blockquote>
 <p>1.77</p>
 <blockquote>
 <ul class="simple">

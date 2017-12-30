@@ -104,6 +104,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classckit_1_1ckit__misc_1_1_text_encoding.html">TextEncoding</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">テキストのエンコーディングを表すクラス  <a href="classckit_1_1ckit__misc_1_1_text_encoding.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classckit_1_1ckit__misc_1_1_file_reader_lock.html">FileReaderLock</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">ファイルが他のプロセスから変更されないように共有ロックするためのクラス  <a href="classckit_1_1ckit__misc_1_1_file_reader_lock.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classckit_1_1ckit__misc_1_1_word_break.html">WordBreak</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">単語区切り位置を検索するためのクラス  <a href="classckit_1_1ckit__misc_1_1_word_break.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -250,7 +253,7 @@ Variables</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>maxlen</em> = <code>100000</code>, </td>
+          <td class="paramname"><em>maxlen</em> = <code>1024*1024</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -914,7 +917,7 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>( ディレクトリ名, ファイル名 )</dd></dl>
-<p>この関数の動きは os.path.split() に似せてありますが、 os.path.split() とは違い、UNC形式 ( //machine/share/ で始まるもの ) のパスを扱うことが出来ます。 </p>
+<p>動作は os.path.split と同じです。 </p>
 
 </div>
 </div>

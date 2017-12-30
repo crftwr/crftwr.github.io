@@ -26,6 +26,7 @@ var hierarchy =
     [ "CsharpLexer", "classlredit__lexer_1_1_csharp_lexer.html", null ],
     [ "CsharpMode", "classlredit__mode_1_1_csharp_mode.html", null ],
     [ "Document", "classckit_1_1ckit__textwidget_1_1_document.html", null ],
+    [ "FileReaderLock", "classckit_1_1ckit__misc_1_1_file_reader_lock.html", null ],
     [ "GlslLexer", "classlredit__lexer_1_1_glsl_lexer.html", null ],
     [ "GlslMode", "classlredit__mode_1_1_glsl_mode.html", null ],
     [ "History", "classlredit__history_1_1_history.html", null ],
