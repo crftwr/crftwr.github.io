@@ -474,6 +474,25 @@ div.highlight {
 
 
 <blockquote>
+<p>2.48</p>
+<blockquote>
+<ul class="simple">
+<li>Python37 に移行</li>
+<li>Python3x に移行した後、JoinFile コマンドが動かなくなっていたのを修正</li>
+<li>SplitFile の途中でエラーになったときに、大量の空ファイルが作られるケースがあったのを修正</li>
+<li>Search や Grep のキャンセル処理に時間がかかることがあったのを修正</li>
+<li>Migemo の辞書の読み込みに失敗した場合に、エラーメッセージを出すようにした</li>
+<li>画像ビューアで、次の画像の読み込み中にスペースキーが押された時の動きがおかしかったのを修正</li>
+<li>Mac OS の NFD 形式のファイル名 (濁点/半濁点の文字が分離されているもの) の表示がおかしかったのを修正</li>
+</ul>
+</blockquote>
+<p>2.47</p>
+<blockquote>
+<ul class="simple">
+<li>v2.40 以降 SplitFile コマンドが失敗してしまっていたのを修正</li>
+<li>正規表現を使った一括変名で、存在しないグループ番号を指定したときに操作不能になるのを修正</li>
+</ul>
+</blockquote>
 <p>2.46</p>
 <blockquote>
 <ul class="simple">
@@ -1706,7 +1725,7 @@ config.py の configure_TextViewer() を呼び出す。</li>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Copyright &copy; 2013 craftware. All rights reserved.</li>
+    <li class="footer">Copyright &copy; 2019 craftware. All rights reserved.</li>
   </ul>
 </div>
 </body>

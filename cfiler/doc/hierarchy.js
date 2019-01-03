@@ -15,6 +15,7 @@ var hierarchy =
       [ "NotExistError", "classcfiler__error_1_1_not_exist_error.html", null ]
     ] ],
     [ "FileList", "classcfiler__filelist_1_1_file_list.html", null ],
+    [ "FileReaderLock", "classckit_1_1ckit__misc_1_1_file_reader_lock.html", null ],
     [ "filter_Bookmark", "classcfiler__filelist_1_1filter___bookmark.html", null ],
     [ "filter_Default", "classcfiler__filelist_1_1filter___default.html", null ],
     [ "ImageViewer", "classcfiler__imageviewer_1_1_image_viewer.html", null ],

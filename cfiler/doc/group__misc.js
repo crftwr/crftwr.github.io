@@ -1,6 +1,10 @@
 var group__misc =
 [
     [ "TextEncoding", "classckit_1_1ckit__misc_1_1_text_encoding.html", null ],
+    [ "FileReaderLock", "classckit_1_1ckit__misc_1_1_file_reader_lock.html", [
+      [ "__init__", "classckit_1_1ckit__misc_1_1_file_reader_lock.html#a3164cf6799ee225be22b2beb6bdf219d", null ],
+      [ "unlock", "classckit_1_1ckit__misc_1_1_file_reader_lock.html#a3aa5c7a8b194766605bd44948ae9588c", null ]
+    ] ],
     [ "WordBreak", "classckit_1_1ckit__misc_1_1_word_break.html", null ],
     [ "UnicodeRange", "classckit_1_1ckit__misc_1_1_unicode_range.html", null ],
     [ "detectTextEncoding", "group__misc.html#ga4ff578f23299121e549e3464123ed394", null ],
