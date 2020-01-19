@@ -1,16 +1,11 @@
 var searchData=
 [
-  ['search',['Search',['../classckit_1_1ckit__textwidget_1_1_search.html',1,'ckit::ckit_textwidget']]],
-  ['selection',['Selection',['../classckit_1_1ckit__textwidget_1_1_selection.html',1,'ckit::ckit_textwidget']]],
-  ['setclipboardtext',['setClipboardText',['../group__misc.html#gae428da9ceb4bd050a0d8e1c5c0aa44a3',1,'ckit::ckit_misc']]],
-  ['setdatapath',['setDataPath',['../group__misc.html#ga405e830fffdd72ef8a4aea9ea4d744c1',1,'ckit::ckit_misc']]],
-  ['setfileattribute',['setFileAttribute',['../group__misc.html#gae51fc0bcd6fd088d4f2530817df5ccbd',1,'ckit::ckit_misc']]],
-  ['setpathslash',['setPathSlash',['../group__misc.html#gace891760a43d3570050219d60cf8d561',1,'ckit::ckit_misc']]],
-  ['settheme',['setTheme',['../group__theme.html#ga8ec761192fb156289b7b7ce6c868b5f5',1,'ckit::ckit_theme']]],
-  ['setthemedefault',['setThemeDefault',['../group__theme.html#ga6e666c83856dbd84dbda6a1c556c699d',1,'ckit::ckit_theme']]],
-  ['splitext',['splitExt',['../group__misc.html#ga38d8f2cb0baa5c3b5b223b3a621da723',1,'ckit::ckit_misc']]],
-  ['splitlines',['splitLines',['../group__misc.html#gaf2098eb99450de6163ea308ceaadb44f',1,'ckit::ckit_misc']]],
-  ['splitpath',['splitPath',['../group__misc.html#gaaffae46362b97643a2c454e14817ce46',1,'ckit::ckit_misc']]],
-  ['subprocess',['SubProcess',['../classckit_1_1ckit__subprocess_1_1_sub_process.html',1,'ckit::ckit_subprocess']]],
-  ['synccall',['SyncCall',['../classckit_1_1ckit__threadutil_1_1_sync_call.html',1,'ckit::ckit_threadutil']]]
+  ['regexlexer_92',['RegexLexer',['../classckit_1_1ckit__textwidget_1_1_regex_lexer.html',1,'ckit::ckit_textwidget']]],
+  ['releaseuserinputownership_93',['releaseUserInputOwnership',['../classcmemo__desktop_1_1_desktop.html#a9f8319c81ece1f10f8ea22911c97e52d',1,'cmemo_desktop::Desktop']]],
+  ['reloadconfigscript_94',['reloadConfigScript',['../group__userconfig.html#gaac23abf0f85b90bfc761d6b1199ad9ca',1,'ckit::ckit_userconfig']]],
+  ['remove_95',['remove',['../classcmemo__listwindow_1_1_list_window.html#a8abef9a87503b73956ae1cb6d3d135e7',1,'cmemo_listwindow.ListWindow.remove()'],['../classckit_1_1ckit__threadutil_1_1_cron_table.html#a135f6808f8c98b5ffc0f919655d6c2a7',1,'ckit.ckit_threadutil.CronTable.remove()']]],
+  ['removebom_96',['removeBom',['../group__misc.html#ga8bafc9e79786319f4112f736d1b607a9',1,'ckit::ckit_misc']]],
+  ['replacepath_97',['replacePath',['../group__misc.html#ga519ec04b1dbdbad0c5a349859b97f06a',1,'ckit::ckit_misc']]],
+  ['restart_98',['restart',['../classckit_1_1ckit__threadutil_1_1_job_item.html#a59f2a5627a6a803f4a116d32d79f1a1e',1,'ckit.ckit_threadutil.JobItem.restart()'],['../classckit_1_1ckit__threadutil_1_1_job_queue.html#a59f2a5627a6a803f4a116d32d79f1a1e',1,'ckit.ckit_threadutil.JobQueue.restart()']]],
+  ['rootpath_99',['rootPath',['../group__misc.html#ga0cc1bc659fc0aacd26fd5142dddc7448',1,'ckit::ckit_misc']]]
 ];

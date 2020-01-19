@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['point',['Point',['../classckit_1_1ckit__textwidget_1_1_point.html',1,'ckit::ckit_textwidget']]],
-  ['progressbarwidget',['ProgressBarWidget',['../classckit_1_1ckit__widget_1_1_progress_bar_widget.html',1,'ckit::ckit_widget']]]
+  ['memowindow_159',['MemoWindow',['../classcmemo__memowindow_1_1_memo_window.html',1,'cmemo_memowindow']]],
+  ['mode_160',['Mode',['../classckit_1_1ckit__textwidget_1_1_mode.html',1,'ckit::ckit_textwidget']]]
 ];

@@ -1,4 +1,19 @@
 var searchData=
 [
-  ['hotkeywidget',['HotKeyWidget',['../classckit_1_1ckit__widget_1_1_hot_key_widget.html',1,'ckit::ckit_widget']]]
+  ['getappdatapath_52',['getAppDataPath',['../group__misc.html#ga39c22990fe573c8e2e12d801e0738eae',1,'ckit::ckit_misc']]],
+  ['getappexepath_53',['getAppExePath',['../group__misc.html#ga2b69e364f38e6ebb25ef3acea4ed2a30',1,'ckit::ckit_misc']]],
+  ['getargv_54',['getArgv',['../group__misc.html#ga660ea5bface0a23711d70d3ca0089843',1,'ckit::ckit_misc']]],
+  ['getclipboardsequencenumber_55',['getClipboardSequenceNumber',['../group__misc.html#gac3de7907242d0055bb9e7e5e674fe202',1,'ckit::ckit_misc']]],
+  ['getclipboardtext_56',['getClipboardText',['../group__misc.html#gaf82d1284aa16191b566c75217e9ff076',1,'ckit::ckit_misc']]],
+  ['getcolor_57',['getColor',['../group__theme.html#ga182e89fe206efc3e4dedada7b2875cfd',1,'ckit::ckit_theme']]],
+  ['getdesktoppath_58',['getDesktopPath',['../group__misc.html#gacafe790d0b428611519ba423c72b27ab',1,'ckit::ckit_misc']]],
+  ['getdisksize_59',['getDiskSize',['../group__misc.html#ga501f1920cb21ee8a459d63798fa3e3b0',1,'ckit::ckit_misc']]],
+  ['getdocumentspath_60',['getDocumentsPath',['../group__misc.html#gae49323a7452873f3d7185992d4bf24a0',1,'ckit::ckit_misc']]],
+  ['getdrivedisplayname_61',['getDriveDisplayName',['../group__misc.html#ga00c9969bd39a3a4d771f2a7c610b1cad',1,'ckit::ckit_misc']]],
+  ['getdrives_62',['getDrives',['../group__misc.html#ga67b0f6a8b6b12b005e6140b5a8a3090a',1,'ckit::ckit_misc']]],
+  ['getdrivetype_63',['getDriveType',['../group__misc.html#gabc230a8d6c3bb238386f517e45754d23',1,'ckit::ckit_misc']]],
+  ['getfileattribute_64',['getFileAttribute',['../group__misc.html#gab396267411677d5a01818bc0dff900f4',1,'ckit::ckit_misc']]],
+  ['getindexfromcolumn_65',['getIndexFromColumn',['../classckit_1_1ckit__textwidget_1_1_text_widget.html#ae51f444696091f9e1459fd794c75c84e',1,'ckit::ckit_textwidget::TextWidget']]],
+  ['getprofilepath_66',['getProfilePath',['../group__misc.html#ga92fc56ef54942724c129e8335d83b2aa',1,'ckit::ckit_misc']]],
+  ['gettemppath_67',['getTempPath',['../group__misc.html#gab4451493ce973e3c801e8adf0ead9fcf',1,'ckit::ckit_misc']]]
 ];

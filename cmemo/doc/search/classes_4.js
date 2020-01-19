@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['hotkeywidget',['HotKeyWidget',['../classckit_1_1ckit__widget_1_1_hot_key_widget.html',1,'ckit::ckit_widget']]]
+  ['filereaderlock_153',['FileReaderLock',['../classckit_1_1ckit__misc_1_1_file_reader_lock.html',1,'ckit::ckit_misc']]]
 ];

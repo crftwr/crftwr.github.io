@@ -6,6 +6,7 @@ var hierarchy =
     [ "CronTable", "classckit_1_1ckit__threadutil_1_1_cron_table.html", null ],
     [ "Desktop", "classcmemo__desktop_1_1_desktop.html", null ],
     [ "Document", "classckit_1_1ckit__textwidget_1_1_document.html", null ],
+    [ "FileReaderLock", "classckit_1_1ckit__misc_1_1_file_reader_lock.html", null ],
     [ "JobItem", "classckit_1_1ckit__threadutil_1_1_job_item.html", null ],
     [ "JobQueue", "classckit_1_1ckit__threadutil_1_1_job_queue.html", null ],
     [ "Lexer", "classckit_1_1ckit__textwidget_1_1_lexer.html", [
