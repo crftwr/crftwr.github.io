@@ -10,6 +10,6 @@ var group__textwidget =
     [ "Search", "classckit_1_1ckit__textwidget_1_1_search.html", null ],
     [ "TextWidget", "classckit_1_1ckit__textwidget_1_1_text_widget.html", [
       [ "configure", "classckit_1_1ckit__textwidget_1_1_text_widget.html#adf02e4896cbf6ef8ebfef2c9e858b65d", null ],
-      [ "getIndexFromColumn", "classckit_1_1ckit__textwidget_1_1_text_widget.html#a307f8526300916648562ee15647fed81", null ]
+      [ "getIndexFromColumn", "classckit_1_1ckit__textwidget_1_1_text_widget.html#ae51f444696091f9e1459fd794c75c84e", null ]
     ] ]
 ];

@@ -2,11 +2,11 @@ var group__threadutil =
 [
     [ "SyncCall", "classckit_1_1ckit__threadutil_1_1_sync_call.html", [
       [ "__init__", "classckit_1_1ckit__threadutil_1_1_sync_call.html#ae64f0875afe3067b97ba370b354b9213", null ],
-      [ "__call__", "classckit_1_1ckit__threadutil_1_1_sync_call.html#ae844e0019d38360a86bac1474132db3c", null ],
+      [ "__call__", "classckit_1_1ckit__threadutil_1_1_sync_call.html#a614225eff92a62bd6e463b2039e9abf5", null ],
       [ "check", "classckit_1_1ckit__threadutil_1_1_sync_call.html#a7d60a0d93b36e13e426f086e476a6373", null ]
     ] ],
     [ "JobItem", "classckit_1_1ckit__threadutil_1_1_job_item.html", [
-      [ "__init__", "classckit_1_1ckit__threadutil_1_1_job_item.html#ac775ee34451fdfa742b318538164070e", null ],
+      [ "__init__", "classckit_1_1ckit__threadutil_1_1_job_item.html#a1c615523c42cd05de013ba94ba4c4df2", null ],
       [ "cancel", "classckit_1_1ckit__threadutil_1_1_job_item.html#a807ed97eee69cbd1e4b9077ac361d77c", null ],
       [ "isCanceled", "classckit_1_1ckit__threadutil_1_1_job_item.html#a892b73e8f432f36076b07e7ee8f67187", null ],
       [ "pause", "classckit_1_1ckit__threadutil_1_1_job_item.html#aee7a4c35e3232c131ff62b5866eb4a16", null ],
