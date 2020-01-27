@@ -1,7 +1,7 @@
 var group__ini =
 [
-    [ "get", "group__ini.html#gaf9d731d72bdf57f6c8e5ed7bfe9fb477", null ],
-    [ "getint", "group__ini.html#ga99b72b43652463119c5f35d936af45af", null ],
+    [ "get", "group__ini.html#ga2e108fed75cd3e88b73feff0b565ac7e", null ],
+    [ "getint", "group__ini.html#gaab95b0f7dc9e1e50b61f5e807c024537", null ],
     [ "set", "group__ini.html#gac49d7a0c962ae89786827c89598fa52f", null ],
     [ "setint", "group__ini.html#gae69e16f989a6f4e61206e9f80b6932e1", null ],
     [ "remove_section", "group__ini.html#gaa088be9010cfa27f39a0bf6223179ae4", null ],

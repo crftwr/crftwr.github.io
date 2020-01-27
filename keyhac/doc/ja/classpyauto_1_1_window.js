@@ -27,9 +27,9 @@ var classpyauto_1_1_window =
     [ "setCheck", "classpyauto_1_1_window.html#a939d6062fa6ea6d67b4234c5f846d403", null ],
     [ "getImeStatus", "classpyauto_1_1_window.html#a6810796978b64f9e81ecbcaeecbd2874", null ],
     [ "setImeStatus", "classpyauto_1_1_window.html#a071a056df3a34d6d72b141f64b03c639", null ],
-    [ "postMessage", "classpyauto_1_1_window.html#af1fef852f73f96e336952912300601e0", null ],
-    [ "sendMessage", "classpyauto_1_1_window.html#a790de8814a68cc38af53382eb73bebae", null ],
-    [ "setForeground", "classpyauto_1_1_window.html#ac9d8b4d05c0fa5d1de2f516013d98905", null ],
+    [ "postMessage", "classpyauto_1_1_window.html#acd961dcb2f4bf3f5af9ec248ccc31e02", null ],
+    [ "sendMessage", "classpyauto_1_1_window.html#a401f583b1ed664c4a6378e6ac42dda0b", null ],
+    [ "setForeground", "classpyauto_1_1_window.html#a8b436cf6221337a022f4b23c147f7f2e", null ],
     [ "setActive", "classpyauto_1_1_window.html#afd90f680fc4fc6e434731d27597b563f", null ],
     [ "getImage", "classpyauto_1_1_window.html#afec5824b1137e5e9c3b7da6902f8981d", null ]
 ];

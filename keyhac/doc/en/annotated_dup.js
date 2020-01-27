@@ -2,6 +2,7 @@ var annotated_dup =
 [
     [ "ckit", null, [
       [ "ckit_misc", null, [
+        [ "FileReaderLock", "classckit_1_1ckit__misc_1_1_file_reader_lock.html", "classckit_1_1ckit__misc_1_1_file_reader_lock" ],
         [ "TextEncoding", "classckit_1_1ckit__misc_1_1_text_encoding.html", null ],
         [ "UnicodeRange", "classckit_1_1ckit__misc_1_1_unicode_range.html", null ],
         [ "WordBreak", "classckit_1_1ckit__misc_1_1_word_break.html", null ]
