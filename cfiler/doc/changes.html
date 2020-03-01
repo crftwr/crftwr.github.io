@@ -477,6 +477,26 @@ div.highlight {
 <h1 class="title">更新履歴</h1>
 
 <blockquote>
+<p>2.53</p>
+<blockquote>
+<ul class="simple">
+<li>トラックパッドを使ったスクロールを滑らかにした。</li>
+<li>高 DPI 時のフォントサイズの計算に、切り捨てではなく、四捨五入を使う</li>
+</ul>
+</blockquote>
+<p>2.52</p>
+<blockquote>
+<ul class="simple">
+<li>コンテキストメニューが 動的なDPI変更に対応してなかったのを修正 (DPI_AWARENESS_CONTEXT_PER_MONITOR_AWARE_V2 を使うようにした)</li>
+<li>フォントサイズの変更後、IMEのフォントサイズが更新されない場合があったのを修正</li>
+</ul>
+</blockquote>
+<p>2.51</p>
+<blockquote>
+<ul class="simple">
+<li>ゴミ箱を使ったファイル削除でエラーになる問題が 2.50 で再発していたのを修正</li>
+</ul>
+</blockquote>
 <p>2.50</p>
 <blockquote>
 <ul class="simple">
@@ -1742,7 +1762,7 @@ config.py の configure_TextViewer() を呼び出す。</li>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Copyright &copy; 2019 craftware. All rights reserved.</li>
+    <li class="footer">Copyright &copy; 2020 craftware. All rights reserved.</li>
   </ul>
 </div>
 </body>

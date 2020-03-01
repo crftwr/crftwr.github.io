@@ -1,8 +1,8 @@
 var classclnch__mainwindow_1_1_main_window =
 [
-    [ "subThreadCall", "classclnch__mainwindow_1_1_main_window.html#ad7b725b28df40abe418fe1c58da3e27b", null ],
-    [ "subProcessCall", "classclnch__mainwindow_1_1_main_window.html#a44f019077abd804ffdbe54b295a30b91", null ],
-    [ "commandLine", "classclnch__mainwindow_1_1_main_window.html#a8b1165d5c89c52ed84d2ed8aff387342", null ],
+    [ "subThreadCall", "classclnch__mainwindow_1_1_main_window.html#adcfd90af5eb5cc28a9814acc3cfabd39", null ],
+    [ "subProcessCall", "classclnch__mainwindow_1_1_main_window.html#aadf18b7a400587360366b7d3267d2964", null ],
+    [ "commandLine", "classclnch__mainwindow_1_1_main_window.html#a3e0c33dece17fa4f7c367b8557dc9438", null ],
     [ "resetPos", "classclnch__mainwindow_1_1_main_window.html#aa94ac4195cb4eb623439a5d5ce1f1040", null ],
     [ "configure", "classclnch__mainwindow_1_1_main_window.html#adf02e4896cbf6ef8ebfef2c9e858b65d", null ],
     [ "command_Edit", "classclnch__mainwindow_1_1_main_window.html#a2b1e93bbee459a577bf37cc0755c67fb", null ],
@@ -11,8 +11,8 @@ var classclnch__mainwindow_1_1_main_window =
     [ "command_MusicList", "classclnch__mainwindow_1_1_main_window.html#a788777c2535d41d2b13fe715bc37a862", null ],
     [ "command_MusicPlay", "classclnch__mainwindow_1_1_main_window.html#a7452355b3bfaa985f2d8d434528a74a6", null ],
     [ "command_MusicStop", "classclnch__mainwindow_1_1_main_window.html#ace0ea6716f2f20e19efc15c84a8010f8", null ],
-    [ "ShellExecuteCommand", "classclnch__mainwindow_1_1_main_window.html#acde2899bf135f63a22b70e46774a4f04", null ],
-    [ "UrlCommand", "classclnch__mainwindow_1_1_main_window.html#abfb6dc723f5bcb8ccaead37ba8ecdb12", null ],
+    [ "ShellExecuteCommand", "classclnch__mainwindow_1_1_main_window.html#afbed6b181609a379c178b2168b9f9b02", null ],
+    [ "UrlCommand", "classclnch__mainwindow_1_1_main_window.html#afb9565e75003bcd5cc794e5a6eeab7d5", null ],
     [ "command_History", "classclnch__mainwindow_1_1_main_window.html#af8ea8f0ad50f891bf39392c4883461ea", null ],
     [ "command_RemoveHistory", "classclnch__mainwindow_1_1_main_window.html#a48ff4409283dce8f0e303272a1458ee0", null ],
     [ "command_CommandList", "classclnch__mainwindow_1_1_main_window.html#ac15cc97975fac5196202a3b41918dd95", null ],
