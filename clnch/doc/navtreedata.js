@@ -23,8 +23,7 @@ for the JavaScript code in this file
 var NAVTREE =
 [
   [ "CraftLaunch", "index.html", [
-    [ "User Manual", "index.html", null ],
-    [ "更新履歴", "changes.html", null ],
+    [ "User Manual", "index.html", "index" ],
     [ "Modules", "modules.html", "modules" ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
