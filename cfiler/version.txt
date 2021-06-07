@@ -1,3 +1,3 @@
 version = 2.62
-url     = https://github.com/crftwr/cfiler/releases/download/v2.62/cfiler_262.exe
+url     = http://github.com/crftwr/cfiler/releases/download/v2.62/cfiler_262.exe
 md5     = 496da2744d63e6efe227a3cbbee00f6a
