@@ -23,8 +23,7 @@ for the JavaScript code in this file
 var NAVTREE =
 [
   [ "keyhac", "index.html", [
-    [ "User Manual", "index.html", null ],
-    [ "Changes", "changes.html", null ],
+    [ "User Manual", "index.html", "index" ],
     [ "Modules", "modules.html", "modules" ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],

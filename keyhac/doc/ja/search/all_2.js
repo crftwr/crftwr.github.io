@@ -6,7 +6,7 @@ var searchData=
   ['cancellistwindow_10',['cancelListWindow',['../classkeyhac__keymap_1_1_keymap.html#ab8b6fa0e217902542cc60231416fa150',1,'keyhac_keymap::Keymap']]],
   ['cblister_5fclipboardhistory_11',['cblister_ClipboardHistory',['../classkeyhac__clipboard_1_1cblister___clipboard_history.html',1,'keyhac_clipboard']]],
   ['cblister_5ffixedphrase_12',['cblister_FixedPhrase',['../classkeyhac__clipboard_1_1cblister___fixed_phrase.html',1,'keyhac_clipboard']]],
-  ['changes_13',['Changes',['../changes.html',1,'']]],
+  ['changes_13',['Changes',['../changes.html',1,'index']]],
   ['char_14',['Char',['../classpyauto_1_1pyauto__input_1_1_char.html',1,'pyauto::pyauto_input']]],
   ['check_15',['check',['../classckit_1_1ckit__threadutil_1_1_sync_call.html#a7d60a0d93b36e13e426f086e476a6373',1,'ckit.ckit_threadutil.SyncCall.check()'],['../classckit_1_1ckit__threadutil_1_1_job_queue.html#a7d60a0d93b36e13e426f086e476a6373',1,'ckit.ckit_threadutil.JobQueue.check()']]],
   ['checkall_16',['checkAll',['../classckit_1_1ckit__threadutil_1_1_job_queue.html#a0290503c79207295686abf1fa19e218a',1,'ckit::ckit_threadutil::JobQueue']]],
